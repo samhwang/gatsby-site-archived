@@ -12,12 +12,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AkaiSuisei2112
 github_username:  samhwang
+github:
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata
 
 # Other theme configs for Minimal theme
 show_downloads: false

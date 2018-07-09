@@ -281,6 +281,7 @@ DEPENDENCIES
   github-pages
   html-proofer (~> 3.0)
   jekyll-feed (~> 0.6)
+  jekyll-github-metadata
   jekyll-theme-minimal!
   rubocop (~> 0.50)
   tzinfo-data

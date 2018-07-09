@@ -47,6 +47,8 @@ NGINX
 * Adobe Creative Suite (Photoshop, Lightroom, Bridge)
 * Project Management tools (JIRA, Trello)
 
+***
+
 # Education
 
 |:------------------------|:-------------------------------------------------------------|

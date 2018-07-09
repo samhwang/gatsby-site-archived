@@ -2,19 +2,16 @@ source "https://rubygems.org"
 
 # Whenever this file is changed, run `bundle install`
 # to start the blog on local, run `bundle exec jekyll serve`
-#
+
 # Ensuring the proper Jekyll version is running.
 # gem "jekyll", "~> 3.8.3"
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
+
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-github-metadata"
 
 # PLUGINS
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
-  gem "jekyll-github-metadata"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

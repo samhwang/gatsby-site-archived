@@ -21,6 +21,9 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
 
+font-awesome:
+  assets: true
+
 # Other theme configs for Minimal theme
 show_downloads: false
 google_analytics:

@@ -20,7 +20,7 @@ plugins:
   - jekyll-feed
 
 # Other theme configs for Minimal theme
-show_downloads: true
+show_downloads: false
 google_analytics:
 
 # Exclude from processing.

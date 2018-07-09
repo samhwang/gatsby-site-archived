@@ -12,26 +12,6 @@ work focus, I have been trying to venture into other parts of the IT Industry,
 with the first and foremost would be Data Science & Data Engineering.
 
 # Proficiency
-<<<<<<< HEAD
-I can learn new technologies pretty quickly, even the hacking around part. But
-sometimes it might take me a while to master it.
-
-## Languages:
-PHP, Javascript, HTML, CSS, SCSS, Bash, Python, Ruby
-
-## Environments:
-- Windows (7, 8, 10)
-- macOS (Mountain Lion - High Sierra)
-- Linux (Ubuntu)
-- iOS and Android
-
-## Tools:
-- Been a fan of Atom, but can also work with VS Code and Sublime Text.
-- IntelliJ IDE (PHPStorm)
-- Git
-
-# Education:
-=======
 
 I can learn new technologies pretty quickly, even the hacking around part. But
 sometimes it might take me a while to master it. I have also been involved in
@@ -80,4 +60,3 @@ NGINX
 | **Sep 2014 - Jan 2015** | **Right Left Communication**<br/> as a *PHP Web Developer*     |
 | **Oct 2015 - Feb 2016** | **Mint and co. Accessories**<br/> as a *Contract Web Developer*|
 | **Jun 2017 - Sep 2017** | **Psych Press**<br/> as a *PHP Developer Intern*               |
->>>>>>> use_jekyll

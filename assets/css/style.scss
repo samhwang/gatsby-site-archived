@@ -1,4 +1,8 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+@import "{{ site.theme }}";
+
+.social-icons{
+  font-size: larger;
+}

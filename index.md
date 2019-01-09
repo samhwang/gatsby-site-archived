@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# Career Profile
+
 I have always been passionate about computers, the Internet and how people
 connect together. That was the reason why I chose to walk down the path of Web
 Development and IT Support. It was to create a link between people where they
@@ -19,14 +21,14 @@ working with Agile teams.
 
 ## Languages, frameworks and platforms:
 
-### Commercially ready:
-* PHP 7, MySQL, Javascript (jQuery), HTML5, CSS, SCSS, Java, Bash, Apache
+### Commercially experienced:
+* PHP 7, SQL (MySQL, SQLite, MS SQL), Javascript (jQuery), Python (Flask, Django),
+HTML5, CSS, SCSS, Java, Bash, Apache
 * Wordpress, CodeIgniter
 
 ### Also learning:
-Vagrant, Docker, Kubernetes, R, Python (Flask, Django), Ruby (Rails, and even
-***THIS BLOG*** is written in Jekyll), C#, Javascript (Vue.js, Angular, React),
-NGINX
+Vagrant, Docker, Kubernetes, R, Ruby (Rails, and even ***THIS BLOG*** is written
+in Jekyll), C#, Javascript (Vue.js, Angular, React), NGINX
 
 ###### (That's a lot, I know. Gotta keep up with the world.)
 

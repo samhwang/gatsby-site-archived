@@ -19,29 +19,31 @@ I can learn new technologies pretty quickly, even the hacking around part. But
 sometimes it might take me a while to master it. I have also been involved in
 working with Agile teams.
 
-## Languages, frameworks and platforms:
+## Languages, frameworks and platforms
 
-### Commercially experienced:
+### Commercially experienced
+
 * PHP 7, SQL (MySQL, SQLite, MS SQL, PostgreSQL), Javascript (jQuery, Node),
 Python (Flask, Django), HTML5, CSS, SCSS, Java, Bash, Apache
 * Wordpress, CodeIgniter, Joomla, Meteor
 
-### Also learning:
+### Also learning
+
 Vagrant, Docker, Kubernetes, R, Ruby (Rails, and even ***THIS BLOG*** is written
-in Jekyll), C#, Javascript (Vue.js, Angular, React), NGINX
+in Jekyll), C#, Javascript (Vue, Angular, React), NGINX
 
 ###### (That's a lot, I know. Gotta keep up with the world.)
 
-## Environments:
+## Environments
 
 * Windows (7 - 10)
 * macOS (Mountain Lion - Mojave)
 * Linux (Ubuntu)
 * iOS and Android
 
-## Tools:
+## Tools
 
-* Primarily Atom, occasionally VS Code and Sublime Text.
+* VS Code
 * JetBrains IDE (PHPStorm)
 * Git Bash
 * Microsoft Office and similar Google tools
@@ -53,11 +55,11 @@ in Jekyll), C#, Javascript (Vue.js, Angular, React), NGINX
 # Employment History
 
 |:------------------------|:---------------------------------------------------------------|
+| **Jan 2019 - Current**  | **ClassCom**<br/> as a *Software Developer*                    |
 | **Jun 2017 - Sep 2017** | **Psych Press**<br/> as a *PHP Developer Intern*               |
 | **Oct 2015 - Feb 2016** | **Mint and co. Accessories**<br/> as a *Web Developer*         |
 | **Sep 2014 - Jan 2015** | **Right Left Communication**<br/> as a *PHP Web Developer*     |
 | **Jul 2012 - Jul 2013** | **Phuong Dong Logistics**<br/> as a *IT Support Technician*    |
-
 
 # Education
 

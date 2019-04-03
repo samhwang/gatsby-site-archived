@@ -55,7 +55,7 @@ in Jekyll), C#, Javascript (Vue, Angular, React), NGINX
 # Employment History
 
 |:------------------------|:---------------------------------------------------------------|
-| **Jan 2019 - Current**  | **ClassCom**<br/> as a *Software Developer*                    |
+| **Jan 2019 - Apr 2019** | **ClassCom**<br/> as a *Software Developer*                    |
 | **Jun 2017 - Sep 2017** | **Psych Press**<br/> as a *PHP Developer Intern*               |
 | **Oct 2015 - Feb 2016** | **Mint and co. Accessories**<br/> as a *Web Developer*         |
 | **Sep 2014 - Jan 2015** | **Right Left Communication**<br/> as a *PHP Web Developer*     |

@@ -24,7 +24,7 @@ and kanban.
 
 ### Commercially experienced
 
-* PHP 7, Python, Javascript (jQuery, Node.js), Java and bash scripting
+* PHP 7, Python, Ruby, Javascript (jQuery, Node.js, Angular), Java and bash scripting
 * Databases and data modelling with MySQL, SQLite, MS SQL, PostgreSQL and MongoDB
 * Server configuration with  Apache
 * Frontend markup with HTML5, CSS, LESS and Sass/SCSS
@@ -33,7 +33,7 @@ and kanban.
 ### Also learning
 
 Ruby (Rails, and even ***THIS SITE*** is written in Jekyll), C#, Javascript (Vue,
-Angular, React), NGINX, Cloud deployment (Vagrant, Docker, Kubernetes, AWS
+React), NGINX, Cloud deployment (Vagrant, Docker, Kubernetes, AWS
 and Google Cloud)
 
 #### (That's a lot, I know. Gotta keep up with the world.)

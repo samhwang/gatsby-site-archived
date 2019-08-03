@@ -3,10 +3,6 @@ source "https://rubygems.org"
 # Whenever this file is changed, run `bundle install`
 # to start the blog on local, run `bundle exec jekyll serve`
 
-# Ensuring the proper Jekyll version is running.
-# gem "jekyll", "~> 3.8.3"
-
-
 gem "github-pages", group: :jekyll_plugins
 
 # PLUGINS

@@ -1,71 +1,53 @@
 ---
+title: Home Page
 layout: default
 ---
 
-# Career Profile
+## Career Profile
 
-I have always been passionate about computers, the Internet and how people
-connect together. That was the reason why I chose to walk down the path of
-Software Development. It was to create a link between people where they
-can interact with each other, making the world a little closer. Throughout my
-past experience and my university studies, I hope I can contribute to my dreams,
-and the software development career path, one step at a time.
-
-***
-
-# Skills and Proficiency
-
-I can learn new technologies pretty quickly, even the hacking around part. But
-sometimes it might take me a while to master it. I have also been involved a lot
-in working with Agile teams, thus making me familiar with the concepts of sprints
-and kanban.
-
-## Languages, frameworks and platforms
-
-### Commercially experienced
-
-* PHP 7, Python, Ruby, Javascript (jQuery, Node.js, Angular), Java and bash scripting
-* Databases and data modelling with MySQL, SQLite, MS SQL, PostgreSQL and MongoDB
-* Server configuration with  Apache
-* Frontend markup with HTML5, CSS, LESS and Sass/SCSS
-* CMS and Frameworks: Wordpress, CodeIgniter, Joomla, Meteor, Django, Flask
-
-### Also learning
-
-Ruby (Rails, and even ***THIS SITE*** is written in Jekyll), C#, Javascript (Vue,
-React), NGINX, Cloud deployment (Vagrant, Docker, Kubernetes, AWS
-and Google Cloud)
-
-#### (That's a lot, I know. Gotta keep up with the world.)
-
-## Environments
-
-* Windows (7 - 10)
-* macOS (Mountain Lion - Mojave)
-* Linux (Ubuntu)
-* iOS and Android
-
-## Tools
-
-* VS Code
-* JetBrains IDE (PHPStorm)
-* Git Command Line, and Gitx for macOS, Gitk for Linux
-* Microsoft Office and similar Google tools
-* Adobe Creative Suite (Photoshop, Lightroom, Bridge)
-* Project Management tools (JIRA, Trello, Asana, Azure DevOps)
+I have always been passionate about computers, and how technology can bring
+the world closer. That was the reason why I walked down the path of Software
+Development. Besides my studies, I have worked in a lot of Agile teams of up to
+10 people, delivering high quality responsive web applications on different
+platforms (PHP, NodeJS) for clients in different industries (retail, sports,
+and education.)
 
 ***
 
-# Employment History
+## Employment History
 
 |:------------------------|:---------------------------------------------------------------|
+| **May 2019 - Ongoing**  | **Bonntech Business Solutions**<br/> as a *Web Application Developer*|
 | **Jan 2019 - Apr 2019** | **ClassCom**<br/> as a *Software Developer*                    |
 | **Jun 2017 - Sep 2017** | **Psych Press**<br/> as a *PHP Developer Intern*               |
 | **Oct 2015 - Feb 2016** | **Mint and co. Accessories**<br/> as a *Web Developer*         |
 | **Sep 2014 - Jan 2015** | **Right Left Communication**<br/> as a *PHP Web Developer*     |
 | **Jul 2012 - Jul 2013** | **Phuong Dong Logistics**<br/> as an *IT Support Technician*   |
 
-# Education
+## Skills and Proficiency
+
+### Professional proficiency
+
+* Backend: PHP 7, Python, Ruby, NodeJS
+* Frontend: Javascript (jQuery, Angular, Bootstrap), HTML5, CSS, LESS and SASS
+* Databases and data modelling with MySQL, SQLite, MS SQL, PostgreSQL and MongoDB
+* Server configuration with Apache
+* CMS and Frameworks: Wordpress, CodeIgniter, Joomla, Meteor, Django, Flask and Jekyll
+* Version control tools with Git
+* Project Management tools (JIRA, Trello, Asana, Azure DevOps)
+* Microsoft Office and similar Google tools
+* Adobe Creative Suite (Photoshop, Lightroom, Bridge)
+
+### Also learning
+
+Ruby (Rails), C#, Javascript (Vue, React), NGINX, Cloud Deployment (Vagrant,
+Docker, Kubernetes, AWS and Google Cloud)
+
+#### (That's a lot, I know. Gotta keep up with the world.)
+
+***
+
+## Education
 
 |:------------------------|:-------------------------------------------------------------|
 | **Oct 2016 - Oct 2017** | **Navitas Professionals**<br/>*Professional Year Program in Computer Science*<br/>(incl. *Cert IV in Business*)|

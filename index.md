@@ -22,7 +22,8 @@ and education.)
 | **Jun 2017 - Sep 2017** | **Psych Press**<br/> as a *PHP Developer Intern*               |
 | **Oct 2015 - Feb 2016** | **Mint and co. Accessories**<br/> as a *Web Developer*         |
 | **Sep 2014 - Jan 2015** | **Right Left Communication**<br/> as a *PHP Web Developer*     |
-| **Jul 2012 - Jul 2013** | **Phuong Dong Logistics**<br/> as an *IT Support Technician*   |
+
+***
 
 ## Skills and Proficiency
 
@@ -40,8 +41,9 @@ and education.)
 
 ### Also learning
 
-Ruby (Rails), C#, Javascript (Vue, React), NGINX, Cloud Deployment (Vagrant,
-Docker, Kubernetes, AWS and Google Cloud)
+Ruby (Rails), C#, Javascript (Vue, React), NGINX, cloud Deployment tools (Vagrant,
+Docker, Kubernetes), cloud services (DigitalOcean, AWS and Google Cloud),
+and infrastructure automation (Terraform and Ansible)
 
 #### (That's a lot, I know. Gotta keep up with the world.)
 

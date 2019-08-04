@@ -14,14 +14,77 @@ and education.)
 
 ***
 
+## Education
+
+|:------------------------|:-------------------------------------------------------------|
+| **Oct 2016 - Oct 2017** | **Navitas Professionals**<br/>*Professional Year Program in Computer Science*<br/>(incl. *Cert IV in Business*)|
+| **Oct 2012 - Dec 2015** | **RMIT University**<br/>*Bachelor of Information Technology*|
+
 ## Employment History
 
-|:------------------------|:---------------------------------------------------------------|
-| **May 2019 - Ongoing**  | **Bonntech Business Solutions**<br/> as a *Web Application Developer*|
-| **Jan 2019 - Apr 2019** | **ClassCom**<br/> as a *Software Developer*                    |
-| **Jun 2017 - Sep 2017** | **Psych Press**<br/> as a *PHP Developer Intern*               |
-| **Oct 2015 - Feb 2016** | **Mint and co. Accessories**<br/> as a *Web Developer*         |
-| **Sep 2014 - Jan 2015** | **Right Left Communication**<br/> as a *PHP Web Developer*     |
+### May 2019 - Ongoing
+
+* **Web Application Developer** at **Bonntech Business Solutions**
+* Built the base framework for future development with Bonntech, along with its own create
+  and update script to speed up the initial setup for future projects.
+* Technologies involved:
+  * PHP 7.3, using CodeIgniter framework and Composer package manager with self-hosted
+    Packagist
+  * MySQL database management and data modelling
+  * HTML5, CSS, Javascript (jQuery, Bootstrap, Datatables, and AJAX)
+  * Apache server configurations
+  * Built containerized development environments with Docker
+
+### Jan 2019 - Apr 2019
+
+* **Software Developer** at **ClassCom**
+* Collaborated on building new core features of the ClassCom project, in addition to bug fixing,
+  writing automated test and build scripts and participated in code reviews before an update
+  is released in a bi-weekly schedule.
+* Technologies involved:
+  * Javascript, using the Meteor JS full stack framework (with NodeJS for backend processing,
+    BlazeJS for templating, CSS pre-processing with LESS)
+  * Automated test scripting with CucumberJS and Mocha.
+  * MongoDB database and data modelling.
+  * REST APIs
+
+### Jun 2017 - Sep 2017
+
+* **PHP Developer Intern** at **Psych Press**
+* Collaborated on building three inhouse projects for Psych Press closely with the psychology
+  team on a weekly basis.
+* Technologies involved:
+  * PHP 7, using CodeIgniter, Laravel and Moodle framework.
+  * Javascript (AJAX, jQuery, Bootstrap, D3js and ChartJS) and CSS (MaterializeCSS)
+  * Microsoft SQL Server Database
+  * Migration from Microsoft servers to Amazon Web Services EC2 Linux instances
+
+### Oct 2015 - Feb 2016
+
+* **Web Developer** at **Mint and Co. Accessories**
+* Designed and built the e-commerce site for Mint and Co. Accessories from the ground
+  up and provided regular maintenance to ensure 99.9% site availability.
+* Technologies involved:
+  * CPanel hosting control panel for Apache server
+  * PHP using the Wordpress framework and WooCommerce e-commerce plugin
+  * MySQL database
+  * Javascript (jQuery, Bootstrap)
+  * Paypal Gateway API
+
+### Sep 2014 - Jan 2015
+
+* **PHP Developer** at **Right Left Communication**
+* Developed, supported, monitored and maintained 4 websites for different clients from
+  various industries.
+* Technologies involved:
+  * CPanel hosting control panel for Apache server
+  * PHP using the Joomla framework
+  * Javascript (jQuery, Bootstrap)
+  * MySQL database
+
+## Personal projects
+
+TBA
 
 ***
 
@@ -48,12 +111,6 @@ and infrastructure automation (Terraform and Ansible)
 #### (That's a lot, I know. Gotta keep up with the world.)
 
 ***
-
-## Education
-
-|:------------------------|:-------------------------------------------------------------|
-| **Oct 2016 - Oct 2017** | **Navitas Professionals**<br/>*Professional Year Program in Computer Science*<br/>(incl. *Cert IV in Business*)|
-| **Oct 2012 - Dec 2015** | **RMIT University**<br/>*Bachelor of Information Technology*|
 
 ```ascii
  _________________________

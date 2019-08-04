@@ -9,7 +9,7 @@ mv _site/* .
 rm -R _site/
 
 git add -fA
-git commit --allow-empty -m "$(git log develop -1 --pretty=%B)"
+git commit --allow-empty -m "$CIRCLE_BUILD_NUM"
 git push origin master
 
 echo "Successfully built and deployed."

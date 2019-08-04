@@ -84,7 +84,18 @@ and education.)
 
 ## Personal projects
 
-TBA
+* My GitHub code repository
+: The host of my many curious projects, from setting up a custom firmware to my keyboard
+  and my own shell configs, to testing and learning new programming languages and techniques.
+
+* My GitHub.io page
+: This site was hosted on my github pages, and was built on Ruby, using the Jekyll framework.
+
+* Pi-Hole
+: Pi-Hole is a self-hosted DNS server that will act as an ad black-hole and can be easily
+  installed on any Raspberry Pi (hence the name, Pi-Hole), or any computer running Linux.
+  To maintain stable and seamless connection between dropouts, I have also set up 2 of them,
+  and sync the ad blocking lists together using a sync script.
 
 ***
 

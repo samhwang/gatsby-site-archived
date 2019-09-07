@@ -25,3 +25,9 @@ jobs:
         USER_NAME: ${{ secrets.USER_NAME }}
         USER_EMAIL: ${{ secrets.USER_EMAIL }}
       run: bash ./.github/workflows/build.sh
+    - name: Notify Slack channel
+      uses: Ilshidur/action-slack@master
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      with:
+        args: 'A new commit has been pushed.'

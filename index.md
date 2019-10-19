@@ -110,7 +110,7 @@ and education.)
 * Backend: PHP 7, Python, Ruby, NodeJS
 * Frontend: Javascript (jQuery, Angular, Bootstrap), HTML5, CSS, LESS and SASS
 * Databases and data modelling with MySQL, SQLite, MS SQL, PostgreSQL and MongoDB
-* Server configuration with Apache
+* Server configuration with Apache and NGINX
 * CMS and Frameworks: Wordpress, CodeIgniter, Joomla, Meteor, Django, Flask and Jekyll
 * Version control tools with Git
 * Project Management tools (JIRA, Trello, Asana, Azure DevOps)
@@ -119,9 +119,9 @@ and education.)
 
 ### Also learning
 
-Ruby (Rails), C#, Javascript (Vue, React), NGINX, cloud Deployment tools (Vagrant,
-Docker, Kubernetes), cloud services (DigitalOcean, AWS and Google Cloud),
-and infrastructure automation (Terraform and Ansible)
+Golang, Ruby (Rails), Javascript (Vue, React), Cloud Deployment tools (Vagrant,
+Docker, Kubernetes), Cloud services (DigitalOcean, AWS and Google Cloud),
+and Infrastructure automation (Terraform and Ansible)
 
 #### (That's a lot, I know. Gotta keep up with the world.)
 

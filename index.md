@@ -22,6 +22,10 @@ and education.)
 
 ## Employment History
 
+### Oct 2019 - Ongoing
+
+* **Junior Full Stack Developer** at **Cannot disclose yet.**
+
 ### May 2019 - Oct 2019
 
 * **Web Application Developer** at **Bonntech Business Solutions**

@@ -1,5 +1,5 @@
 ---
-title: Home Page
+title: Sam Huynh
 layout: default
 ---
 
@@ -16,13 +16,13 @@ and education.)
 
 ## Education
 
-|:------------------------|:-------------------------------------------------------------|
+|:---|:---|
 | **Oct 2016 - Oct 2017** | **Navitas Professionals**<br/>*Professional Year Program in Computer Science*<br/>(incl. *Cert IV in Business*)|
 | **Oct 2012 - Dec 2015** | **RMIT University**<br/>*Bachelor of Information Technology*|
 
 ## Employment History
 
-### May 2019 - Ongoing
+### May 2019 - Oct 2019
 
 * **Web Application Developer** at **Bonntech Business Solutions**
 * Built the base framework for future development with Bonntech, along with its own create

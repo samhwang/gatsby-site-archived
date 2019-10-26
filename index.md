@@ -24,7 +24,7 @@ and education.)
 
 ### Oct 2019 - Ongoing
 
-* **Junior Full Stack Developer** at **Cannot disclose yet.**
+* **Junior Full Stack Developer** at **Hertz Australia**
 
 ### May 2019 - Oct 2019
 
@@ -107,10 +107,11 @@ and education.)
 
 ### Professional proficiency
 
-* Backend: PHP 7, Python, Ruby, NodeJS
-* Frontend: Javascript (jQuery, Angular, Bootstrap), HTML5, CSS, LESS and SASS
+* Backend: PHP 7, NodeJS
+* Frontend: Javascript (jQuery, React), HTML5, CSS, LESS and SASS
 * Databases and data modelling with MySQL, SQLite, MS SQL, PostgreSQL and MongoDB
 * Server configuration with Apache and NGINX
+* Containerize applications (traditional and microservices) with Docker
 * CMS and Frameworks: Wordpress, CodeIgniter, Joomla, Meteor, Django, Flask and Jekyll
 * Version control tools with Git
 * Project Management tools (JIRA, Trello, Asana, Azure DevOps)
@@ -119,9 +120,8 @@ and education.)
 
 ### Also learning
 
-Golang, Ruby (Rails), Javascript (Vue, React), Cloud Deployment tools (Vagrant,
-Docker, Kubernetes), Cloud services (DigitalOcean, AWS and Google Cloud),
-and Infrastructure automation (Terraform and Ansible)
+Golang, Cloud Deployment using Kubernetes to Cloud services (DigitalOcean,
+AWS and Google Cloud), and Infrastructure Automation (Terraform and Ansible)
 
 #### (That's a lot, I know. Gotta keep up with the world.)
 

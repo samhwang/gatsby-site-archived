@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Layout from '../components/Layout';
+import Layout from '../components/Template/Layout';
 
 function IndexPage() {
   return (
@@ -13,9 +12,9 @@ function IndexPage() {
           <header className="major">
             <h2>
               Page not found
-            <br />
+              <br />
               Not a valid URL
-          </h2>
+            </h2>
           </header>
         </section>
       </div>

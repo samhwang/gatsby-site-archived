@@ -11,6 +11,21 @@
     "email": "samhwang2112.dev@gmail.com"
   },
   "homepage": "https://github.com/samhwang/samhwang.github.io",
+  "engine": {
+    "node": ">=12.16",
+    "npm": ">=6.13",
+    "yarn": ">=1.22"
+  },
+  "scripts": {
+    "build": "yarn run clean && gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,d.ts,json,md}\"",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "start": "yarn run develop"
+  },
   "dependencies": {
     "@types/smoothscroll-polyfill": "^0.3.1",
     "gatsby": "^2.4.3",
@@ -27,16 +42,6 @@
     "react-scrollspy": "^3.4.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
-  "scripts": {
-    "build": "yarn run clean && gatsby build",
-    "clean": "gatsby clean",
-    "develop": "gatsby develop",
-    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "start": "yarn run develop"
-  },
   "devDependencies": {
     "@types/node": "^13.7.7",
     "@types/react": "^16.9.23",
@@ -46,9 +51,11 @@
     "@typescript-eslint/parser": "^2.21.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.5.0",
     "gatsby-plugin-root-import": "^2.0.5",

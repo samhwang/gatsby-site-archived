@@ -28,9 +28,7 @@ function Scroll(props: {
   children: JSX.Element;
   counter: number;
 }) {
-  const {
-    type, element, offset, timeout, children, counter,
-  } = props;
+  const { type, element, offset, timeout, children, counter } = props;
   useEffect(() => {
     smoothscroll.polyfill();
   }, []);
@@ -61,11 +59,18 @@ function Scroll(props: {
 
   return (
     <Element>
-      {
-        typeof children === 'object'
-          ? (cloneElement(children, { onClick: handleClick }))
-          : (<span onClick={(event) => handleClick(event)} onKeyDown={(event) => handleClick(event)} role="tab" tabIndex={counter}>{children}</span>)
-      }
+      {typeof children === 'object' ? (
+        cloneElement(children, { onClick: handleClick })
+      ) : (
+        <span
+          onClick={event => handleClick(event)}
+          onKeyDown={event => handleClick(event)}
+          role="tab"
+          tabIndex={counter}
+        >
+          {children}
+        </span>
+      )}
     </Element>
   );
 }

@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import '../assets/sass/resume.scss';
+import '../../assets/sass/resume.scss';
 
-function Layout(props) {
+function Layout(props: { children: React.ReactNode }) {
   const { children } = props;
   return (
     <StaticQuery
@@ -18,7 +17,7 @@ function Layout(props) {
             }
           }
         `}
-      render={data => (
+      render={(data) => (
         <>
           <Helmet
             title={data.site.siteMetadata.title}
@@ -28,15 +27,11 @@ function Layout(props) {
           >
             <html lang="en" />
           </Helmet>
-          <div className={'main-body'}>{children}</div>
+          <div className="main-body">{children}</div>
         </>
       )}
     />
   );
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

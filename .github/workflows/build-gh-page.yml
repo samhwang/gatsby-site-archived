@@ -9,25 +9,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 2.6.x
-    - name: Install Bundle and build Jekyll
-      run: |
-        gem install bundler
-        bundle install
-        bundle exec jekyll build
-    - name: Change to Master branch and push
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        USER_NAME: ${{ secrets.USER_NAME }}
-        USER_EMAIL: ${{ secrets.USER_EMAIL }}
-      run: bash ./.github/workflows/build.bash
-    - name: Notify Slack channel
-      uses: Ilshidur/action-slack@master
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      with:
-        args: 'A new commit has been pushed.'
+    - uses: actions/checkout@v2
+    # - name: Set up Ruby 2.6
+    #   uses: actions/setup-ruby@v1
+    #   with:
+    #     ruby-version: 2.6.x
+    # - name: Install Bundle and build Jekyll
+    #   run: |
+    #     gem install bundler
+    #     bundle install
+    #     bundle exec jekyll build
+    # - name: Change to Master branch and push
+    #   env:
+    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    #     USER_NAME: ${{ secrets.USER_NAME }}
+    #     USER_EMAIL: ${{ secrets.USER_EMAIL }}
+    #   run: bash ./.github/workflows/build.bash
+    # - name: Notify Slack channel
+    #   uses: Ilshidur/action-slack@master
+    #   env:
+    #     SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+    #   with:
+    #     args: 'A new commit has been pushed.'

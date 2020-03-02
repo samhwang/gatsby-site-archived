@@ -9,21 +9,19 @@ function Layout(props: { children: React.ReactNode }) {
   return (
     <StaticQuery
       query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
             }
           }
-        `}
-      render={(data) => (
+        }
+      `}
+      render={data => (
         <>
           <Helmet
             title={data.site.siteMetadata.title}
-            meta={[
-              { name: 'description', content: 'Resume' },
-            ]}
+            meta={[{ name: 'description', content: 'Resume' }]}
           >
             <html lang="en" />
           </Helmet>

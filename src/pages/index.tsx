@@ -20,20 +20,21 @@ function IndexPage() {
               <span className="text-primary">{config.lastName}</span>
             </h1>
             <div className="subheading mb-5">
-              {config.address}
-              -
+              {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+              {config.address} -
               <a href={`mailto:${config.email}`}>{config.email}</a>
             </div>
             <p className="lead mb-5">
-              I have always been passionate about computers, and how technology can bring
-              the world closer. That was the reason why I walked down the path of Software
-              Development. Besides my studies, I have worked in a lot of Agile teams of up to
-              10 people, delivering high quality responsive web applications on different
-              platforms (PHP, NodeJS) for clients in different industries (retail, sports,
-              and education.)
+              I have always been passionate about computers, and how technology
+              can bring the world closer. That was the reason why I walked down
+              the path of Software Development. Besides my studies, I have
+              worked in a lot of Agile teams of up to 10 people, delivering high
+              quality responsive web applications on different platforms (PHP,
+              NodeJS) for clients in different industries (retail, sports, and
+              education.)
             </p>
             <div className="social-icons">
-              {config.socialLinks.map((social) => {
+              {config.socialLinks.map(social => {
                 const { icon, url } = social;
                 return (
                   <a key={url} href={url}>
@@ -119,7 +120,6 @@ function IndexPage() {
               major=""
               duration="Oct 2012 - Dec 2015"
             />
-
           </div>
         </section>
 

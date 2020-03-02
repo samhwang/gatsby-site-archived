@@ -1,15 +1,12 @@
 import React from 'react';
 
-function Education(props:
-  {
-    institute: string;
-    degree: string;
-    major: string;
-    duration: string;
+function Education(props: {
+  institute: string;
+  degree: string;
+  major: string;
+  duration: string;
 }) {
-  const {
-    institute, degree, major, duration,
-  } = props;
+  const { institute, degree, major, duration } = props;
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div className="resume-content">

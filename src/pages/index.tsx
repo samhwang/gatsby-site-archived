@@ -6,6 +6,7 @@ import Education from '../components/Homepage/Education';
 import config from '../../config';
 
 function IndexPage() {
+  const { firstName, lastName, address, email, socialLinks } = config;
   return (
     <Layout>
       <Sidebar />
@@ -16,13 +17,13 @@ function IndexPage() {
         >
           <div className="w-100">
             <h1 className="mb-0">
-              {config.firstName}
-              <span className="text-primary">{config.lastName}</span>
+              {firstName}
+              <span className="text-primary">{lastName}</span>
             </h1>
             <div className="subheading mb-5">
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-              {config.address} -
-              <a href={`mailto:${config.email}`}>{config.email}</a>
+              {address} -
+              <a href={`mailto:${email}`}>{email}</a>
             </div>
             <p className="lead mb-5">
               I have always been passionate about computers, and how technology
@@ -34,7 +35,7 @@ function IndexPage() {
               education.)
             </p>
             <div className="social-icons">
-              {config.socialLinks.map(social => {
+              {socialLinks.map(social => {
                 const { icon, url } = social;
                 return (
                   <a key={url} href={url}>

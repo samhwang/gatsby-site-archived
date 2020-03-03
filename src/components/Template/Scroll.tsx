@@ -2,8 +2,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 import React, { cloneElement, useEffect } from 'react';
 
 function Element(props: { children: JSX.Element }) {
-  const { children } = props;
-  return children;
+  return props.children;
 }
 
 function scrollTo(element?: Element, offSet = 0, timeout?: number) {

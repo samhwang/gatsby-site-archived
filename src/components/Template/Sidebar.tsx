@@ -2,7 +2,6 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
-// @ts-ignore
 import avatar from '../../assets/images/avatar.jpg';
 import config from '../../../config';
 

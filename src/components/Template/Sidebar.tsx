@@ -1,6 +1,7 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
+import Footer from '../Template/Footer';
 
 import avatar from '../../assets/images/avatar.jpg';
 import config from '../../../config';
@@ -11,7 +12,7 @@ function Sidebar() {
     { content: 'Experience', href: 'experience' },
     { content: 'Education', href: 'education' },
     { content: 'Skills', href: 'skills' },
-    { content: 'Awards', href: 'awards' },
+    { content: 'Projects', href: 'projects' },
   ];
 
   return (
@@ -64,6 +65,7 @@ function Sidebar() {
           })}
         </Scrollspy>
       </div>
+      <Footer />
     </nav>
   );
 }

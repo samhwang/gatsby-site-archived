@@ -3,11 +3,13 @@ import Layout from '../components/Template/Layout';
 import Sidebar from '../components/Template/Sidebar';
 import JobDescription from '../components/Homepage/JobDescription';
 import Education from '../components/Homepage/Education';
+import LangIcon from '../components/Homepage/LangIcon';
 import { experiences, education } from '../components/Homepage/information';
 import config from '../../config';
 
 function IndexPage() {
   const { firstName, lastName, address, email, socialLinks } = config;
+  const languages = ['html5', 'css3', 'js-square', 'angular', 'react', 'node-js', 'sass', 'less', 'wordpress', 'gulp', 'grunt', 'npm'];
 
   return (
     <Layout>
@@ -88,42 +90,9 @@ function IndexPage() {
               Programming Languages &amp; Tools
             </div>
             <ul className="list-inline dev-icons">
-              <li className="list-inline-item">
-                <i className="fab fa-html5" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-css3-alt" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-js-square" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-angular" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-react" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-node-js" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-sass" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-less" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-wordpress" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-gulp" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-grunt" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-npm" />
-              </li>
+              {languages.map((language, key) => (
+                <LangIcon name={language} key={key} />
+              ))}
             </ul>
           </div>
         </section>

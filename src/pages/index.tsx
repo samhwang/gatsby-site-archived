@@ -3,10 +3,12 @@ import Layout from '../components/Template/Layout';
 import Sidebar from '../components/Template/Sidebar';
 import JobDescription from '../components/Homepage/JobDescription';
 import Education from '../components/Homepage/Education';
+import { experiences, education } from '../components/Homepage/information';
 import config from '../../config';
 
 function IndexPage() {
   const { firstName, lastName, address, email, socialLinks } = config;
+
   return (
     <Layout>
       <Sidebar />
@@ -22,8 +24,7 @@ function IndexPage() {
             </h1>
             <div className="subheading mb-5">
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-              {address} -
-              <a href={`mailto:${email}`}>{email}</a>
+              {address} - <a href={`mailto:${email}`}>{email}</a>
             </div>
             <p className="lead mb-5">
               I have always been passionate about computers, and how technology
@@ -55,48 +56,9 @@ function IndexPage() {
         >
           <div className="w-100">
             <h2 className="mb-5">Experience</h2>
-
-            <JobDescription
-              title="Junior Full Stack Developer"
-              companyName="Hertz Australia"
-              duration="Oct 2019 - Present"
-              description=""
-            />
-
-            <JobDescription
-              title="Web Application Developer"
-              companyName="Bonntech Business Solutions"
-              duration="May 2019 - Oct 2019"
-              description="Built the base framework for future development with Bonntech, along with its own create and update script to speed up the initial setup for future projects."
-            />
-
-            <JobDescription
-              title="Software Developer"
-              companyName="Classcom"
-              duration="Jan 2019 - Apr 2019"
-              description="Collaborated on building new core features of the ClassCom project, in addition to bug fixing, writing automated test and build scripts and participated in code reviews before an update is released in a bi-weekly schedule."
-            />
-
-            <JobDescription
-              title="PHP Developer Intern"
-              companyName="Psych Press"
-              duration="Jun 2017 - Sep 2017"
-              description="Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis."
-            />
-
-            <JobDescription
-              title="Web Developer"
-              companyName="Mint n Co. Accessories"
-              duration="Oct 2015 - Feb 2016"
-              description="Designed and built the e-commerce site for Mint and Co. Accessories from the ground up and provided regular maintenance to ensure 99.9% site availability."
-            />
-
-            <JobDescription
-              title="PHP Developer"
-              companyName="Right Left Communication"
-              duration="Sep 2014 - Feb 2015"
-              description="Developed, supported, monitored and maintained 4 websites for different clients from various industries."
-            />
+            {experiences.map((job, key) => (
+              <JobDescription {...job} key={key} />
+            ))}
           </div>
         </section>
         <hr className="m-0" />
@@ -107,20 +69,9 @@ function IndexPage() {
         >
           <div className="w-100">
             <h2 className="mb-5">Education</h2>
-
-            <Education
-              institute="Navitas Professionals"
-              degree="Professional Year Program in Computer Science"
-              major="incl. Cert IV in Business"
-              duration="Oct 2016 - Oct 2017"
-            />
-
-            <Education
-              institute="RMIT University"
-              degree="Bachelor of Information Technology"
-              major=""
-              duration="Oct 2012 - Dec 2015"
-            />
+            {education.map((school, key) => (
+              <Education {...school} key={key} />
+            ))}
           </div>
         </section>
 

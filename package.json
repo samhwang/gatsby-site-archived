@@ -1,5 +1,5 @@
 {
-  "name": "@samhwang/gatsby-starter-resume",
+  "name": "@samhwang/gatsby-resume",
   "version": "2.0.0",
   "description": "My resume page, now re-written in Gatsby",
   "repository": {
@@ -11,6 +11,7 @@
     "email": "samhwang2112.dev@gmail.com"
   },
   "homepage": "https://github.com/samhwang/samhwang.github.io",
+  "license": "SEE LICENSE IN LICENSE FILE",
   "engine": {
     "node": ">=12.16",
     "npm": ">=6.13",
@@ -20,7 +21,7 @@
     "prebuild": "yarn clean",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "develop": "gatsby develop",
+    "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "predeploy": "gh-pages-clean",
     "deploy": "gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,d.ts,json}\"",
@@ -64,6 +65,5 @@
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.0",
     "typescript": "^3.8.3"
-  },
-  "license": "MIT"
+  }
 }

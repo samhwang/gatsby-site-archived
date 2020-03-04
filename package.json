@@ -18,10 +18,10 @@
   },
   "scripts": {
     "prebuild": "yarn clean",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "deploy": "gh-pages -d public",
+    "deploy": "gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,d.ts,json}\"",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",

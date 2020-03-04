@@ -5,10 +5,13 @@ import JobDescription from '../components/Homepage/JobDescription';
 import Education from '../components/Homepage/Education';
 import LangIcon from '../components/Homepage/LangIcon';
 import Project from '../components/Homepage/Project';
+import Skill from '../components/Homepage/Skill';
 import {
   experiences,
   education,
   projects,
+  skills,
+  techStack,
 } from '../components/Homepage/information';
 import config from '../../config';
 
@@ -89,11 +92,11 @@ function IndexPage() {
           id="skills"
         >
           <div className="w-100">
-            <h2 className="mb-5">Skills</h2>
+            <h2 className="mb-5">Skills and Proficiency</h2>
 
-            <div className="subheading mb-3">
-              Programming Languages &amp; Tools
-            </div>
+            {skills.map((skillGroup, key) => (
+              <Skill {...skillGroup} key={key} />
+            ))}
             <ul className="list-inline dev-icons">
               {languages.map((language, key) => (
                 <LangIcon name={language} key={key} />
@@ -112,10 +115,7 @@ function IndexPage() {
             <h2 className="mb-5">Projects</h2>
             <ul className="fa-ul mb-0">
               {projects.map((project, key) => (
-                <Project
-                  {...project}
-                  key={key}
-                />
+                <Project {...project} key={key} />
               ))}
             </ul>
           </div>

@@ -16,6 +16,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Set up git credentials
+        env:
+          USER_NAME: ${{ secrets.USER_NAME }}
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
+        run: |
+          git config --local user.name "$USER_NAME"
+          git config --local user.email "$USER_EMAIL"
 
       - name: Set up Node 12 and Yarn 1.22
         uses: actions/setup-node@v1
@@ -32,11 +42,7 @@ jobs:
         run: yarn build
 
       - name: Deploy to GitHub Pages on master branch
+        # run: yarn deploy
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          USER_NAME: ${{ secrets.USER_NAME }}
-          USER_EMAIL: ${{ secrets.USER_EMAIL }}
-        run: |
-          git config user.name "${USER_NAME"
-          git config user.email ${USER_EMAIL}"
-          yarn deploy -r https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        run: bash ./.github/workflows/build.bash

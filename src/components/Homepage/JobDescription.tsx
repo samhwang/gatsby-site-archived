@@ -1,15 +1,7 @@
 import React from 'react';
 import LangIcon from './LangIcon';
 
-function JobDescription(props: {
-  title: string;
-  companyName: string;
-  description: string[];
-  duration: string;
-  techIcons: string[];
-  technologies: string[];
-  key?: number;
-}) {
+function JobDescription(props: JobDescriptionProps) {
   const {
     title,
     companyName,

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Project(props: { title: string; description: string; url?: string }) {
+function Project(props: ProjectProps) {
   const { title, description, url } = props;
 
-  let titleText = <strong>{title + ':'}</strong>;
+  let titleText = <strong>{`${title}:`}</strong>;
 
   titleText = url ? (
     <a href={url}>
@@ -16,9 +16,7 @@ function Project(props: { title: string; description: string; url?: string }) {
   return (
     <li>
       <i className="fa-li fa fa-tasks text-warning" />
-      <p>
-        {titleText} {description}
-      </p>
+      <p>{`${titleText} ${description}`}</p>
     </li>
   );
 }

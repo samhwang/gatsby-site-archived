@@ -1,6 +1,6 @@
 import React from 'react';
 
-function LangIcon(props: { name: string }) {
+function LangIcon(props: LangIconProps) {
   const { name } = props;
 
   return (

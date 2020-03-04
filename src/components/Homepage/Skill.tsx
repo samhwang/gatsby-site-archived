@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Skill(props: { title: string; description: string[] }) {
+function Skill(props: SkillProps) {
   const { title, description } = props;
   return (
     <>

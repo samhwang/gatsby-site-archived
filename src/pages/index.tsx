@@ -1,6 +1,8 @@
+/* eslint-disable react/jsx-props-no-spreading, react/jsx-one-expression-per-line, react/no-array-index-key */
 import React from 'react';
 import Layout from '../components/Template/Layout';
 import Sidebar from '../components/Template/Sidebar';
+import Footer from '../components/Template/Footer';
 import JobDescription from '../components/Homepage/JobDescription';
 import Education from '../components/Homepage/Education';
 import LangIcon from '../components/Homepage/LangIcon';
@@ -32,7 +34,6 @@ function IndexPage() {
               <span className="text-primary">{lastName}</span>
             </h1>
             <div className="subheading mb-5">
-              {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
               {address} - <a href={`mailto:${email}`}>{email}</a>
             </div>
             <p className="lead mb-5">
@@ -45,10 +46,10 @@ function IndexPage() {
               education.)
             </p>
             <div className="social-icons">
-              {socialLinks.map(social => {
+              {socialLinks.map((social, key) => {
                 const { icon, url } = social;
                 return (
-                  <a key={url} href={url}>
+                  <a key={key} href={url}>
                     <i className={`${icon}`} />
                   </a>
                 );
@@ -118,6 +119,13 @@ function IndexPage() {
               ))}
             </ul>
           </div>
+        </section>
+
+        <section
+          className="resume-section p-3 p-lg-5 d-flex align-items-center"
+          id="footer"
+        >
+          <Footer />
         </section>
       </div>
     </Layout>

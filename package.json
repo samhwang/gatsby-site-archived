@@ -17,14 +17,15 @@
     "yarn": ">=1.22"
   },
   "scripts": {
-    "build": "yarn run clean && gatsby build",
+    "prebuild": "yarn clean",
+    "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,d.ts,json}\"",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "start": "yarn run develop"
+    "start": "yarn develop"
   },
   "dependencies": {
     "@types/smoothscroll-polyfill": "^0.3.1",

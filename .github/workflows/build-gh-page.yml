@@ -16,22 +16,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Set up Node 12 and Yarn 1.22
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      
+
       - name: Set up project
         run: |
           npm -g install gatsby-cli yarn
           yarn install
           yarn clean
-      
+
       - name: Build Public files
         run: yarn build
-      
-      - name: Deploy to GitHub branch
+
+      - name: Deploy to GitHub Pages on master branch
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: yarn deploy -r https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          USER_NAME: ${{ secrets.USER_NAME }}
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
+        run: |
+          git config user.name "${USER_NAME"
+          git config user.email ${USER_EMAIL}"
+          yarn deploy -r https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git

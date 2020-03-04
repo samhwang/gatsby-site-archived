@@ -17,7 +17,6 @@ import config from '../../config';
 
 function IndexPage() {
   const { firstName, lastName, address, email, socialLinks } = config;
-  const languages = ['html5', 'css3', 'js-square', 'angular', 'react', 'node-js', 'sass', 'less', 'wordpress', 'gulp', 'grunt', 'npm'];
 
   return (
     <Layout>
@@ -98,7 +97,7 @@ function IndexPage() {
               <Skill {...skillGroup} key={key} />
             ))}
             <ul className="list-inline dev-icons">
-              {languages.map((language, key) => (
+              {techStack.map((language, key) => (
                 <LangIcon name={language} key={key} />
               ))}
             </ul>

@@ -7,7 +7,7 @@ function LangIcon(props: { name: string }) {
     <li className="list-inline-item">
       <i className={`fab fa-${name}`} />
     </li>
-  )
+  );
 }
 
 export default LangIcon;

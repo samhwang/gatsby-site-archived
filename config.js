@@ -11,14 +11,19 @@ module.exports = {
   lastName: 'Huynh',
   socialLinks: [
     {
-      icon: 'fa-github',
+      icon: 'fab fa-github',
       name: 'Github',
       url: 'https://github.com/samhwang',
     },
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fab fa-linkedin-in',
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/samhwang2112/',
+    },
+    {
+      icon: 'far fa-file-pdf',
+      name: 'PDF',
+      url: '/files/Resume_SamHuynh.pdf',
     },
   ],
   email: 'samhwang2112.dev@gmail.com',

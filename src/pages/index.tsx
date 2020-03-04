@@ -49,7 +49,7 @@ function IndexPage() {
                 const { icon, url } = social;
                 return (
                   <a key={url} href={url}>
-                    <i className={`fab ${icon}`} />
+                    <i className={`${icon}`} />
                   </a>
                 );
               })}

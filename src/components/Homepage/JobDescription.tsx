@@ -9,7 +9,14 @@ function JobDescription(props: {
   techIcons: [string];
   technologies: [string];
 }) {
-  const { title, companyName, description, duration, techIcons, technologies } = props;
+  const {
+    title,
+    companyName,
+    description,
+    duration,
+    techIcons,
+    technologies,
+  } = props;
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div className="resume-content">

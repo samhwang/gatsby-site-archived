@@ -4,10 +4,11 @@ import LangIcon from './LangIcon';
 function JobDescription(props: {
   title: string;
   companyName: string;
-  description: [string];
+  description: string[];
   duration: string;
-  techIcons: [string];
-  technologies: [string];
+  techIcons: string[];
+  technologies: string[];
+  key?: number;
 }) {
   const {
     title,

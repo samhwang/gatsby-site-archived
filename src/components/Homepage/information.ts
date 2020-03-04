@@ -177,7 +177,7 @@ export const skills = [
       'Containerize applications (traditional, serverless and microservices) with Docker',
       'CMS and Frameworks: Wordpress, CodeIgniter, Joomla, Meteor, Gatsby',
       'Version control tools with Git',
-      'Continuous Integration and Continuous Delivery with GitHub Actions & GitHub Packages',
+      'Continuous Integration and Continuous Delivery with CircleCI, GitHub Actions & GitHub Packages',
       'Amazon Web Services tool: EC2, Beanstalk, S3, Beanstalk, Lambda',
       'Project Management tools (JIRA, Confluence, Trello, Asana, Azure DevOps)',
       'Microsoft Office and similar Google tools',
@@ -194,4 +194,18 @@ export const skills = [
   },
 ];
 
-export const techStack = [];
+export const techStack = [
+  'php',
+  'js',
+  'node',
+  'react',
+  'npm',
+  'yarn',
+  'html5',
+  'css3',
+  'less',
+  'sass',
+  'docker',
+  'aws',
+  'github',
+];

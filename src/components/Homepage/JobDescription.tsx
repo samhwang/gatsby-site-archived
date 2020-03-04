@@ -38,12 +38,13 @@ function JobDescription(props: {
             ))}
           </ul>
         </p>
-
-        <ul className="list-inline dev-icons">
-          {techIcons.map((icon, key) => (
-            <LangIcon name={icon} key={key} />
-          ))}
-        </ul>
+        <p>
+          <ul className="list-inline dev-icons">
+            {techIcons.map((icon, key) => (
+              <LangIcon name={icon} key={key} />
+            ))}
+          </ul>
+        </p>
       </div>
       <div className="resume-date text-md-right">
         <span className="text-primary">{duration}</span>

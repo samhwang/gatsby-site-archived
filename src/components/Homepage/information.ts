@@ -166,4 +166,32 @@ export const projects = [
   },
 ];
 
-export const skills = [];
+export const skills = [
+  {
+    title: 'Professional Proficiency',
+    description: [
+      'Backend: PHP 7, NodeJS',
+      'Frontend: JavaScript (jQuery, React, TypeScript), HTML5, CSS, LESS and SASS',
+      'Databases and data modelling with MySQL, SQLite, MS SQL, PostgreSQL and MongoDB',
+      'Server configuration with Apache and NGINX',
+      'Containerize applications (traditional, serverless and microservices) with Docker',
+      'CMS and Frameworks: Wordpress, CodeIgniter, Joomla, Meteor, Gatsby',
+      'Version control tools with Git',
+      'Continuous Integration and Continuous Delivery with GitHub Actions & GitHub Packages',
+      'Amazon Web Services tool: EC2, Beanstalk, S3, Beanstalk, Lambda',
+      'Project Management tools (JIRA, Confluence, Trello, Asana, Azure DevOps)',
+      'Microsoft Office and similar Google tools',
+      'Adobe Creative Suite (Photoshop, Lightroom, Bridge)',
+    ],
+  },
+  {
+    title: 'Also Learning',
+    description: [
+      'Golang',
+      'Cloud Deployment using Kubernetes to AWS, DigitalOcean and Google Cloud',
+      'Infrastructure Automation (Terraform, Ansible and Packer)',
+    ],
+  },
+];
+
+export const techStack = [];

@@ -4,7 +4,12 @@ import Sidebar from '../components/Template/Sidebar';
 import JobDescription from '../components/Homepage/JobDescription';
 import Education from '../components/Homepage/Education';
 import LangIcon from '../components/Homepage/LangIcon';
-import { experiences, education } from '../components/Homepage/information';
+import Project from '../components/Homepage/Project';
+import {
+  experiences,
+  education,
+  projects,
+} from '../components/Homepage/information';
 import config from '../../config';
 
 function IndexPage() {
@@ -101,15 +106,17 @@ function IndexPage() {
 
         <section
           className="resume-section p-3 p-lg-5 d-flex align-items-center"
-          id="awards"
+          id="projects"
         >
           <div className="w-100">
-            <h2 className="mb-5">Awards &amp; Certifications</h2>
+            <h2 className="mb-5">Projects</h2>
             <ul className="fa-ul mb-0">
-              <li>
-                <i className="fa-li fa fa-trophy text-warning" />
-                Lorem Ipsum
-              </li>
+              {projects.map((project, key) => (
+                <Project
+                  {...project}
+                  key={key}
+                />
+              ))}
             </ul>
           </div>
         </section>

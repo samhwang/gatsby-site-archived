@@ -1,7 +1,7 @@
 import React from 'react';
 import config from '../../../../config';
 
-function AboutSection() {
+function About() {
   const { firstName, lastName, address, email, socialLinks } = config;
 
   return (
@@ -40,4 +40,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default About;

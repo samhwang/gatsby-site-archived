@@ -2,7 +2,7 @@ import React from 'react';
 import JobDescription from './JobDescription';
 import { experiences } from '../information';
 
-function ExperiencesSection() {
+function Experiences() {
   return (
     <section
       className="resume-section p-3 p-lg-5 d-flex justify-content-center"
@@ -18,4 +18,4 @@ function ExperiencesSection() {
   );
 }
 
-export default ExperiencesSection;
+export default Experiences;

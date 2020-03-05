@@ -1,5 +1,5 @@
 import React from 'react';
-import Education from './Education';
+import School from './School';
 import { education } from '../information';
 
 function EducationSection() {
@@ -11,7 +11,7 @@ function EducationSection() {
       <div className="w-100">
         <h2 className="mb-5">Education</h2>
         {education.map((school, key) => (
-          <Education {...school} key={key} />
+          <School {...school} key={key} />
         ))}
       </div>
     </section>

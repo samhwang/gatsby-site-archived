@@ -1,23 +1,23 @@
 import React from 'react';
 import Layout from '../components/Template/Layout';
-import AboutSection from '../components/Homepage/About/AboutSection';
-import ExperiencesSection from '../components/Homepage/Experiences/ExperiencesSection';
-import EducationSection from '../components/Homepage/Education/EducationSection';
-import ProjectSection from '../components/Homepage/Projects/ProjectSection';
-import SkillsSection from '../components/Homepage/Skills/SkillsSection';
+import About from '../components/Homepage/About';
+import Experiences from '../components/Homepage/Experiences';
+import Education from '../components/Homepage/Education';
+import Projects from '../components/Homepage/Projects';
+import Skills from '../components/Homepage/Skills';
 
 function IndexPage() {
   return (
     <Layout>
-      <AboutSection />
+      <About />
       <hr className="m-0" />
-      <ExperiencesSection />
+      <Experiences />
       <hr className="m-0" />
-      <EducationSection />
+      <Education />
       <hr className="m-0" />
-      <SkillsSection />
+      <Skills />
       <hr className="m-0" />
-      <ProjectSection />
+      <Projects />
       <hr className="m-0" />
     </Layout>
   );

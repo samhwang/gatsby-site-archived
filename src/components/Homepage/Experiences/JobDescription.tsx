@@ -1,5 +1,5 @@
 import React from 'react';
-import LangIcon from './LangIcon';
+import LangIcon from '../../Icons/LangIcon';
 
 function JobDescription(props: JobDescriptionProps) {
   const {

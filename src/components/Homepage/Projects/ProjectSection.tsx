@@ -1,0 +1,23 @@
+import React from 'react';
+import Project from './Project';
+import { projects } from '../information';
+
+function ProjectSection() {
+  return (
+    <section
+      className="resume-section p-3 p-lg-5 d-flex align-items-center"
+      id="projects"
+    >
+      <div className="w-100">
+        <h2 className="mb-5">Projects</h2>
+        <ul className="fa-ul mb-0">
+          {projects.map((project, key) => (
+            <Project {...project} key={key} />
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
+
+export default ProjectSection;

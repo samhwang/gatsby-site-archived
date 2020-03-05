@@ -14,6 +14,7 @@ function Layout(props: { children: React.ReactNode }) {
           site {
             siteMetadata {
               title
+              description
             }
           }
         }
@@ -22,7 +23,16 @@ function Layout(props: { children: React.ReactNode }) {
         <>
           <Helmet
             title={data.site.siteMetadata.title}
-            meta={[{ name: 'description', content: 'Resume' }]}
+            meta={[
+              {
+                name: 'description',
+                content: data.site.siteMetadata.description
+              },
+              {
+                name: 'viewport',
+                content: 'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no',
+              },
+            ]}
           >
             <html lang="en" />
           </Helmet>

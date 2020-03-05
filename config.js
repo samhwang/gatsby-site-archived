@@ -1,5 +1,6 @@
 module.exports = {
   siteTitle: 'Sam Huynh',
+  siteDescription: 'Online profile of Sam Huynh.',
   manifestName: 'Resume',
   manifestShortName: 'Home',
   manifestStartUrl: '/',

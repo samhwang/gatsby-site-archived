@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-gtag';
 import config from '../../../../config';
 
 function About() {
@@ -15,7 +16,8 @@ function About() {
           <span className="text-primary">{lastName}</span>
         </h1>
         <div className="subheading mb-5">
-          {address} - <a href={`mailto:${email}`}>{email}</a>
+          {address} -{' '}
+          <OutboundLink href={`mailto:${email}`}>{email}</OutboundLink>
         </div>
         <p className="lead mb-5">
           I have always been passionate about computers, and how technology can
@@ -29,9 +31,9 @@ function About() {
           {socialLinks.map((social, key) => {
             const { icon, url } = social;
             return (
-              <a key={key} href={url}>
+              <OutboundLink key={key} href={url}>
                 <i className={`${icon}`} />
-              </a>
+              </OutboundLink>
             );
           })}
         </div>

@@ -1,11 +1,12 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-gtag';
 
 function Project(props: ProjectProps) {
   const { title, description, url } = props;
   const titleText = url ? (
-    <a href={url}>
+    <OutboundLink href={url}>
       <strong>{`${title}:`}</strong>
-    </a>
+    </OutboundLink>
   ) : (
     <strong>{`${title}:`}</strong>
   );

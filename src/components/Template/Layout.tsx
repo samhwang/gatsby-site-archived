@@ -26,11 +26,12 @@ function Layout(props: { children: React.ReactNode }) {
             meta={[
               {
                 name: 'description',
-                content: data.site.siteMetadata.description
+                content: data.site.siteMetadata.description,
               },
               {
                 name: 'viewport',
-                content: 'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no',
+                content:
+                  'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no',
               },
             ]}
           >

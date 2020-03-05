@@ -3,20 +3,22 @@ import React from 'react';
 function Project(props: ProjectProps) {
   const { title, description, url } = props;
 
-  let titleText = <strong>{`${title}:`}</strong>;
+  console.log(title)
 
-  titleText = url ? (
-    <a href={url}>
-      <strong>{titleText}</strong>
-    </a>
-  ) : (
-    titleText
-  );
+  const titleText = url
+    ? (
+      <a href={url}>
+        <strong>{`${title}:`}</strong>
+      </a>
+    )
+    : (
+      <strong>{`${title}:`}</strong>
+    );
 
   return (
     <li>
       <i className="fa-li fa fa-tasks text-warning" />
-      <p>{`${titleText} ${description}`}</p>
+      <p>{titleText} {description}</p>
     </li>
   );
 }

@@ -18,6 +18,8 @@ export const experiences = [
       'aws',
       'docker',
       'github',
+      'jira',
+      'confluence',
     ],
     technologies: [
       'PHP 7.4 and Wordpress',
@@ -29,6 +31,7 @@ export const experiences = [
       'Serverless architecture and websockets',
       'AWS Lambda and Elastic Beanstalk',
       'CI/CD: GitHub Actions pipeline and GitHub Packages',
+      'Project management using JIRA and Confluence',
     ],
   },
   {
@@ -40,6 +43,7 @@ export const experiences = [
       "Assisted in setting up Bonntech's central Git repository and private Composer Packagist for internal projects and libraries.",
     ],
     techIcons: [
+      'cpanel',
       'php',
       'js',
       'bootstrap',
@@ -67,10 +71,11 @@ export const experiences = [
     ],
     techIcons: ['js', 'node', 'html5', 'css3', 'less', 'npm'],
     technologies: [
-      'JavaScript, using the Meteor JS full stack framework (with NodeJS for backend processing, BlazeJS for templating, CSS pre-processing with LESS)',
+      'JavaScript, using the Meteor full stack framework (with Node/Express for backend processing, Blaze for templating, CSS pre-processing with LESS)',
       'Automated test scripting with CucumberJS and Mocha.',
       'MongoDB database and data modelling.',
       'REST APIs',
+      'Project management using Azure DevOps',
     ],
   },
   {
@@ -80,7 +85,16 @@ export const experiences = [
     description: [
       'Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis.',
     ],
-    techIcons: ['php', 'laravel', 'js', 'bootstrap', 'html5', 'css3', 'aws'],
+    techIcons: [
+      'php',
+      'laravel',
+      'js',
+      'bootstrap',
+      'html5',
+      'css3',
+      'aws',
+      'bitbucket',
+    ],
     technologies: [
       'PHP 7, using CodeIgniter, Laravel and Moodle framework.',
       'JavaScript (AJAX, jQuery, Bootstrap, D3js and ChartJS) and CSS (MaterializeCSS)',
@@ -97,6 +111,7 @@ export const experiences = [
       'Provided regular maintenance to ensure 99.9% site availability.',
     ],
     techIcons: [
+      'cpanel',
       'php',
       'wordpress',
       'bootstrap',
@@ -120,7 +135,7 @@ export const experiences = [
     description: [
       'Developed, supported, monitored and maintained 4 websites for different clients from various industries.',
     ],
-    techIcons: ['php', 'joomla', 'bootstrap', 'html5', 'css3', 'js'],
+    techIcons: ['cpanel', 'php', 'joomla', 'bootstrap', 'html5', 'css3', 'js'],
     technologies: [
       'CPanel hosting control panel for Apache server',
       'PHP using the Joomla framework',
@@ -207,5 +222,12 @@ export const techStack = [
   'sass',
   'docker',
   'aws',
+  'digital-ocean',
+  'git-alt',
   'github',
+  'gitlab',
+  'bitbucket',
+  'trello',
+  'jira',
+  'confluence',
 ];

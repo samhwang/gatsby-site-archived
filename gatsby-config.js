@@ -5,6 +5,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -23,5 +24,31 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-plugin-typescript',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        trackingId: 'UA-159808770-1',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-humans-txt`,
+      options: {
+        team: [
+          {
+            Developer: 'Sam Huynh',
+            GitHub: 'samhwang',
+          },
+        ],
+        thanks: ['Gatsby', 'Node', 'React', 'GitHub Pages & Actions'],
+        site: {
+          'Last update': '2020/03/05',
+          Standards: 'JavaScript, TypeScript, React, AirBnB',
+          Components: 'humans-generator',
+          Softwares: 'Visual Studio Code',
+        },
+      },
+    },
   ],
 };

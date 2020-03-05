@@ -20,9 +20,7 @@ function JobDescription(props: JobDescriptionProps) {
             <li key={key}>{line}</li>
           ))}
         </ul>
-        <h4>
-          Technologies involved:
-          </h4>
+        <h4>Technologies involved:</h4>
         <ul>
           {technologies.map((tech, key) => (
             <li key={key}>{tech}</li>

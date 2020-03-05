@@ -18,14 +18,13 @@ function AboutSection() {
           {address} - <a href={`mailto:${email}`}>{email}</a>
         </div>
         <p className="lead mb-5">
-          I have always been passionate about computers, and how technology
-          can bring the world closer. That was the reason why I walked down
-          the path of Software Development. Besides my studies, I have
-          worked in a lot of Agile teams of up to 10 people, delivering high
-          quality responsive web applications on different platforms (PHP,
-          NodeJS) for clients in different industries (retail, sports, and
-          education.)
-      </p>
+          I have always been passionate about computers, and how technology can
+          bring the world closer. That was the reason why I walked down the path
+          of Software Development. Besides my studies, I have worked in a lot of
+          Agile teams of up to 10 people, delivering high quality responsive web
+          applications on different platforms (PHP, NodeJS) for clients in
+          different industries (retail, sports, and education.)
+        </p>
         <div className="social-icons">
           {socialLinks.map((social, key) => {
             const { icon, url } = social;

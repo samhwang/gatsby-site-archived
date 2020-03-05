@@ -17,7 +17,7 @@ function ProjectSection() {
         </ul>
       </div>
     </section>
-  )
+  );
 }
 
 export default ProjectSection;

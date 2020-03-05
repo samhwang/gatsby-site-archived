@@ -15,7 +15,7 @@ function ExperiencesSection() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
 export default ExperiencesSection;

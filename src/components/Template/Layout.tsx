@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
+import Sidebar from './Sidebar';
+import Footer from './Footer';
 import '../../assets/sass/resume.scss';
 
 function Layout(props: { children: React.ReactNode }) {
@@ -25,7 +26,13 @@ function Layout(props: { children: React.ReactNode }) {
           >
             <html lang="en" />
           </Helmet>
-          <div className="main-body">{children}</div>
+          <div className="main-body">
+            <Sidebar />
+            <div className="container-fluid p-0">
+              {children}
+              <Footer />
+            </div>
+          </div>
         </>
       )}
     />

@@ -5,13 +5,11 @@ function Skill(props: SkillProps) {
   return (
     <>
       <div className="subheading mb-3">{title}</div>
-      <p>
-        <ul>
-          {description.map((line, key) => (
-            <li key={key}>{line}</li>
-          ))}
-        </ul>
-      </p>
+      <ul>
+        {description.map((line, key) => (
+          <li key={key}>{line}</li>
+        ))}
+      </ul>
     </>
   );
 }

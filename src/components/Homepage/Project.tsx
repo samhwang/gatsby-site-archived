@@ -2,9 +2,6 @@ import React from 'react';
 
 function Project(props: ProjectProps) {
   const { title, description, url } = props;
-
-  console.log(title)
-
   const titleText = url
     ? (
       <a href={url}>

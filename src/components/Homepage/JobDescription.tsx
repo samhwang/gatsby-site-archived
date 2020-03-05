@@ -15,28 +15,24 @@ function JobDescription(props: JobDescriptionProps) {
       <div className="resume-content">
         <h3 className="mb-0">{title}</h3>
         <div className="subheading mb-3">{companyName}</div>
-        <p>
-          <ul>
-            {description.map((line, key) => (
-              <li key={key}>{line}</li>
-            ))}
-          </ul>
-        </p>
-        <p>
+        <ul>
+          {description.map((line, key) => (
+            <li key={key}>{line}</li>
+          ))}
+        </ul>
+        <h4>
           Technologies involved:
-          <ul>
-            {technologies.map((tech, key) => (
-              <li key={key}>{tech}</li>
-            ))}
-          </ul>
-        </p>
-        <p>
-          <ul className="list-inline dev-icons">
-            {techIcons.map((icon, key) => (
-              <LangIcon name={icon} key={key} />
-            ))}
-          </ul>
-        </p>
+          </h4>
+        <ul>
+          {technologies.map((tech, key) => (
+            <li key={key}>{tech}</li>
+          ))}
+        </ul>
+        <ul className="list-inline dev-icons">
+          {techIcons.map((icon, key) => (
+            <LangIcon name={icon} key={key} />
+          ))}
+        </ul>
       </div>
       <div className="resume-date text-md-right">
         <span className="text-primary">{duration}</span>

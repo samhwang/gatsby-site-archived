@@ -3,6 +3,11 @@ declare module '*.jpg' {
   export default content;
 }
 
+declare module '*.webp' {
+  const content: string;
+  export default content;
+}
+
 interface EducationProps {
   institute: string;
   degree: string;

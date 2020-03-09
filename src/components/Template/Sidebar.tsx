@@ -2,7 +2,8 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
-import avatar from '../../assets/img/avatar.jpg';
+import avatarJPG from '../../assets/img/avatar.jpg';
+import avatarWebP from '../../assets/img/avatar.webp';
 import config from '../../../config';
 
 function Sidebar() {
@@ -25,11 +26,15 @@ function Sidebar() {
           {config.lastName}
         </span>
         <span className="d-none d-lg-block">
-          <img
-            className="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src={avatar}
-            alt=""
-          />
+          <picture>
+            <source type="image/webp" srcSet={avatarWebP} />
+            <source type="image/jpeg" srcSet={avatarJPG} />
+            <img
+              className="img-fluid img-profile rounded-circle mx-auto mb-2"
+              src={avatarJPG}
+              alt="Sam Huynh Avatar"
+            />
+          </picture>
         </span>
       </a>
       <button

@@ -1,6 +1,6 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-gtag';
-import AboutIcons from '../../Icons/AboutIcons'
+import AboutIcons from '../../Icons/AboutIcons';
 import config from '../../../../config';
 
 function About() {

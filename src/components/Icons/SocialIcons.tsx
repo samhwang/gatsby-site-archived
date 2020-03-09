@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // eslint-disable-next-line no-unused-vars
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
-import { OutboundLink } from 'gatsby-plugin-gtag';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 function AboutIcons(props: { social: SocialIconProps }) {
   const {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { OutboundLink } from 'gatsby-plugin-gtag';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 function Project(props: ProjectProps) {
   const { title, description, url } = props;

@@ -27,10 +27,13 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     {
-      resolve: 'gatsby-plugin-gtag',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingId: 'UA-159808770-1',
       },
+      gtagConfig: {
+        anonymizeIp: true,
+      }
     },
     {
       resolve: `gatsby-plugin-humans-txt`,

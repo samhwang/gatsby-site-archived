@@ -3,7 +3,11 @@ export const experiences = [
     title: 'Junior Full Stack Developer',
     companyName: 'Hertz Australia',
     duration: 'Oct 2019 - Present',
-    description: [],
+    description: [
+      'Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary',
+      "Built new core features into Hertz's internal rental analytics and tracking systems, using ExpressJS, EJS and NodeJS",
+      "Built the new frontend for Hertz's shuttle bus tracking system, now currently used by the Ace brand, using ReactJS and deployed in an S3 bucket endpoint, communicating via serverless websockets",
+    ],
     techIcons: [
       'js',
       'react',
@@ -23,9 +27,9 @@ export const experiences = [
     ],
     technologies: [
       'PHP 7.4 and Wordpress',
-      'HTML5, CSS3 and CSS pre-processors like SCSS, SASS and LESS',
+      'HTML5, CSS3 and CSS pre-processors like SASS and LESS',
       'GraphQL and REST API',
-      'JavaScript (jQuery, NodeJS, ReactJS)',
+      'JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)',
       'Docker containers & docker-compose',
       'Database: MySQL & MongoDB',
       'Serverless architecture and websockets',

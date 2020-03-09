@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render without crashing 1`] = `
+<section
+  className="resume-section p-3 p-lg-5 d-flex align-items-center"
+>
+  <p>
+    © 2020
+     
+    <a
+      href="https://github.com/samhwang"
+      onClick={[Function]}
+    >
+      Sam Huynh
+    </a>
+    . Hosted on
+     
+    <a
+      href="https://pages.github.com/"
+      onClick={[Function]}
+    >
+      GitHub Pages
+    </a>
+    . Based on
+     
+    <a
+      href="https://www.gatsbyjs.org/"
+      onClick={[Function]}
+    >
+      GatsbyJS.
+    </a>
+  </p>
+</section>
+`;

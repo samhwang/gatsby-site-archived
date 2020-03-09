@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
+import 'bootstrap/dist/css/bootstrap.css';
 import '../../assets/sass/resume.scss';
 
 function Layout(props: { children: React.ReactNode }) {

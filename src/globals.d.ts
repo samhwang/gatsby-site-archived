@@ -29,6 +29,14 @@ interface LangIconProps {
   name: string;
 }
 
+interface SocialIconProps {
+  social: {
+    icon: string;
+    name: string;
+    url: string;
+  };
+}
+
 interface ProjectProps {
   title: string;
   description: string;

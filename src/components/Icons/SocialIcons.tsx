@@ -4,11 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { OutboundLink } from 'gatsby-plugin-gtag';
 
-function AboutIcons(props: {
-  social: { icon: string; name: string; url: string };
-}) {
+function AboutIcons(props: { social: SocialIconProps }) {
   const {
-    social: { icon, name, url },
+    social: { icon, name, url }
   } = props;
   const iconProps = icon.split(' ') as [IconPrefix, IconName];
 

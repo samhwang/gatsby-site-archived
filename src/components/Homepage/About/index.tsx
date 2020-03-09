@@ -1,5 +1,6 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-gtag';
+import AboutIcons from '../../Icons/AboutIcons'
 import config from '../../../../config';
 
 function About() {
@@ -28,14 +29,9 @@ function About() {
           different industries (retail, sports, and education.)
         </p>
         <div className="social-icons">
-          {socialLinks.map((social, key) => {
-            const { icon, url } = social;
-            return (
-              <OutboundLink key={key} href={url}>
-                <i className={`${icon}`} />
-              </OutboundLink>
-            );
-          })}
+          {socialLinks.map((social, key) => (
+            <AboutIcons key={key} social={social} />
+          ))}
         </div>
       </div>
     </section>

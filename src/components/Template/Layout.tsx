@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../assets/sass/resume.scss';
+import '../Icons';
 
 function Layout(props: { children: React.ReactNode }) {
   const { children } = props;

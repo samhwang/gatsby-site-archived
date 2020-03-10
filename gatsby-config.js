@@ -21,7 +21,12 @@ module.exports = {
         icon: config.manifestIcon,
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        useResolveUrlLoader: true,
+      },
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sitemap',

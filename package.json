@@ -76,6 +76,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.0",
+    "resolve-url-loader": "^3.1.1",
     "typescript": "^3.8.3"
   }
 }

@@ -41,8 +41,10 @@ jobs:
       - name: Build Public files
         run: yarn build
 
-      - name: Deploy to GitHub Pages on master branch
-        # run: yarn deploy
+      - name: Deploy to GitHub Pages
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: bash ./.github/workflows/build.bash
+          DEPLOY_BRANCH: master
+        run: |
+          # yarn deploy
+          bash ./.github/workflows/build.bash

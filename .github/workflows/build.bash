@@ -1,7 +1,7 @@
 # !/bin/bash
 
-git fetch origin master
-git checkout master
+git fetch origin ${DEPLOY_BRANCH}
+git checkout ${DEPLOY_BRANCH}
 
 find . -maxdepth 1 ! -name 'public' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
 mv public/* .

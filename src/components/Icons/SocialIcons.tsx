@@ -6,7 +6,7 @@ import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 function AboutIcons(props: { social: SocialIconProps }) {
   const {
-    social: { icon, name, url }
+    social: { icon, name, url },
   } = props;
   const iconProps = icon.split(' ') as [IconPrefix, IconName];
 

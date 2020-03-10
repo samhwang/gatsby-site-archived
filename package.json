@@ -10,7 +10,7 @@
     "name": "sam Huynh",
     "email": "samhwang2112.dev@gmail.com"
   },
-  "homepage": "https://github.com/samhwang/samhwang.github.io",
+  "homepage": "https://samhwang.github.io",
   "license": "SEE LICENSE IN LICENSE FILE",
   "engine": {
     "node": ">=12.16",

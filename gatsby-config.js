@@ -29,11 +29,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: 'UA-159808770-1',
+        trackingIds: ['UA-159808770-1'],
       },
       gtagConfig: {
         anonymizeIp: true,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-humans-txt`,

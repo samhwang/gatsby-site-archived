@@ -58,5 +58,20 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Muli`,
+            variants: [`400i`, `800i`, `400`, `800`],
+          },
+          {
+            family: `Saira Extra Condensed`,
+            variants: [`500`, `700`],
+          },
+        ],
+      },
+    },
   ],
 };

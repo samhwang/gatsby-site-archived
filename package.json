@@ -27,7 +27,9 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,d.ts,json}\"",
     "serve": "gatsby serve",
     "test": "jest",
-    "start": "yarn develop"
+    "start": "yarn develop",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -58,6 +60,11 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.7.7",
     "@types/react": "^16.9.23",
@@ -68,7 +75,9 @@
     "@types/smoothscroll-polyfill": "^0.3.1",
     "@typescript-eslint/parser": "^2.21.0",
     "babel-jest": "^25.1.0",
+    "babel-loader": "^8.1.0",
     "babel-preset-gatsby": "^0.2.31",
+    "babel-preset-react-app": "^9.1.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
@@ -84,8 +93,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
     "prettier": "^1.17.0",
-    "resolve-url-loader": "^3.1.1",
     "react-test-renderer": "^16.13.0",
+    "resolve-url-loader": "^3.1.1",
     "typescript": "^3.8.3"
   }
 }

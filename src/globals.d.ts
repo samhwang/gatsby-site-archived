@@ -47,3 +47,9 @@ interface SkillProps {
   title: string;
   description: string[];
 }
+
+interface SiteMetadata {
+  title: string;
+  description: string;
+  siteUrl: string;
+}

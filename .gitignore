@@ -58,6 +58,7 @@ typings/
 .cache/
 public
 reduxcache*
+storybook-static
 
 # Mac files
 .DS_Store

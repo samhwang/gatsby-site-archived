@@ -32,17 +32,13 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ],
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "import/extensions": ["error", "never"]
   },
   "settings": {
     "import/parser": {
       "@typescript-eslint/parser": [".ts", ".tsx", ".d.ts"]
     },
-    "import/extensions": [
-      {
-        ".ts, .tsx, .d.ts, .js, .jsx": "never"
-      }
-    ],
     "import/resolver": {
       "node": {
         "extensions": [".ts", ".tsx", ".d.ts", ".js", ".jsx"]

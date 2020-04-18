@@ -1,13 +1,17 @@
 import React from 'react';
 
-function Skill(props: SkillProps) {
-  const { title, description } = props;
+interface SkillProps {
+  title: string;
+  description: string[];
+}
+
+function Skill({ title, description }: SkillProps) {
   return (
     <>
       <div className="subheading mb-3">{title}</div>
       <ul>
-        {description.map((line, key) => (
-          <li key={key}>{line}</li>
+        {description.map((line) => (
+          <li key={line}>{line}</li>
         ))}
       </ul>
     </>

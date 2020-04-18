@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // eslint-disable-next-line no-unused-vars
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 
-function LangIcon(props: LangIconProps) {
-  const { name } = props;
+interface LangIconProps {
+  name: string;
+}
+
+function LangIcon({ name }: LangIconProps) {
   const iconProps = ['fab', name] as [IconPrefix, IconName];
 
   return (

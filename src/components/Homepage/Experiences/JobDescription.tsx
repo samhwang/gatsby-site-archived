@@ -1,34 +1,43 @@
 import React from 'react';
 import LangIcon from '../../Icons/LangIcon';
 
-function JobDescription(props: JobDescriptionProps) {
-  const {
-    title,
-    companyName,
-    description,
-    duration,
-    techIcons,
-    technologies,
-  } = props;
+interface JobDescriptionProps {
+  title: string;
+  companyName: string;
+  description: string[];
+  duration: string;
+  techIcons: string[];
+  technologies: string[];
+  key?: number;
+}
+
+function JobDescription({
+  title,
+  companyName,
+  description,
+  duration,
+  techIcons,
+  technologies,
+}: JobDescriptionProps) {
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div className="resume-content">
         <h3 className="mb-0">{title}</h3>
         <div className="subheading mb-3">{companyName}</div>
         <ul>
-          {description.map((line, key) => (
-            <li key={key}>{line}</li>
+          {description.map((line) => (
+            <li key={line}>{line}</li>
           ))}
         </ul>
         <h4>Technologies involved:</h4>
         <ul>
-          {technologies.map((tech, key) => (
-            <li key={key}>{tech}</li>
+          {technologies.map((tech) => (
+            <li key={tech}>{tech}</li>
           ))}
         </ul>
         <ul className="list-inline dev-icons">
-          {techIcons.map((icon, key) => (
-            <LangIcon name={icon} key={key} />
+          {techIcons.map((icon) => (
+            <LangIcon name={icon} key={icon} />
           ))}
         </ul>
       </div>

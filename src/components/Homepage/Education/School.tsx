@@ -1,7 +1,13 @@
 import React from 'react';
 
-function Education(props: EducationProps) {
-  const { institute, degree, major, duration } = props;
+interface EducationProps {
+  institute: string;
+  degree: string;
+  major: string;
+  duration: string;
+}
+
+function Education({ institute, degree, major, duration }: EducationProps) {
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div className="resume-content">

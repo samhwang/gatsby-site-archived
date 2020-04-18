@@ -50,7 +50,7 @@ function Sidebar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <Scrollspy
-          items={tabs.map(s => s.href)}
+          items={tabs.map((s) => s.href)}
           currentClassName="active"
           offset={-300}
           className="navbar-nav"

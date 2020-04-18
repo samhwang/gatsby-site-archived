@@ -6,19 +6,14 @@ import Footer from './Footer';
 import '../../assets/sass/resume.scss';
 import '../Icons';
 
-const SiteMetadataQuery = graphql`
-  query SiteMetadataQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`;
-
 function Layout(props: { children: React.ReactNode }) {
   const { children } = props;
+
+  interface SiteMetadata {
+    title: string;
+    description: string;
+    siteUrl: string;
+  }
 
   function renderLayout(data: { site: { siteMetadata: SiteMetadata } }) {
     return (
@@ -49,6 +44,17 @@ function Layout(props: { children: React.ReactNode }) {
       </>
     );
   }
+
+  const SiteMetadataQuery = graphql`
+    query SiteMetadataQuery {
+      site {
+        siteMetadata {
+          title
+          description
+        }
+      }
+    }
+  `;
 
   return <StaticQuery query={SiteMetadataQuery} render={renderLayout} />;
 }

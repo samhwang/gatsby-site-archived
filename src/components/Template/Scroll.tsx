@@ -19,15 +19,23 @@ function scrollTo(element?: Element, offSet = 0, timeout?: number) {
   }, timeout);
 }
 
-function Scroll(props: {
+interface ScrollProps {
   type: string;
   element: string;
   offset?: number;
   timeout?: number;
   children: JSX.Element;
   counter: number;
-}) {
-  const { type, element, offset, timeout, children, counter } = props;
+}
+
+function Scroll({
+  type,
+  element,
+  offset,
+  timeout,
+  children,
+  counter,
+}: ScrollProps) {
   useEffect(() => {
     smoothscroll.polyfill();
   }, []);
@@ -62,8 +70,8 @@ function Scroll(props: {
         cloneElement(children, { onClick: handleClick })
       ) : (
         <span
-          onClick={event => handleClick(event)}
-          onKeyDown={event => handleClick(event)}
+          onClick={(event) => handleClick(event)}
+          onKeyDown={(event) => handleClick(event)}
           role="tab"
           tabIndex={counter}
         >

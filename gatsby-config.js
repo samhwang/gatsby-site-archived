@@ -6,6 +6,13 @@ module.exports = {
     title: config.siteTitle,
     description: config.siteDescription,
     siteUrl: config.siteUrl,
+    personalInformation: {
+      firstName: config.firstName,
+      lastName: config.lastName,
+      address: config.address,
+      email: config.email,
+      socialLinks: config.socialLinks,
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',

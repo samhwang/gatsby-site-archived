@@ -5,24 +5,21 @@ exports[`Footer should render without crashing 1`] = `
   className="resume-section p-3 p-lg-5 d-flex align-items-center"
 >
   <p>
-    © 2020
-     
+    © 2020 
     <a
       href="https://github.com/samhwang"
       onClick={[Function]}
     >
       Sam Huynh
     </a>
-    . Hosted on
-     
+    . Hosted on 
     <a
       href="https://pages.github.com/"
       onClick={[Function]}
     >
       GitHub Pages
     </a>
-    . Based on
-     
+    . Based on 
     <a
       href="https://www.gatsbyjs.org/"
       onClick={[Function]}

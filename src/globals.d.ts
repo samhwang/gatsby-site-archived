@@ -7,3 +7,9 @@ declare module '*.webp' {
   const content: string;
   export default content;
 }
+
+interface GraphQLSiteMetadata {
+  site: {
+    siteMetadata: object;
+  };
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
+import avatarJPG from '../../../assets/img/avatar.jpg';
+import avatarWebP from '../../../assets/img/avatar.webp';
 
-import avatarJPG from '../../assets/img/avatar.jpg';
-import avatarWebP from '../../assets/img/avatar.webp';
-import config from '../../../config';
+function PureSidebar({ data }: SidebarProps) {
+  const { firstName, lastName } = data.site.siteMetadata;
 
-function Sidebar() {
   const tabs = [
     { content: 'About', href: 'about' },
     { content: 'Experience', href: 'experience' },
@@ -22,8 +22,8 @@ function Sidebar() {
     >
       <a className="navbar-brand" href="#page-top">
         <span className="d-block d-lg-none">
-          {config.firstName}
-          {config.lastName}
+          {firstName}
+          {lastName}
         </span>
         <span className="d-none d-lg-block">
           <picture>
@@ -73,4 +73,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default PureSidebar;

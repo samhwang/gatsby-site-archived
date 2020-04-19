@@ -38,6 +38,9 @@ jobs:
           yarn install
           yarn clean
 
+      - name: Run tests
+        run: yarn test
+
       - name: Build Public files
         run: yarn build
 

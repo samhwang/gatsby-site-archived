@@ -25,6 +25,7 @@
     "predeploy": "gh-pages-clean",
     "deploy": "gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,d.ts,json}\"",
+    "lint": "eslint src --ext .ts --ext .tsx",
     "serve": "gatsby serve",
     "test": "jest",
     "start": "yarn develop",

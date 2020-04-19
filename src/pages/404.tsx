@@ -8,11 +8,12 @@ function IndexPage() {
         <header className="major">
           <h2>Error 404: Page not found.</h2>
           <h3>
-            It seems like you've hit a dead end. There&apos;s nothing to see
-            here.
+            It seems like you&apos;ve hit a dead end. There&apos;s nothing to
+            see here.
           </h3>
           <h4>
-            Please go back to the <a href="/">Home page</a>.
+            {`Please go back to the `}
+            <a href="/">Home page.</a>
           </h4>
         </header>
       </section>

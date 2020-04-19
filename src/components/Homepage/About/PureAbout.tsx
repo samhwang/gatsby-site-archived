@@ -3,7 +3,6 @@ import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import AboutIcons from '../../Icons/SocialIcons';
 
 function PureAbout({ data }: AboutProps) {
-  console.log({data});
   const {
     firstName,
     lastName,

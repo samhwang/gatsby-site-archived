@@ -11,8 +11,13 @@ function ProjectSection() {
       <div className="w-100">
         <h2 className="mb-5">Projects</h2>
         <ul className="fa-ul mb-0">
-          {projects.map((project, key) => (
-            <Project {...project} key={key} />
+          {projects.map(({ title, description, url }) => (
+            <Project
+              key={title}
+              title={title}
+              description={description}
+              url={url}
+            />
           ))}
         </ul>
       </div>

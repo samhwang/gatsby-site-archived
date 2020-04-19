@@ -10,8 +10,14 @@ function EducationSection() {
     >
       <div className="w-100">
         <h2 className="mb-5">Education</h2>
-        {education.map((school, key) => (
-          <School {...school} key={key} />
+        {education.map(({ institute, degree, major, duration }) => (
+          <School
+            institute={institute}
+            degree={degree}
+            major={major}
+            duration={duration}
+            key={institute}
+          />
         ))}
       </div>
     </section>

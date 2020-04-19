@@ -10,9 +10,26 @@ function Experiences() {
     >
       <div className="w-100">
         <h2 className="mb-5">Experience</h2>
-        {experiences.map((job, key) => (
-          <JobDescription {...job} key={key} />
-        ))}
+        {experiences.map(
+          ({
+            title,
+            companyName,
+            description,
+            duration,
+            techIcons,
+            technologies,
+          }) => (
+            <JobDescription
+              key={companyName}
+              title={title}
+              companyName={companyName}
+              description={description}
+              duration={duration}
+              techIcons={techIcons}
+              technologies={technologies}
+            />
+          )
+        )}
       </div>
     </section>
   );

@@ -12,12 +12,12 @@ function SkillSection() {
       <div className="w-100">
         <h2 className="mb-5">Skills and Proficiency</h2>
 
-        {skills.map((skillGroup, key) => (
-          <Skill {...skillGroup} key={key} />
+        {skills.map(({ title, description }) => (
+          <Skill title={title} description={description} key={title} />
         ))}
         <ul className="list-inline dev-icons">
-          {techStack.map((language, key) => (
-            <LangIcon name={language} key={key} />
+          {techStack.map((language) => (
+            <LangIcon name={language} key={language} />
           ))}
         </ul>
       </div>

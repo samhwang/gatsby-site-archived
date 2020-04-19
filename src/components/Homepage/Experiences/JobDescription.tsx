@@ -8,7 +8,6 @@ interface JobDescriptionProps {
   duration: string;
   techIcons: string[];
   technologies: string[];
-  key?: number;
 }
 
 function JobDescription({

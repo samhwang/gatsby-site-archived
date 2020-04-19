@@ -2,11 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PureLayout from './PureLayout';
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-function Layout({ children }: LayoutProps) {
+function Layout({ sections }: LayoutProps) {
   const SiteMetadataQuery = graphql`
     query SiteMetadataQuery {
       site {
@@ -19,7 +15,7 @@ function Layout({ children }: LayoutProps) {
   `;
 
   function renderLayout(data: SiteMetadata) {
-    return <PureLayout data={data}>{children}</PureLayout>;
+    return <PureLayout data={data} sections={sections} />;
   }
 
   return <StaticQuery query={SiteMetadataQuery} render={renderLayout} />;

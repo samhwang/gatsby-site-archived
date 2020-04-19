@@ -7,7 +7,15 @@ interface SiteMetadata extends GraphQLSiteMetadata {
   };
 }
 
+interface SectionType {
+  id: string;
+  content: React.ReactNode | Element;
+}
+
 interface LayoutProps {
-  children: React.ReactNode;
+  sections: Array<SectionType>;
+}
+
+interface LayoutRenderProps extends LayoutProps {
   data: SiteMetadata;
 }

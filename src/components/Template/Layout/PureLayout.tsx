@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Sidebar from '../Sidebar';
 import Footer from '../Footer';
 import '../../../assets/sass/resume.scss';
 import '../../Icons';
 
-function PureLayout({ children, data }: LayoutProps) {
+function PureLayout({ sections, data }: LayoutRenderProps) {
   const { title, description } = data.site.siteMetadata;
+
+  const children = sections.map(({ id, content }: SectionType) => (
+    <Fragment key={id}>
+      {content}
+      <hr className="m-0" />
+    </Fragment>
+  ));
+
   return (
     <>
       <Helmet
@@ -27,10 +35,8 @@ function PureLayout({ children, data }: LayoutProps) {
       </Helmet>
       <div className="main-body">
         <Sidebar />
-        <div className="container-fluid p-0">
-          {children}
-          <Footer />
-        </div>
+        <div className="container-fluid p-0">{children}</div>
+        <Footer />
       </div>
     </>
   );

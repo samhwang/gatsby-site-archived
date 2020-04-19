@@ -7,20 +7,15 @@ import Projects from '../components/Homepage/Projects';
 import Skills from '../components/Homepage/Skills';
 
 function IndexPage() {
-  return (
-    <Layout>
-      <About />
-      <hr className="m-0" />
-      <Experiences />
-      <hr className="m-0" />
-      <Education />
-      <hr className="m-0" />
-      <Skills />
-      <hr className="m-0" />
-      <Projects />
-      <hr className="m-0" />
-    </Layout>
-  );
+  const sections = [
+    { id: 'about', content: <About /> },
+    { id: 'experience', content: <Experiences /> },
+    { id: 'education', content: <Education /> },
+    { id: 'skills', content: <Skills /> },
+    { id: 'projects', content: <Projects /> },
+  ];
+
+  return <Layout sections={sections} />;
 }
 
 export default IndexPage;

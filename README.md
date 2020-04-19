@@ -5,6 +5,21 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/samhwang/samhwang.github.io?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/samhwang/samhwang.github.io?style=for-the-badge)
 
-Originally created to be used like a resume, this site may eventually be
-used for something else. That I may not know yet, but still you came to
-the repo though...
+Originally created to be a page where I can learn about static sites, it
+has grown to be my main resume page.
+
+Created with [Gatsby](https://gatsbyjs.org), hosted on [GitHubPages](https://pages.github.com/).
+
+Language:
+
+- TypeScript (primary) and React
+- SASS pre-processor for CSS
+- JavaScript configurations for Gatsby, Jest, and Storybook.
+
+Tools:
+
+- Gatsby static site generator
+- Jest for testing
+- Storybook for UI Testing
+- GitHub Actions for CI/CD
+- GitHub Pages for static site hosting

@@ -12,7 +12,7 @@ type SocialIconProps = {
   };
 };
 
-function AboutIcons({ social: { icon, name, url } }: SocialIconProps) {
+function SocialIcon({ social: { icon, name, url } }: SocialIconProps) {
   const iconProps = icon.split(' ') as [IconPrefix, IconName];
 
   return (
@@ -22,4 +22,4 @@ function AboutIcons({ social: { icon, name, url } }: SocialIconProps) {
   );
 }
 
-export default AboutIcons;
+export default SocialIcon;

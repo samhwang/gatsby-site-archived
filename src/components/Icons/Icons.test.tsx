@@ -3,7 +3,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import './index';
 import LangIcon from './LangIcon';
-import SocialIcon from './SocialIcons';
+import SocialIcon from './SocialIcon';
 
 describe('Lang Icon', () => {
   it('should render without crashing', () => {

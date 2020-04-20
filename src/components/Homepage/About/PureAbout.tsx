@@ -1,6 +1,6 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
-import AboutIcons from '../../Icons/SocialIcons';
+import SocialIcon from '../../Icons/SocialIcon';
 
 function PureAbout({ data }: AboutProps) {
   const {
@@ -35,7 +35,7 @@ function PureAbout({ data }: AboutProps) {
         </p>
         <div className="social-icons">
           {socialLinks.map((social) => (
-            <AboutIcons key={social.name} social={social} />
+            <SocialIcon key={social.name} social={social} />
           ))}
         </div>
       </div>

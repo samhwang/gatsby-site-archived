@@ -4,6 +4,7 @@
 ![GitHub](https://img.shields.io/github/license/samhwang/samhwang.github.io?style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/samhwang/samhwang.github.io?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/samhwang/samhwang.github.io?style=for-the-badge)
+[![Coverage Status](https://coveralls.io/repos/github/samhwang/samhwang.github.io/badge.svg?branch=develop)](https://coveralls.io/github/samhwang/samhwang.github.io?branch=develop)
 
 Originally created to be a page where I can learn about static sites, it
 has grown to be my main resume page.

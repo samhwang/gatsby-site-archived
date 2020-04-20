@@ -1,11 +1,11 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
-interface ProjectProps {
+type ProjectProps = {
   title: string;
   description: string;
   url?: string;
-}
+};
 
 function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (

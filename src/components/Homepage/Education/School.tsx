@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface EducationProps {
+type EducationProps = {
   institute: string;
   degree: string;
   major: string;
   duration: string;
-}
+};
 
 function Education({ institute, degree, major, duration }: EducationProps) {
   return (

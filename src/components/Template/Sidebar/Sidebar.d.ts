@@ -1,12 +1,12 @@
-interface SidebarMetadata extends GraphQLSiteMetadata {
+type SidebarMetadata = {
   site: {
     siteMetadata: {
       firstName: string;
       lastName: string;
     };
   };
-}
+};
 
-interface SidebarProps {
+type SidebarProps = {
   data: SidebarMetadata;
-}
+};

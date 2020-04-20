@@ -1,9 +1,9 @@
 import React from 'react';
 
-interface SkillProps {
+type SkillProps = {
   title: string;
   description: string[];
-}
+};
 
 function Skill({ title, description }: SkillProps) {
   return (

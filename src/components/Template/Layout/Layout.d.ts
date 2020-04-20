@@ -1,21 +1,21 @@
-interface SiteMetadata extends GraphQLSiteMetadata {
+type SiteMetadata = {
   site: {
     siteMetadata: {
       title: string;
       description: string;
     };
   };
-}
+};
 
-interface SectionType {
+type SectionType = {
   id: string;
   content: React.ReactNode | Element;
-}
+};
 
-interface LayoutProps {
+type LayoutProps = {
   sections: Array<SectionType>;
-}
+};
 
-interface LayoutRenderProps extends LayoutProps {
+type LayoutRenderProps = LayoutProps & {
   data: SiteMetadata;
-}
+};

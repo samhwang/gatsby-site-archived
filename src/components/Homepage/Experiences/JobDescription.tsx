@@ -1,14 +1,14 @@
 import React from 'react';
 import LangIcon from '../../Icons/LangIcon';
 
-interface JobDescriptionProps {
+type JobDescriptionProps = {
   title: string;
   companyName: string;
   description: string[];
   duration: string;
   techIcons: string[];
   technologies: string[];
-}
+};
 
 function JobDescription({
   title,

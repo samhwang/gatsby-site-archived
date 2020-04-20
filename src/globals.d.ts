@@ -8,8 +8,8 @@ declare module '*.webp' {
   export default content;
 }
 
-interface GraphQLSiteMetadata {
+type GraphQLSiteMetadata = {
   site: {
     siteMetadata: object;
   };
-}
+};

@@ -19,14 +19,14 @@ function scrollTo(element?: Element, offSet = 0, timeout?: number) {
   }, timeout);
 }
 
-interface ScrollProps {
+type ScrollProps = {
   type: string;
   element: string;
   offset?: number;
   timeout?: number;
   children: JSX.Element;
   counter: number;
-}
+};
 
 function Scroll({
   type,

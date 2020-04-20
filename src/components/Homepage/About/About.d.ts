@@ -1,19 +1,19 @@
-interface AboutSection {
+type AboutSection = {
   firstName: string;
   lastName: string;
   address: string;
   email: string;
   socialLinks: Array<{ icon: string; name: string; url: string }>;
-}
+};
 
-interface AboutMetadata extends GraphQLSiteMetadata {
+type AboutMetadata = {
   site: {
     siteMetadata: {
       personalInformation: AboutSection;
     };
   };
-}
+};
 
-interface AboutProps {
+type AboutProps = {
   data: AboutMetadata;
-}
+};

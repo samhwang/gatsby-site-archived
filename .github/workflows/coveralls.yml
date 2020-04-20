@@ -1,6 +1,11 @@
-name: Run Tests and Lints before merging into main branch
+name: Generate coveralls
 
 on:
+  push:
+    branches:
+      - develop
+    paths:
+      - src/**
   pull_request:
     branches:
       - develop
@@ -26,9 +31,10 @@ jobs:
           yarn install
           yarn clean
 
-      - name: Run linting
-        run: yarn lint
+      - name: Generate test coverage file
+        run: yarn test:coverage
 
-      - name: Run tests
-        run: yarn test
-
+      - name: Generate Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

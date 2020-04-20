@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
 
-      - uses: Set up project
+      - name: Set up project
         run: |
           npm -g install gatsby-cli yarn
           yarn install

@@ -10,6 +10,6 @@ global.___loader = {
 
 global.__PATH_PREFIX__ = '';
 
-window.___navigate = pathname => {
+window.___navigate = (pathname) => {
   action('NavigateTo:')(pathname);
 };

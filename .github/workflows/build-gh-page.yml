@@ -6,6 +6,9 @@ on:
       - develop
     paths:
       - src/**
+      - "!src/stories/*"
+      - "!src/__tests__/*"
+      - "!src/__mocks__/*"
       - static/**
       - .github/workflows/build-gh-page.yml
       - .github/workflows/build.bash

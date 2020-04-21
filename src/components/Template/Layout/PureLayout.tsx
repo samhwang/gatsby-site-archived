@@ -17,20 +17,13 @@ function PureLayout({ sections, data }: LayoutRenderProps) {
 
   return (
     <>
-      <Helmet
-        title={title}
-        meta={[
-          {
-            name: 'description',
-            content: description,
-          },
-          {
-            name: 'viewport',
-            content:
-              'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no',
-          },
-        ]}
-      >
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+        />
         <html lang="en" />
       </Helmet>
       <div className="main-body">

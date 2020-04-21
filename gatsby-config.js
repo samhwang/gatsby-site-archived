@@ -77,6 +77,10 @@ module.exports = {
             family: `Saira Extra Condensed`,
             variants: [`500`, `700`],
           },
+          {
+            family: `Roboto`,
+            variants: [`300`, `400`, `500`, `700`],
+          },
         ],
       },
     },

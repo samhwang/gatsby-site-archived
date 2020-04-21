@@ -1,7 +1,7 @@
 import React from 'react';
-import './index';
-import SocialIcon from './SocialIcon';
-import '../../assets/sass/resume.scss';
+import '../components/Icons/index';
+import SocialIcon from '../components/Icons/SocialIcon';
+import '../assets/sass/resume.scss';
 
 export default {
   title: 'Social Icons',

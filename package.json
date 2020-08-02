@@ -58,7 +58,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^6.0.0",
     "react-images": "^1.1.0",
-    "react-scrollspy": "^3.4.0",
+    "react-scrollspy": "^3.4.3",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {

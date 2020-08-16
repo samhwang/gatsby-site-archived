@@ -82,4 +82,9 @@ function Scroll({
   );
 }
 
+Scroll.defaultProps = {
+  offset: 0,
+  timeout: 300,
+};
+
 export default Scroll;

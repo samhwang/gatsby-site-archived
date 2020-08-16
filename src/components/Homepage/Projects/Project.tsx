@@ -27,4 +27,8 @@ function Project({ title, description, url }: ProjectProps) {
   );
 }
 
+Project.defaultProps = {
+  url: '',
+};
+
 export default Project;

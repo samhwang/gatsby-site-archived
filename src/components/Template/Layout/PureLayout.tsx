@@ -5,8 +5,8 @@ import Footer from '../Footer';
 import '../../../assets/sass/resume.scss';
 import '../../Icons';
 
-function PureLayout({ sections, data }: LayoutRenderProps) {
-  const { title, description } = data.site.siteMetadata;
+function PureLayout({ sections, siteMetadata }: LayoutRenderProps) {
+  const { title, description } = siteMetadata;
 
   const children = sections.map(({ id, content }: SectionType) => (
     <Fragment key={id}>

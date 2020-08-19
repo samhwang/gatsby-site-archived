@@ -15,9 +15,13 @@ function Sidebar() {
       }
     }
   `;
-  const data = useStaticQuery(SidebarQuery);
+  const {
+    site: {
+      siteMetadata: { personalInformation },
+    }
+  } = useStaticQuery(SidebarQuery);
 
-  return <PureSidebar data={data} />;
+  return <PureSidebar personalInformation={personalInformation} />;
 }
 
 export default Sidebar;

@@ -22,9 +22,13 @@ function About() {
       }
     }
   `;
-  const data = useStaticQuery(AboutQuery);
+  const {
+    site: {
+      siteMetadata: { personalInformation },
+    },
+  } = useStaticQuery(AboutQuery);
 
-  return <PureAbout data={data} />;
+  return <PureAbout personalInformation={personalInformation} />;
 }
 
 export default About;

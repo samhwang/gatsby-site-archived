@@ -1,18 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // eslint-disable-next-line no-unused-vars
-import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
+import type { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
-type SocialIconProps = {
-  social: {
-    icon: string;
-    name: string;
-    url: string;
-  };
-};
-
-function SocialIcon({ social: { icon, name, url } }: SocialIconProps) {
+function SocialIcon({ icon, name, url }: SocialLinkProps) {
   const iconProps = icon.split(' ') as [IconPrefix, IconName];
 
   return (

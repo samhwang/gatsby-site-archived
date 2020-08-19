@@ -17,7 +17,7 @@ type IconMeta = {
 function IconBase({ icon, name, url }: IconMeta) {
   return (
     <div className="social-icons">
-      <SocialIcon social={{ icon, name, url }} />
+      <SocialIcon icon={icon} name={name} url={url} />
     </div>
   );
 }

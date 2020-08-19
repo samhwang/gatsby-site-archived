@@ -4,8 +4,12 @@ import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';
 import avatarWebP from '../../../assets/img/avatar.webp';
 
-function PureSidebar({ data }: SidebarProps) {
-  const { firstName, lastName } = data.site.siteMetadata;
+function PureSidebar({
+  personalInformation,
+}: {
+  personalInformation: SidebarProps;
+}) {
+  const { firstName, lastName } = personalInformation;
 
   const tabs = [
     { content: 'About', href: 'about' },
@@ -21,10 +25,7 @@ function PureSidebar({ data }: SidebarProps) {
       id="sideNav"
     >
       <a className="navbar-brand" href="#page-top">
-        <span className="d-block d-lg-none">
-          {firstName}
-          {lastName}
-        </span>
+        <span className="d-block d-lg-none">{`${firstName} ${lastName}`}</span>
         <span className="d-none d-lg-block">
           <picture>
             <source type="image/webp" srcSet={avatarWebP} />
@@ -32,7 +33,7 @@ function PureSidebar({ data }: SidebarProps) {
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"
               src={avatarJPG}
-              alt="Sam Huynh Avatar"
+              alt={`${firstName} ${lastName} Avatar`}
             />
           </picture>
         </span>

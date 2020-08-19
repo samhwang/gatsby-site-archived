@@ -13,9 +13,9 @@ function Layout({ sections }: LayoutProps) {
       }
     }
   `;
-  const data = useStaticQuery(SiteMetadataQuery);
+  const { site: siteMetadata } = useStaticQuery(SiteMetadataQuery);
 
-  return <PureLayout data={data} sections={sections} />;
+  return <PureLayout siteMetadata={siteMetadata} sections={sections} />;
 }
 
 export default Layout;

@@ -17,11 +17,9 @@ describe('Social Icon', () => {
     const tree = renderer
       .create(
         <SocialIcon
-          social={{
-            icon: 'fab github',
-            name: 'Github',
-            url: 'https://github.com/samhwang',
-          }}
+          icon="fab github"
+          name="Github"
+          url="https://github.com/samhwang"
         />
       )
       .toJSON();

@@ -2,14 +2,18 @@ import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import SocialIcon from '../../Icons/SocialIcon';
 
-function PureAbout({ data }: AboutProps) {
+function PureAbout({
+  personalInformation,
+}: {
+  personalInformation: AboutSectionProps;
+}) {
   const {
     firstName,
     lastName,
     address,
     email,
     socialLinks,
-  } = data.site.siteMetadata.personalInformation;
+  } = personalInformation;
 
   return (
     <section
@@ -34,8 +38,8 @@ function PureAbout({ data }: AboutProps) {
           different industries (retail, sports, and education.)
         </p>
         <div className="social-icons">
-          {socialLinks.map((social) => (
-            <SocialIcon key={social.name} social={social} />
+          {socialLinks.map(({ icon, name, url }) => (
+            <SocialIcon key={name} icon={icon} name={name} url={url} />
           ))}
         </div>
       </div>

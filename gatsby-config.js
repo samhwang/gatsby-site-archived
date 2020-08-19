@@ -12,6 +12,11 @@ module.exports = {
       address: config.address,
       email: config.email,
       socialLinks: config.socialLinks,
+      experience: config.experience,
+      education: config.education,
+      projects: config.projects,
+      skills: config.skills,
+      techStack: config.techStack,
     },
   },
   plugins: [

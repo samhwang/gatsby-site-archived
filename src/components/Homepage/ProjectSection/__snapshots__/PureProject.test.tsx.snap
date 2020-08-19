@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Section Component Should render without crashing 1`] = `
+<section
+  className="resume-section p-3 p-lg-5 d-flex align-items-center"
+  id="projects"
+>
+  <div
+    className="w-100"
+  >
+    <h2
+      className="mb-5"
+    >
+      Projects
+    </h2>
+    <ul
+      className="fa-ul mb-0"
+    >
+      <li>
+        <i
+          className="fa-li fa fa-tasks text-warning"
+        />
+        <p>
+          <a
+            href="https://samhwang.github.io"
+            onClick={[Function]}
+          >
+            <strong>
+              title:
+            </strong>
+          </a>
+           description
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+`;

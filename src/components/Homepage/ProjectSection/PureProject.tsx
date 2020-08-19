@@ -1,8 +1,7 @@
 import React from 'react';
 import Project from './Project';
-import { projects } from '../information';
 
-function ProjectSection() {
+function PureProject({ projects }: { projects: ProjectsMetadata }) {
   return (
     <section
       className="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -25,4 +24,4 @@ function ProjectSection() {
   );
 }
 
-export default ProjectSection;
+export default PureProject;

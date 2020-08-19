@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Component Should render without crashing 1`] = `
+<li>
+  <i
+    className="fa-li fa fa-tasks text-warning"
+  />
+  <p>
+    <a
+      href="https://samhwang.github.io"
+      onClick={[Function]}
+    >
+      <strong>
+        title:
+      </strong>
+    </a>
+     description
+  </p>
+</li>
+`;

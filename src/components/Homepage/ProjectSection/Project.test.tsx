@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import Project from './Project';
 
 describe('Project Component', () => {
-  it('Should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const project = {
       title: 'title',
       description: 'description',

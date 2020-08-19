@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import Skill from './Skill';
 
 describe('Skill Component', () => {
-  it('Should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const skill = {
       title: 'asdfasdf',
       description: ['asdfasdf1234'],

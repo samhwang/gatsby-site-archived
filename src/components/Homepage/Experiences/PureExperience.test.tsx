@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import PureExperience from './PureExperience';
 
 describe('Pure Experience Component', () => {
-  it('Should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const experience = [
       {
         title: 'Junior Full Stack Developer',

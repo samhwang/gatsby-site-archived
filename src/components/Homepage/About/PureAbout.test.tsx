@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import PureAbout from './PureAbout';
 
 describe('Pure About Component', () => {
-  it('should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const personalInformation = {
       firstName: 'Sam',
       lastName: 'Huynh',

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import JobDescription from './JobDescription';
 
 describe('Job Description Component', () => {
-  it('Should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const job = {
       title: 'Junior Full Stack Developer',
       companyName: 'Hertz Australia',

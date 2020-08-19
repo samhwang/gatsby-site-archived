@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Project Component Should render without crashing 1`] = `
+exports[`Project Component Should render without crashing and match snapshot 1`] = `
 <li>
   <i
     className="fa-li fa fa-tasks text-warning"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Lang Icon should render without crashing 1`] = `
+exports[`Lang Icon Should render without crashing and match snapshot 1`] = `
 <li
   className="list-inline-item"
 >
@@ -24,7 +24,7 @@ exports[`Lang Icon should render without crashing 1`] = `
 </li>
 `;
 
-exports[`Social Icon should render without crashing 1`] = `
+exports[`Social Icon Should render without crashing and match snapshot 1`] = `
 <a
   alt="Github link"
   href="https://github.com/samhwang"

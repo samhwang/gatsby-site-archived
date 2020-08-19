@@ -6,14 +6,14 @@ import LangIcon from './LangIcon';
 import SocialIcon from './SocialIcon';
 
 describe('Lang Icon', () => {
-  it('should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const tree = renderer.create(<LangIcon name="php" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
 
 describe('Social Icon', () => {
-  it('should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const tree = renderer
       .create(
         <SocialIcon

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import PureSkills from './PureSkills';
 
 describe('Skill Section Component', () => {
-  it('Should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const skills = [
       {
         title: 'asdfasdf',

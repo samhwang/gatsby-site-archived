@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Skill Section Component Should render without crashing 1`] = `
+exports[`Skill Section Component Should render without crashing and match snapshot 1`] = `
 <section
   className="resume-section p-3 p-lg-5 d-flex align-items-center"
   id="skills"

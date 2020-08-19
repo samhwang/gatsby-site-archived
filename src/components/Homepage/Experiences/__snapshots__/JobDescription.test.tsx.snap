@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Job Description Component Should render without crashing 1`] = `
+exports[`Job Description Component Should render without crashing and match snapshot 1`] = `
 <div
   className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
 >

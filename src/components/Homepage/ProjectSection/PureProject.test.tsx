@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import PureProject from './PureProject';
 
 describe('Project Section Component', () => {
-  it('Should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const projects = [
       {
         title: 'title',

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import PureEducation from './PureEducation';
 
 describe('Education Component', () => {
-  it('Should render without crashing', () => {
+  it('Should render without crashing and match snapshot', () => {
     const education = [
       {
         institute: 'Navitas Professionals',

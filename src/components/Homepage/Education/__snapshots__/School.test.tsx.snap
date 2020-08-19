@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`School Component Should render without crashing 1`] = `
+<div
+  className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+>
+  <div
+    className="resume-content"
+  >
+    <h3
+      className="mb-0"
+    >
+      RMIT University
+    </h3>
+    <div
+      className="subheading mb-3"
+    >
+      Bachelor of IT
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  <div
+    className="resume-date text-md-right"
+  >
+    <span
+      className="text-primary"
+    >
+      Oct 2016 - Oct 2017
+    </span>
+  </div>
+</div>
+`;

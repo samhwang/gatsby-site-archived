@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Job Description Component Should render without crashing 1`] = `
+<div
+  className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+>
+  <div
+    className="resume-content"
+  >
+    <h3
+      className="mb-0"
+    >
+      Junior Full Stack Developer
+    </h3>
+    <div
+      className="subheading mb-3"
+    >
+      Hertz Australia
+    </div>
+    <ul>
+      <li>
+        Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary
+      </li>
+      <li>
+        Built new core features into Hertz's internal rental analytics and tracking systems, using ExpressJS, EJS and NodeJS
+      </li>
+      <li>
+        Built the new frontend for Hertz's shuttle bus tracking system, now currently used by the Ace brand, using ReactJS and deployed in an S3 bucket endpoint, communicating via serverless websockets
+      </li>
+    </ul>
+    <h4>
+      Technologies involved:
+    </h4>
+    <ul>
+      <li>
+        PHP 7.4 and Wordpress
+      </li>
+      <li>
+        HTML5, CSS3 and CSS pre-processors like SASS and LESS
+      </li>
+      <li>
+        GraphQL and REST API
+      </li>
+      <li>
+        JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)
+      </li>
+      <li>
+        Docker containers & docker-compose
+      </li>
+      <li>
+        Database: MySQL & MongoDB
+      </li>
+      <li>
+        Serverless architecture and websockets
+      </li>
+      <li>
+        AWS Lambda and Elastic Beanstalk
+      </li>
+      <li>
+        CI/CD: GitHub Actions pipeline and GitHub Packages
+      </li>
+      <li>
+        Project management using JIRA and Confluence
+      </li>
+    </ul>
+    <ul
+      className="list-inline dev-icons"
+    >
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+      <li
+        className="list-inline-item"
+      />
+    </ul>
+  </div>
+  <div
+    className="resume-date text-md-right"
+  >
+    <span
+      className="text-primary"
+    >
+      Oct 2019 - Present
+    </span>
+  </div>
+</div>
+`;

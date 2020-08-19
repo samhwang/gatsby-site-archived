@@ -1,7 +1,7 @@
 import React from 'react';
-import '../components/Icons/index';
-import LangIcon from '../components/Icons/LangIcon';
-import '../assets/sass/resume.scss';
+import './index';
+import LangIcon from './LangIcon';
+import '../../assets/sass/resume.scss';
 
 export default {
   title: 'Language Icons',

@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import renderer from 'react-test-renderer';
-import '../components/Icons/index';
-import LangIcon from '../components/Icons/LangIcon';
-import SocialIcon from '../components/Icons/SocialIcon';
+import './index';
+import LangIcon from './LangIcon';
+import SocialIcon from './SocialIcon';
 
 describe('Lang Icon', () => {
   it('should render without crashing', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from '../components/Template/Footer';
+import Footer from '.';
 import 'bootstrap/dist/css/bootstrap.css';
-import '../assets/sass/resume.scss';
+import '../../../assets/sass/resume.scss';
 
 export default {
   title: 'Footer',

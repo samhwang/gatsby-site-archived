@@ -1,22 +1,20 @@
 import React from 'react';
-import '../components/Icons/index';
-import SocialIcon from '../components/Icons/SocialIcon';
-import '../assets/sass/resume.scss';
+import './index';
+import SocialIcon from './SocialIcon';
+import '../../assets/sass/resume.scss';
 
 export default {
   title: 'Social Icons',
   component: SocialIcon,
 };
 
-function IconBase({
-  icon,
-  name,
-  url,
-}: {
+type IconMeta = {
   icon: string;
   name: string;
   url: string;
-}) {
+};
+
+function IconBase({ icon, name, url }: IconMeta) {
   return (
     <div className="social-icons">
       <SocialIcon social={{ icon, name, url }} />

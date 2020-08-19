@@ -22,3 +22,12 @@ export function ProjectComponent() {
     />
   );
 }
+
+export function ProjectComponentWithoutURL() {
+  const project = {
+    title: 'title',
+    description: 'description',
+  };
+
+  return <Project title={project.title} description={project.description} />;
+}

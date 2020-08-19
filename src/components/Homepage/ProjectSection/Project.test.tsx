@@ -21,4 +21,17 @@ describe('Project Component', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it('Should render project without URL', () => {
+    const project = {
+      title: 'title',
+      description: 'description',
+    };
+    const tree = renderer
+      .create(
+        <Project title={project.title} description={project.description} />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

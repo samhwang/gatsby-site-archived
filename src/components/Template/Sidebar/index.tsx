@@ -18,7 +18,7 @@ function Sidebar() {
   const {
     site: {
       siteMetadata: { personalInformation },
-    }
+    },
   } = useStaticQuery(SidebarQuery);
 
   return <PureSidebar personalInformation={personalInformation} />;

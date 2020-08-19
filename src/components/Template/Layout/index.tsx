@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import PureLayout from './PureLayout';
 
 function Layout({ sections }: LayoutProps) {
@@ -13,12 +13,9 @@ function Layout({ sections }: LayoutProps) {
       }
     }
   `;
+  const data = useStaticQuery(SiteMetadataQuery);
 
-  function renderLayout(data: SiteMetadata) {
-    return <PureLayout data={data} sections={sections} />;
-  }
-
-  return <StaticQuery query={SiteMetadataQuery} render={renderLayout} />;
+  return <PureLayout data={data} sections={sections} />;
 }
 
 export default Layout;

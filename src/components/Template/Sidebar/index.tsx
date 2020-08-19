@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import PureSidebar from './PureSidebar';
 
 function Sidebar() {
@@ -15,12 +15,9 @@ function Sidebar() {
       }
     }
   `;
+  const data = useStaticQuery(SidebarQuery);
 
-  function renderSidebar(data: SidebarMetadata) {
-    return <PureSidebar data={data} />;
-  }
-
-  return <StaticQuery query={SidebarQuery} render={renderSidebar} />;
+  return <PureSidebar data={data} />;
 }
 
 export default Sidebar;

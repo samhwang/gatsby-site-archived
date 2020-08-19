@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import PureAbout from './PureAbout';
 
 function About() {
@@ -22,12 +22,9 @@ function About() {
       }
     }
   `;
+  const data = useStaticQuery(AboutQuery);
 
-  function renderAbout(data: AboutMetadata) {
-    return <PureAbout data={data} />;
-  }
-
-  return <StaticQuery query={AboutQuery} render={renderAbout} />;
+  return <PureAbout data={data} />;
 }
 
 export default About;

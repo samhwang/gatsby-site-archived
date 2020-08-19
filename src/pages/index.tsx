@@ -4,14 +4,14 @@ import About from '../components/Homepage/About';
 import Experiences from '../components/Homepage/Experiences';
 import Education from '../components/Homepage/Education';
 import Projects from '../components/Homepage/Projects';
-import Skills from '../components/Homepage/Skills';
+import SkillSection from '../components/Homepage/SkillSection';
 
 function IndexPage() {
   const sections = [
     { id: 'about', content: <About /> },
     { id: 'experience', content: <Experiences /> },
     { id: 'education', content: <Education /> },
-    { id: 'skills', content: <Skills /> },
+    { id: 'skills', content: <SkillSection /> },
     { id: 'projects', content: <Projects /> },
   ];
 

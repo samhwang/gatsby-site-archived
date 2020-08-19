@@ -1,9 +1,14 @@
 import React from 'react';
 import Skill from './Skill';
 import LangIcon from '../../Icons/LangIcon';
-import { skills, techStack } from '../information';
 
-function SkillSection() {
+function PureSkills({
+  skills,
+  techStack,
+}: {
+  skills: SkillsMetadata;
+  techStack: TechStackMetadata;
+}) {
   return (
     <section
       className="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -25,4 +30,4 @@ function SkillSection() {
   );
 }
 
-export default SkillSection;
+export default PureSkills;

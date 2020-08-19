@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skill Component Should render without crashing 1`] = `
+Array [
+  <div
+    className="subheading mb-3"
+  >
+    asdfasdf
+  </div>,
+  <ul>
+    <li>
+      asdfasdf1234
+    </li>
+  </ul>,
+]
+`;

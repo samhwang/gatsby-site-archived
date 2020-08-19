@@ -74,3 +74,12 @@ type ProjectProps = {
   description: string;
   url?: string;
 };
+
+type SkillsMetadata = SkillProps[];
+
+type SkillProps = {
+  title: string;
+  description: string[];
+};
+
+type TechStackMetadata = string[];

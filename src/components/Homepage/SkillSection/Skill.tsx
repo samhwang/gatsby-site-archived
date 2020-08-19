@@ -1,10 +1,5 @@
 import React from 'react';
 
-type SkillProps = {
-  title: string;
-  description: string[];
-};
-
 function Skill({ title, description }: SkillProps) {
   return (
     <>

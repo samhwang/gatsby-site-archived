@@ -1,4 +1,4 @@
-export const experiences = [
+const experiences = [
   {
     title: 'Junior Full Stack Developer',
     companyName: 'Hertz Australia',
@@ -149,7 +149,7 @@ export const experiences = [
   },
 ];
 
-export const education = [
+const education = [
   {
     institute: 'Navitas Professionals',
     degree: 'Professional Year Program in Computer Science',
@@ -164,7 +164,7 @@ export const education = [
   },
 ];
 
-export const projects = [
+const projects = [
   {
     title: 'My GitHub code repository',
     description:
@@ -185,7 +185,7 @@ export const projects = [
   },
 ];
 
-export const skills = [
+const skills = [
   {
     title: 'Professional Proficiency',
     description: [
@@ -194,7 +194,8 @@ export const skills = [
       'Databases and data modelling with MySQL, SQLite, MS SQL, PostgreSQL and MongoDB',
       'Server configuration with Apache and NGINX',
       'Containerize applications (traditional, serverless and microservices) with Docker',
-      'CMS and Frameworks: Wordpress, CodeIgniter, Joomla, Meteor, Gatsby',
+      'Frameworks: Meteor, Gatsby, Symfony, Express',
+      'Package management and build tools: Composer, NPM, Yarn, Babel, Webpack',
       'Version control tools with Git',
       'Continuous Integration and Continuous Delivery with CircleCI, GitHub Actions & GitHub Packages',
       'Amazon Web Services tool: EC2, Beanstalk, S3, Beanstalk, Lambda',
@@ -213,7 +214,7 @@ export const skills = [
   },
 ];
 
-export const techStack = [
+const techStack = [
   'php',
   'js',
   'node',
@@ -235,3 +236,5 @@ export const techStack = [
   'jira',
   'confluence',
 ];
+
+export { experiences, education, projects, skills, techStack };

@@ -72,7 +72,7 @@
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.5",
     "@types/react-helmet": "^6.1.0",
-    "@types/react-scrollspy": "^3.3.2",
+    "@types/react-scrollspy": "^3.3.3",
     "@types/react-test-renderer": "^16.9.2",
     "@types/smoothscroll-polyfill": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "^3.9.1",

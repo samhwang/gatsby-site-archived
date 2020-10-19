@@ -1,4 +1,3 @@
-import React from 'react';
 import LangIcon from '../../Icons/LangIcon';
 
 function JobDescription({

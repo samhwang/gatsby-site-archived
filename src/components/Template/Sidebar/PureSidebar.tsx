@@ -1,4 +1,3 @@
-import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';

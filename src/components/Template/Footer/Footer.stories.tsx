@@ -1,4 +1,3 @@
-import React from 'react';
 import Footer from '.';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../../assets/sass/resume.scss';

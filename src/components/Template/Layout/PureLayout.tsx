@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import Sidebar from '../Sidebar';
 import Footer from '../Footer';

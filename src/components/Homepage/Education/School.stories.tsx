@@ -1,4 +1,3 @@
-import React from 'react';
 import School from './School';
 import '../../../assets/sass/resume.scss';
 

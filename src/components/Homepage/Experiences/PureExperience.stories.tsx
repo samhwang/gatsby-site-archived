@@ -1,4 +1,3 @@
-import React from 'react';
 import PureExperience from './PureExperience';
 import '../../../assets/sass/resume.scss';
 

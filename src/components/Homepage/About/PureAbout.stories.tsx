@@ -1,4 +1,3 @@
-import React from 'react';
 import PureAbout from './PureAbout';
 import '../../../assets/sass/resume.scss';
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Education({ institute, degree, major, duration }: EducationProps) {
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">

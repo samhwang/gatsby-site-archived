@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Skill({ title, description }: SkillProps) {
   return (
     <>

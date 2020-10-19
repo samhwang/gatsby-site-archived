@@ -1,4 +1,3 @@
-import React from 'react';
 import PureEducation from './PureEducation';
 import '../../../assets/sass/resume.scss';
 

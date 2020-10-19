@@ -1,5 +1,6 @@
 import smoothscroll from 'smoothscroll-polyfill';
-import React, { cloneElement, useEffect } from 'react';
+import { cloneElement, useEffect } from 'react';
+import type { KeyboardEvent, MouseEvent } from 'react';
 
 function Element(props: { children: JSX.Element }) {
   return props.children;
@@ -40,7 +41,7 @@ function Scroll({
     smoothscroll.polyfill();
   }, []);
 
-  function handleClick(event: React.KeyboardEvent | React.MouseEvent) {
+  function handleClick(event: KeyboardEvent | MouseEvent) {
     event.preventDefault();
     let elem = null;
     let scroll = true;

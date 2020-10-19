@@ -1,4 +1,3 @@
-import React from 'react';
 import JobDescription from './JobDescription';
 
 function PureExperience({ experiences }: { experiences: ExperienceSection }) {

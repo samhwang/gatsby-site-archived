@@ -1,4 +1,3 @@
-import React from 'react';
 import './index';
 import SocialIcon from './SocialIcon';
 import '../../assets/sass/resume.scss';

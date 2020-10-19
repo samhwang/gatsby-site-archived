@@ -1,4 +1,3 @@
-import React from 'react';
 import Layout from '../components/Template/Layout';
 import About from '../components/Homepage/About';
 import Experiences from '../components/Homepage/Experiences';

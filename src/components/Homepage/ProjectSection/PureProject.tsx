@@ -1,4 +1,3 @@
-import React from 'react';
 import Project from './Project';
 
 function PureProject({ projects }: { projects: ProjectsMetadata }) {

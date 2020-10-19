@@ -1,4 +1,3 @@
-import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 function Project({ title, description, url }: ProjectProps) {

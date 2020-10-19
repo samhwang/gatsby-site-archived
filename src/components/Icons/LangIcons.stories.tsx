@@ -1,4 +1,3 @@
-import React from 'react';
 import './index';
 import LangIcon from './LangIcon';
 import '../../assets/sass/resume.scss';

@@ -1,4 +1,3 @@
-import React from 'react';
 import School from './School';
 
 function PureEducation({ education }: { education: EducationMetadata }) {

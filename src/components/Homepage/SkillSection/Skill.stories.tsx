@@ -1,4 +1,3 @@
-import React from 'react';
 import Skill from './Skill';
 import '../../../assets/sass/resume.scss';
 

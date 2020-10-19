@@ -1,4 +1,3 @@
-import React from 'react';
 import JobDescription from './JobDescription';
 import '../../../assets/sass/resume.scss';
 

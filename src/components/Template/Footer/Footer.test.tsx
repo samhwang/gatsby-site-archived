@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Footer from '.';
 
 describe('Footer', () => {

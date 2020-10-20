@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Skill from './Skill';
 
 describe('Skill Component', () => {
@@ -8,9 +8,9 @@ describe('Skill Component', () => {
       title: 'asdfasdf',
       description: ['asdfasdf1234'],
     };
-    const tree = renderer
-      .create(<Skill title={skill.title} description={skill.description} />)
-      .toJSON();
+    const tree = render(
+      <Skill title={skill.title} description={skill.description} />
+    );
     expect(tree).toMatchSnapshot();
   });
 });

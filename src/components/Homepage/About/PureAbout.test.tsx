@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import PureAbout from './PureAbout';
 
 describe('Pure About Component', () => {
@@ -18,9 +18,9 @@ describe('Pure About Component', () => {
       ],
     };
 
-    const tree = renderer
-      .create(<PureAbout personalInformation={personalInformation} />)
-      .toJSON();
+    const tree = render(
+      <PureAbout personalInformation={personalInformation} />
+    );
     expect(tree).toMatchSnapshot();
   });
 });

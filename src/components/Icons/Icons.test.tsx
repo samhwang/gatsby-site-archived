@@ -1,27 +1,25 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import './index';
 import LangIcon from './LangIcon';
 import SocialIcon from './SocialIcon';
 
 describe('Lang Icon', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = renderer.create(<LangIcon name="php" />).toJSON();
+    const tree = render(<LangIcon name="php" />);
     expect(tree).toMatchSnapshot();
   });
 });
 
 describe('Social Icon', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = renderer
-      .create(
-        <SocialIcon
-          icon="fab github"
-          name="Github"
-          url="https://github.com/samhwang"
-        />
-      )
-      .toJSON();
+    const tree = render(
+      <SocialIcon
+        icon="fab github"
+        name="Github"
+        url="https://github.com/samhwang"
+      />
+    );
     expect(tree).toMatchSnapshot();
   });
 });

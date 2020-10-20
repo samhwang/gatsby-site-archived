@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import PureSkills from './PureSkills';
 
 describe('Skill Section Component', () => {
@@ -12,9 +12,7 @@ describe('Skill Section Component', () => {
     ];
     const techStack = ['js'];
 
-    const tree = renderer
-      .create(<PureSkills skills={skills} techStack={techStack} />)
-      .toJSON();
+    const tree = render(<PureSkills skills={skills} techStack={techStack} />);
     expect(tree).toMatchSnapshot();
   });
 });

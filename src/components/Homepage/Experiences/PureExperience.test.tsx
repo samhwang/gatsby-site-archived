@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import PureExperience from './PureExperience';
 
 describe('Pure Experience Component', () => {
@@ -46,9 +46,7 @@ describe('Pure Experience Component', () => {
       },
     ];
 
-    const tree = renderer
-      .create(<PureExperience experiences={experience} />)
-      .toJSON();
+    const tree = render(<PureExperience experiences={experience} />);
     expect(tree).toMatchSnapshot();
   });
 });

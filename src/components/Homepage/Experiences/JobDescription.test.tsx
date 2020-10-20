@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import JobDescription from './JobDescription';
 
 describe('Job Description Component', () => {
@@ -44,19 +44,17 @@ describe('Job Description Component', () => {
       ],
     };
 
-    const tree = renderer
-      .create(
-        <JobDescription
-          key={job.companyName}
-          title={job.title}
-          companyName={job.companyName}
-          description={job.description}
-          duration={job.duration}
-          techIcons={job.techIcons}
-          technologies={job.technologies}
-        />
-      )
-      .toJSON();
+    const tree = render(
+      <JobDescription
+        key={job.companyName}
+        title={job.title}
+        companyName={job.companyName}
+        description={job.description}
+        duration={job.duration}
+        techIcons={job.techIcons}
+        technologies={job.technologies}
+      />
+    );
     expect(tree).toMatchSnapshot();
   });
 });

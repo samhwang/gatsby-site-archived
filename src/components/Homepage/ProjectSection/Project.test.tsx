@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Project from './Project';
 
 describe('Project Component', () => {
@@ -9,15 +9,13 @@ describe('Project Component', () => {
       description: 'description',
       url: 'https://samhwang.github.io',
     };
-    const tree = renderer
-      .create(
-        <Project
-          title={project.title}
-          description={project.description}
-          url={project.url}
-        />
-      )
-      .toJSON();
+    const tree = render(
+      <Project
+        title={project.title}
+        description={project.description}
+        url={project.url}
+      />
+    );
     expect(tree).toMatchSnapshot();
   });
 
@@ -26,11 +24,9 @@ describe('Project Component', () => {
       title: 'title',
       description: 'description',
     };
-    const tree = renderer
-      .create(
-        <Project title={project.title} description={project.description} />
-      )
-      .toJSON();
+    const tree = render(
+      <Project title={project.title} description={project.description} />
+    );
     expect(tree).toMatchSnapshot();
   });
 });

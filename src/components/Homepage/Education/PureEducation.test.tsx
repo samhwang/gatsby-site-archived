@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import PureEducation from './PureEducation';
 
 describe('Education Component', () => {
@@ -12,9 +12,7 @@ describe('Education Component', () => {
         duration: 'Oct 2016 - Oct 2017',
       },
     ];
-    const tree = renderer
-      .create(<PureEducation education={education} />)
-      .toJSON();
+    const tree = render(<PureEducation education={education} />);
     expect(tree).toMatchSnapshot();
   });
 });

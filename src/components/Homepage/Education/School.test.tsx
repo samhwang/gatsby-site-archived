@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import School from './School';
 
 describe('School Component', () => {
@@ -10,16 +10,14 @@ describe('School Component', () => {
       major: '',
       duration: 'Oct 2016 - Oct 2017',
     };
-    const tree = renderer
-      .create(
-        <School
-          institute={input.institute}
-          degree={input.degree}
-          major={input.major}
-          duration={input.duration}
-        />
-      )
-      .toJSON();
+    const tree = render(
+      <School
+        institute={input.institute}
+        degree={input.degree}
+        major={input.major}
+        duration={input.duration}
+      />
+    );
     expect(tree).toMatchSnapshot();
   });
 });

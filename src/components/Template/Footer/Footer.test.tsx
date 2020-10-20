@@ -4,7 +4,7 @@ import Footer from '.';
 
 describe('Footer', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = renderer.create(<Footer />).toJSON();
+    const tree = render(<Footer />);
     expect(tree).toMatchSnapshot();
   });
 });

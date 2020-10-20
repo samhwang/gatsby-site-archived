@@ -1,5 +1,6 @@
 import smoothscroll from 'smoothscroll-polyfill';
 import { cloneElement, useEffect } from 'react';
+// eslint-disable-next-line no-unused-vars
 import type { KeyboardEvent, MouseEvent } from 'react';
 
 function Element(props: { children: JSX.Element }) {

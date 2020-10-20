@@ -11,7 +11,7 @@ describe('Project Section Component', () => {
         url: 'https://samhwang.github.io',
       },
     ];
-    const tree = renderer.create(<PureProject projects={projects} />).toJSON();
+    const tree = render(<PureProject projects={projects} />);
     expect(tree).toMatchSnapshot();
   });
 });

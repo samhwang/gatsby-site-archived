@@ -1,13 +1,13 @@
 import Skill from './Skill';
 import LangIcon from '../../Icons/LangIcon';
+import type { SkillsMetadata, TechStackMetadata } from '../../../globals';
 
-function PureSkills({
-  skills,
-  techStack,
-}: {
+interface PureSkillsProps {
   skills: SkillsMetadata;
   techStack: TechStackMetadata;
-}) {
+}
+
+function PureSkills({ skills, techStack }: PureSkillsProps) {
   return (
     <section
       className="resume-section p-3 p-lg-5 d-flex align-items-center"

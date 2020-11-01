@@ -1,4 +1,5 @@
 import JobDescription from './JobDescription';
+import type { ExperienceSection } from '../../../globals';
 
 function PureExperience({ experiences }: { experiences: ExperienceSection }) {
   return (

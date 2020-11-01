@@ -7,7 +7,7 @@ export default {
 };
 
 export function AboutLayout() {
-  const personalInformation: AboutSectionProps = {
+  const personalInformation = {
     firstName: 'Sam',
     lastName: 'Huynh',
     address: 'Vermont South',

@@ -8,32 +8,30 @@ declare module '*.webp' {
   export default content;
 }
 
-type GraphQLResult = {
-  site: {
-    siteMetadata: SiteMetadata;
-  };
-};
-
-type SiteTitleDesc = {
+export type SiteTitleDesc = {
   title: string;
   description: string;
 };
-
-type SiteMetadata = SiteTitleDesc & {
-  siteUrl: string;
-  personalInformation: PersonalInformation;
-};
-
-type SidebarProps = {
+export interface PersonalInformation {
   firstName: string;
   lastName: string;
-};
-
-type AboutSectionProps = SidebarProps & {
   address: string;
-  email: string;
-  socialLinks: SocialLinkProps[];
-};
+}
+export interface SiteMetadata extends SiteTitleDesc {
+  siteUrl: string;
+  personalInformation: PersonalInformation;
+}
+
+export interface GraphQLResult {
+  site: {
+    siteMetadata: SiteMetadata;
+  };
+}
+
+export interface SidebarProps {
+  firstName: string;
+  lastName: string;
+}
 
 type SocialLinkProps = {
   icon: string;
@@ -41,45 +39,45 @@ type SocialLinkProps = {
   url: string;
 };
 
-type PersonalInformation = {
-  firstName: string;
-  lastName: string;
+export interface AboutSectionProps extends SidebarProps {
   address: string;
-};
+  email: string;
+  socialLinks: SocialLinkProps[];
+}
 
-type ExperienceSection = JobDescriptionProps[];
-
-type JobDescriptionProps = {
+export interface JobDescriptionProps {
   title: string;
   companyName: string;
   description: string[];
   duration: string;
   techIcons: string[];
   technologies: string[];
-};
+}
 
-type EducationMetadata = EducationProps[];
+export type ExperienceSection = JobDescriptionProps[];
 
-type EducationProps = {
+export interface EducationProps {
   institute: string;
   degree: string;
   major: string;
   duration: string;
-};
+}
 
-type ProjectsMetadata = ProjectProps[];
+export type EducationMetadata = EducationProps[];
 
-type ProjectProps = {
+export interface ProjectProps {
   title: string;
   description: string;
   url?: string;
-};
+}
 
-type SkillsMetadata = SkillProps[];
+export type ProjectsMetadata = ProjectProps[];
 
-type SkillProps = {
+export interface SkillProps {
   title: string;
   description: string[];
-};
+}
 
-type TechStackMetadata = string[];
+export type SkillsMetadata = SkillProps[];
+
+export type TechStackMetadata = string[];

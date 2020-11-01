@@ -1,4 +1,5 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import type { AboutSectionProps } from '../../../globals';
 import SocialIcon from '../../Icons/SocialIcon';
 
 function PureAbout({

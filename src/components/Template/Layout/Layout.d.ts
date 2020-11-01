@@ -1,12 +1,15 @@
-type SectionType = {
+import type { ReactNode } from 'react';
+import type { SiteMetadata } from '../../../globals';
+
+export type SectionType = {
   id: string;
-  content: React.ReactNode | Element;
+  content: ReactNode | Element;
 };
 
-type LayoutProps = {
+export type LayoutProps = {
   sections: SectionType[];
 };
 
-type LayoutRenderProps = LayoutProps & {
+export type LayoutRenderProps = LayoutProps & {
   siteMetadata: SiteMetadata;
 };

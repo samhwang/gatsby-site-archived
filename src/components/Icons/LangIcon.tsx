@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// eslint-disable-next-line no-unused-vars
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 
 type LangIconProps = {

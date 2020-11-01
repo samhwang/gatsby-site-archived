@@ -1,5 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import PureLayout from './PureLayout';
+import type { LayoutProps } from './Layout';
 
 function Layout({ sections }: LayoutProps) {
   const SiteMetadataQuery = graphql`

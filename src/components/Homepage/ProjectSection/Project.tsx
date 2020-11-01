@@ -1,4 +1,5 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import type { ProjectProps } from '../../../globals';
 
 function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (

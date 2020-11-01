@@ -1,3 +1,5 @@
+import type { SkillProps } from '../../../globals';
+
 function Skill({ title, description }: SkillProps) {
   return (
     <>

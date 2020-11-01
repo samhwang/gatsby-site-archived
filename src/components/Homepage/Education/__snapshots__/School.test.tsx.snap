@@ -1,34 +1,120 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`School Component Should render without crashing and match snapshot 1`] = `
-<div
-  className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
->
-  <div
-    className="resume-content"
-  >
-    <h3
-      className="mb-0"
-    >
-      RMIT University
-    </h3>
-    <div
-      className="subheading mb-3"
-    >
-      Bachelor of IT
-    </div>
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
     <div>
-      
+      <div
+        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+      >
+        <div
+          class="resume-content"
+        >
+          <h3
+            class="mb-0"
+          >
+            RMIT University
+          </h3>
+          <div
+            class="subheading mb-3"
+          >
+            Bachelor of IT
+          </div>
+          <div />
+        </div>
+        <div
+          class="resume-date text-md-right"
+        >
+          <span
+            class="text-primary"
+          >
+            Oct 2016 - Oct 2017
+          </span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div
-    className="resume-date text-md-right"
-  >
-    <span
-      className="text-primary"
+  </body>,
+  "container": <div>
+    <div
+      class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
     >
-      Oct 2016 - Oct 2017
-    </span>
-  </div>
-</div>
+      <div
+        class="resume-content"
+      >
+        <h3
+          class="mb-0"
+        >
+          RMIT University
+        </h3>
+        <div
+          class="subheading mb-3"
+        >
+          Bachelor of IT
+        </div>
+        <div />
+      </div>
+      <div
+        class="resume-date text-md-right"
+      >
+        <span
+          class="text-primary"
+        >
+          Oct 2016 - Oct 2017
+        </span>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

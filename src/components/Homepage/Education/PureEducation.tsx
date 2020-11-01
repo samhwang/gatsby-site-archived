@@ -1,4 +1,5 @@
 import School from './School';
+import type { EducationMetadata } from '../../../globals';
 
 function PureEducation({ education }: { education: EducationMetadata }) {
   return (

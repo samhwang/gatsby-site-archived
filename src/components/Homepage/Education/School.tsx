@@ -1,3 +1,5 @@
+import type { EducationProps } from '../../../globals';
+
 function Education({ institute, degree, major, duration }: EducationProps) {
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">

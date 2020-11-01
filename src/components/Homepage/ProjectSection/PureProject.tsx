@@ -1,4 +1,5 @@
 import Project from './Project';
+import type { ProjectsMetadata } from '../../../globals';
 
 function PureProject({ projects }: { projects: ProjectsMetadata }) {
   return (

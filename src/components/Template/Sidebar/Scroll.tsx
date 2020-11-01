@@ -1,9 +1,8 @@
 import smoothscroll from 'smoothscroll-polyfill';
 import { cloneElement, useEffect } from 'react';
-// eslint-disable-next-line no-unused-vars
-import type { KeyboardEvent, MouseEvent } from 'react';
+import type { KeyboardEvent, MouseEvent, ReactElement } from 'react';
 
-function Element(props: { children: JSX.Element }) {
+function Element(props: { children: ReactElement }) {
   return props.children;
 }
 
@@ -26,7 +25,7 @@ type ScrollProps = {
   element: string;
   offset?: number;
   timeout?: number;
-  children: JSX.Element;
+  children: ReactElement;
   counter: number;
 };
 
@@ -72,8 +71,8 @@ function Scroll({
         cloneElement(children, { onClick: handleClick })
       ) : (
         <span
-          onClick={(event) => handleClick(event)}
-          onKeyDown={(event) => handleClick(event)}
+          onClick={handleClick}
+          onKeyDown={handleClick}
           role="tab"
           tabIndex={counter}
         >

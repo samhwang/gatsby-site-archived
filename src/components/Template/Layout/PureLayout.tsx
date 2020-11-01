@@ -4,6 +4,7 @@ import Sidebar from '../Sidebar';
 import Footer from '../Footer';
 import '../../../assets/sass/resume.scss';
 import '../../Icons';
+import type { SectionType, LayoutRenderProps } from './Layout';
 
 function PureLayout({ sections, siteMetadata }: LayoutRenderProps) {
   const { title, description } = siteMetadata;

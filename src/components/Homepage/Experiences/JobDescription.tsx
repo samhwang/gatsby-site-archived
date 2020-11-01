@@ -1,4 +1,5 @@
 import LangIcon from '../../Icons/LangIcon';
+import type { JobDescriptionProps } from '../../../globals';
 
 function JobDescription({
   title,

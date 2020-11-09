@@ -1,7 +1,7 @@
 import { configure } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-configure(require.context('../src', true, /\.stories\.(js|tsx)$/), module);
+configure(require.context('../src', true, /\.stories\.(jsx?|tsx?)$/), module);
 
 global.___loader = {
   enqueue: () => {},

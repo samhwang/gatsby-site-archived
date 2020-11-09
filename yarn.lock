@@ -1786,7 +1786,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-actions@^6.0.12":
+"@storybook/addon-actions@^6.0.28":
   version "6.0.28"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.0.28.tgz#86c0353b597c2a41f6ac7efa7c0d5aeed6a456b2"
   integrity sha512-DrApIt/rMCBrynJsFbmXPba2BCAj+yOybCsr0cqNNMkaZytAnoeDEqseCdWUtNXSgDnprAQ0HIrS2TIf4twh8w==
@@ -1810,7 +1810,7 @@
     util-deprecate "^1.0.2"
     uuid "^8.0.0"
 
-"@storybook/addon-links@^6.0.12":
+"@storybook/addon-links@^6.0.28":
   version "6.0.28"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.0.28.tgz#990aa86332de7a745edfc9c98dffff8aa4916bda"
   integrity sha512-5i0nh8vKQKRZGQAnI05VBPSKnZYlaIeB7sPcAzBvb1a8aSVQS4O1MBS9H5e92iN9N4QD7GujhN0aQh3aRbq/hw==
@@ -1828,7 +1828,7 @@
     regenerator-runtime "^0.13.3"
     ts-dedent "^1.1.1"
 
-"@storybook/addons@6.0.28", "@storybook/addons@^6.0.12":
+"@storybook/addons@6.0.28", "@storybook/addons@^6.0.28":
   version "6.0.28"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-6.0.28.tgz#8c7ef3229706e2dc32d40ec9158431a3ffee3e5b"
   integrity sha512-3Brf9w/u2sw0huarcO1iLFBmGt7KtApRxX4bFcsRiPPFxliDrmb1sAsd37UbKp8qBSw1U6FByjuTJQ7xn/TDhg==
@@ -2078,7 +2078,7 @@
     npmlog "^4.1.2"
     pretty-hrtime "^1.0.3"
 
-"@storybook/react@^6.0.12":
+"@storybook/react@^6.0.28":
   version "6.0.28"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.0.28.tgz#b7b482342b995645770906833799a0b1e155f9b4"
   integrity sha512-a0X5htjhqlBYQbuQlllTHD8VBeiEUs0UMU3lnJv79B2B2BiIaXK0w5ptyQyiOznP5OzSLnjZEQwmiefepFpr3g==

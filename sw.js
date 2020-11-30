@@ -33,40 +33,20 @@ self.__precacheManifest = [
     "url": "framework-922eea244903fb0ee878.js"
   },
   {
-    "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-6d990d7ef725645fa46e.js"
+    "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-c08279a37b46f21df278.js"
   },
   {
-    "url": "app-c2bfb1ac2e402c93d88d.js"
+    "url": "app-56696959f185bec2b804.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f53c9ed90386ae7b7f577ab427399c90"
-  },
-  {
-    "url": "google-fonts/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
-    "revision": "020c97dc8e0463259c2f9df929bb0c69"
-  },
-  {
-    "url": "google-fonts/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2",
-    "revision": "ef7c6637c68f269a882e73bcb57a7f6a"
-  },
-  {
-    "url": "google-fonts/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2",
-    "revision": "2735a3a69b509faf3577afd25bdf552e"
-  },
-  {
-    "url": "google-fonts/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2",
-    "revision": "479970ffb74f2117317f9d24d9e317fe"
-  },
-  {
-    "url": "google-fonts/s/sairaextracondensed/v6/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrU23h2wph.woff2",
-    "revision": "08acc2cfb7cb0f56a29924a9d599681d"
+    "revision": "bec40a8aeb0ca23a5df775228ce115c9"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
   },
   {
-    "url": "polyfill-4dac3e37364b62bc8e71.js"
+    "url": "polyfill-5c06361788956bb8730f.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -162,7 +142,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-c2bfb1ac2e402c93d88d.js`))) {
+  if (!resources || !(await caches.match(`/app-56696959f185bec2b804.js`))) {
     return await fetch(event.request)
   }
 

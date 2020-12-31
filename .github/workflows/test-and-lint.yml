@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Set up Node 14 and Yarn
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.1.4
         with:
           node-version: "14.x"
 

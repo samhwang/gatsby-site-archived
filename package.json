@@ -13,7 +13,7 @@
   "homepage": "https://samhwang.github.io",
   "license": "SEE LICENSE IN LICENSE FILE",
   "engine": {
-    "node": ">=12.16",
+    "node": ">=14.15",
     "npm": ">=6.13",
     "yarn": ">=1.22"
   },
@@ -54,7 +54,7 @@
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sitemap": "^2.2.27",
+    "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-plugin-typescript": "^2.4.16",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0",

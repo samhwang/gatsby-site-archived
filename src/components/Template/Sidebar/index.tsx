@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';
@@ -18,6 +19,10 @@ function PureSidebar({
     { content: 'Skills', href: 'skills' },
     { content: 'Projects', href: 'projects' },
   ];
+  const [isCollapsed, setCollapsed] = useState(true);
+  function toggleNavbar() {
+    setCollapsed((currentCollapsed) => !currentCollapsed);
+  }
 
   return (
     <nav
@@ -39,17 +44,21 @@ function PureSidebar({
         </span>
       </a>
       <button
-        className="navbar-toggler"
+        className={`navbar-toggler ${isCollapsed ? 'collapsed' : ''}`}
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onClick={toggleNavbar}
       >
         <span className="navbar-toggler-icon" />
       </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`}
+        id="navbarSupportedContent"
+      >
         <Scrollspy
           items={tabs.map((s) => s.href)}
           currentClassName="active"

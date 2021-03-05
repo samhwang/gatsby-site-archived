@@ -7,7 +7,7 @@ import '../../Icons';
 import type { SectionType, LayoutRenderProps } from './Layout';
 
 function PureLayout({ sections, siteMetadata }: LayoutRenderProps) {
-  const { title, description } = siteMetadata;
+  const { title, description, personalInformation } = siteMetadata;
 
   const children = sections.map(({ id, content }: SectionType) => (
     <Fragment key={id}>
@@ -28,7 +28,7 @@ function PureLayout({ sections, siteMetadata }: LayoutRenderProps) {
         <html lang="en" />
       </Helmet>
       <div className="main-body">
-        <Sidebar />
+        <Sidebar personalInformation={personalInformation} />
         <div className="container-fluid p-0">{children}</div>
         <Footer />
       </div>

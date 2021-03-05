@@ -9,11 +9,17 @@ function Layout({ sections }: LayoutProps) {
         siteMetadata {
           title
           description
+          personalInformation {
+            firstName
+            lastName
+          }
         }
       }
     }
   `;
-  const { site: siteMetadata } = useStaticQuery(SiteMetadataQuery);
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery(SiteMetadataQuery);
 
   return <PureLayout siteMetadata={siteMetadata} sections={sections} />;
 }

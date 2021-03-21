@@ -68,10 +68,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@storybook/addon-actions": "^6.0.28",
-    "@storybook/addon-links": "^6.0.28",
-    "@storybook/addons": "^6.0.28",
-    "@storybook/react": "^6.0.28",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@types/jest": "^26.0.10",

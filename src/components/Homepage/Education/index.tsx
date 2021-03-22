@@ -1,33 +1,31 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import PureEducation from './PureEducation';
+import { usePersonalInformationData } from '../../../hooks';
+import School from './School';
+import type { EducationMetadata } from '../../../globals';
 
 function Education() {
-  const EducationQuery = graphql`
-    query EducationQuery {
-      site {
-        siteMetadata {
-          personalInformation {
-            education {
-              institute
-              degree
-              major
-              duration
-            }
-          }
-        }
-      }
-    }
-  `;
-
   const {
-    site: {
-      siteMetadata: {
-        personalInformation: { education },
-      },
-    },
-  } = useStaticQuery(EducationQuery);
+    education,
+  }: { education: EducationMetadata } = usePersonalInformationData();
 
-  return <PureEducation education={education} />;
+  return (
+    <section
+      className="resume-section p-3 p-lg-5 d-flex align-items-center"
+      id="education"
+    >
+      <div className="w-100">
+        <h2 className="mb-5">Education</h2>
+        {education.map(({ institute, degree, major, duration }) => (
+          <School
+            institute={institute}
+            degree={degree}
+            major={major}
+            duration={duration}
+            key={institute}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Education;

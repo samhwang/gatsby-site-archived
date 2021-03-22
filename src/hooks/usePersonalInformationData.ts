@@ -20,6 +20,12 @@ export default function usePersonalInformationData() {
               description
               url
             }
+            education {
+              institute
+              degree
+              major
+              duration
+            }
           }
         }
       }

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Project Section Component Should render without crashing and match snapshot 1`] = `
+exports[`Project section rendering Should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -26,13 +26,13 @@ Object {
               />
               <p>
                 <a
-                  href="https://samhwang.github.io"
+                  href="test url"
                 >
                   <strong>
-                    title:
+                    Test Title:
                   </strong>
                 </a>
-                 description
+                 Test Description
               </p>
             </li>
           </ul>
@@ -62,13 +62,13 @@ Object {
             />
             <p>
               <a
-                href="https://samhwang.github.io"
+                href="test url"
               >
                 <strong>
-                  title:
+                  Test Title:
                 </strong>
               </a>
-               description
+               Test Description
             </p>
           </li>
         </ul>

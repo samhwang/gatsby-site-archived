@@ -8,6 +8,11 @@ export default function usePersonalInformationData() {
           personalInformation {
             firstName
             lastName
+            projects {
+              title
+              description
+              url
+            }
           }
         }
       }

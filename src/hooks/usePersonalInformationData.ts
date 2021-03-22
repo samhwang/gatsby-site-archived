@@ -34,6 +34,11 @@ export default function usePersonalInformationData() {
               techIcons
               technologies
             }
+            skills {
+              title
+              description
+            }
+            techStack
           }
         }
       }

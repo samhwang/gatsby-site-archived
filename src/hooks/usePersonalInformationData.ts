@@ -26,6 +26,14 @@ export default function usePersonalInformationData() {
               major
               duration
             }
+            experience {
+              title
+              companyName
+              description
+              duration
+              techIcons
+              technologies
+            }
           }
         }
       }

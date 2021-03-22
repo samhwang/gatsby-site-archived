@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render } from '@testing-library/react';
-import PureExperience from './PureExperience';
+import Experiences from '.';
 
-describe('Pure Experience Component', () => {
-  it('Should render without crashing and match snapshot', () => {
-    const experience = [
+jest.mock('../../../hooks', () => ({
+  usePersonalInformationData: jest.fn().mockReturnValue({
+    experience: [
       {
         title: 'Junior Full Stack Developer',
         companyName: 'Hertz Australia',
@@ -44,9 +44,14 @@ describe('Pure Experience Component', () => {
           'Project management using JIRA and Confluence',
         ],
       },
-    ];
+    ],
+  }),
+}));
 
-    const tree = render(<PureExperience experiences={experience} />);
+describe('Pure Experience Component', () => {
+  it('Should render without crashing and match snapshot', () => {
+    const ExperienceSection = <Experiences />;
+    const tree = render(ExperienceSection);
     expect(tree).toMatchSnapshot();
   });
 });

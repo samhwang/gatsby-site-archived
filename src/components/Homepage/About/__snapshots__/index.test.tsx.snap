@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pure About Component Should render without crashing and match snapshot 1`] = `
+exports[`Render About Data Should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -15,21 +15,21 @@ Object {
           <h1
             class="mb-0"
           >
-            Sam
+            test
             <span
               class="text-primary"
             >
-              Huynh
+              test
             </span>
           </h1>
           <div
             class="subheading mb-5"
           >
-            Vermont South - 
+            123 Test Drive - 
             <a
-              href="mailto:samhwang2112.dev@gmail.com"
+              href="mailto:test@test.com"
             >
-              samhwang2112.dev@gmail.com
+              test@test.com
             </a>
           </div>
           <p
@@ -41,8 +41,8 @@ Object {
             class="social-icons"
           >
             <a
-              alt="Github link"
-              href="https://samhwang.github.io"
+              alt="test social icon link"
+              href="test social URL"
             />
           </div>
         </div>
@@ -60,21 +60,21 @@ Object {
         <h1
           class="mb-0"
         >
-          Sam
+          test
           <span
             class="text-primary"
           >
-            Huynh
+            test
           </span>
         </h1>
         <div
           class="subheading mb-5"
         >
-          Vermont South - 
+          123 Test Drive - 
           <a
-            href="mailto:samhwang2112.dev@gmail.com"
+            href="mailto:test@test.com"
           >
-            samhwang2112.dev@gmail.com
+            test@test.com
           </a>
         </div>
         <p
@@ -86,8 +86,8 @@ Object {
           class="social-icons"
         >
           <a
-            alt="Github link"
-            href="https://samhwang.github.io"
+            alt="test social icon link"
+            href="test social URL"
           />
         </div>
       </div>

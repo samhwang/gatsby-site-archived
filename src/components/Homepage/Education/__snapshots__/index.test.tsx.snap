@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Education Component Should render without crashing and match snapshot 1`] = `
+exports[`Education section render Should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -26,15 +26,15 @@ Object {
               <h3
                 class="mb-0"
               >
-                Navitas Professionals
+                Test
               </h3>
               <div
                 class="subheading mb-3"
               >
-                Professional Year Program in Computer Science
+                Test
               </div>
               <div>
-                incl. Cert IV in Business
+                Test
               </div>
             </div>
             <div
@@ -43,7 +43,7 @@ Object {
               <span
                 class="text-primary"
               >
-                Oct 2016 - Oct 2017
+                2020 - 2021
               </span>
             </div>
           </div>
@@ -73,15 +73,15 @@ Object {
             <h3
               class="mb-0"
             >
-              Navitas Professionals
+              Test
             </h3>
             <div
               class="subheading mb-3"
             >
-              Professional Year Program in Computer Science
+              Test
             </div>
             <div>
-              incl. Cert IV in Business
+              Test
             </div>
           </div>
           <div
@@ -90,7 +90,7 @@ Object {
             <span
               class="text-primary"
             >
-              Oct 2016 - Oct 2017
+              2020 - 2021
             </span>
           </div>
         </div>

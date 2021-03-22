@@ -1,29 +1,28 @@
 import type { ReactNode } from 'react';
-import { Helmet } from 'react-helmet';
-import Sidebar from '../Sidebar';
+import SEO from '../SEO';
 import Footer from '../Footer';
+import Sidebar from '../Sidebar';
 import '../../../assets/sass/resume.scss';
 import '../../Icons';
-import useSiteMetadata from '../../../hooks/useSiteMetadata';
+import { useSiteMetadata, usePersonalInformationData } from '../../../hooks';
 
 export type LayoutProps = {
+  title: string;
+  description: string;
   children: ReactNode | Element;
 };
 
-function Layout({ children }: LayoutProps) {
-  const { title, description, personalInformation } = useSiteMetadata();
+function Layout({ children, title, description }: LayoutProps) {
+  const defaultFallback = useSiteMetadata();
+  const personalInformation = usePersonalInformationData();
 
   return (
     <>
-      <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-        />
-        <html lang="en" />
-      </Helmet>
+      <SEO
+        title={title}
+        description={description}
+        defaultFallback={defaultFallback}
+      />
       <div className="main-body">
         <Sidebar personalInformation={personalInformation} />
         <div className="container-fluid p-0">{children}</div>

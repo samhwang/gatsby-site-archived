@@ -1,7 +1,7 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { usePersonalInformationData } from '../../../hooks';
 import SocialIcon from '../../Icons/SocialIcon';
-import type { SocialLinkProps } from '../../../globals';
+import type { SocialLinkProps } from '../../Icons/SocialIcon';
 
 function About() {
   const {

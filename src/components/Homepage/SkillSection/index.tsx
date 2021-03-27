@@ -1,7 +1,10 @@
 import { usePersonalInformationData } from '../../../hooks';
 import Skill from './Skill';
+import type { SkillProps } from './Skill';
 import LangIcon from '../../Icons/LangIcon';
-import type { SkillsMetadata, TechStackMetadata } from '../../../globals';
+
+export type TechStackMetadata = string[];
+export type SkillsMetadata = SkillProps[];
 
 interface SkillsProp {
   skills: SkillsMetadata;

@@ -3,7 +3,11 @@ import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';
 import avatarWebP from '../../../assets/img/avatar.webp';
-import type { SidebarProps } from '../../../globals';
+
+export interface SidebarProps {
+  firstName: string;
+  lastName: string;
+}
 
 function PureSidebar({
   personalInformation,

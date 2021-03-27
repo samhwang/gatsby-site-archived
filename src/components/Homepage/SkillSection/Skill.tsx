@@ -1,4 +1,7 @@
-import type { SkillProps } from '../../../globals';
+export interface SkillProps {
+  title: string;
+  description: string[];
+}
 
 function Skill({ title, description }: SkillProps) {
   return (

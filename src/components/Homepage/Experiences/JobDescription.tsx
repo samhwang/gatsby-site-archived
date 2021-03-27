@@ -1,5 +1,13 @@
 import LangIcon from '../../Icons/LangIcon';
-import type { JobDescriptionProps } from '../../../globals';
+
+export interface JobDescriptionProps {
+  title: string;
+  companyName: string;
+  description: string[];
+  duration: string;
+  techIcons: string[];
+  technologies: string[];
+}
 
 function JobDescription({
   title,

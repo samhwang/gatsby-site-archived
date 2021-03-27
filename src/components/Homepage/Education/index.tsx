@@ -1,6 +1,8 @@
 import { usePersonalInformationData } from '../../../hooks';
 import School from './School';
-import type { EducationMetadata } from '../../../globals';
+import type { EducationProps } from './School';
+
+export type EducationMetadata = EducationProps[];
 
 function Education() {
   const {

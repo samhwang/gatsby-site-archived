@@ -1,6 +1,8 @@
 import { usePersonalInformationData } from '../../../hooks';
-import type { ExperienceSection } from '../../../globals';
+import type { JobDescriptionProps } from './JobDescription';
 import JobDescription from './JobDescription';
+
+export type ExperienceSection = JobDescriptionProps[];
 
 function Experiences() {
   const {

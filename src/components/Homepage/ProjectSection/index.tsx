@@ -1,6 +1,8 @@
-import type { ProjectsMetadata } from '../../../globals';
 import { usePersonalInformationData } from '../../../hooks';
 import Project from './Project';
+import type { ProjectProps } from './Project';
+
+export type ProjectsMetadata = ProjectProps[];
 
 function ProjectSection() {
   const {

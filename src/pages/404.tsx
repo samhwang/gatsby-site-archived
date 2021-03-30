@@ -1,4 +1,4 @@
-import Layout from '../components/Template/Layout';
+import { Layout } from '../components/Template';
 
 function IndexPage() {
   return (

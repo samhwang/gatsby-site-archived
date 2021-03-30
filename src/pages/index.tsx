@@ -1,11 +1,13 @@
 import { Fragment } from 'react';
 import type { ReactNode } from 'react';
-import Layout from '../components/Template/Layout';
-import About from '../components/Homepage/About';
-import Experiences from '../components/Homepage/Experiences';
-import Education from '../components/Homepage/Education';
-import ProjectSection from '../components/Homepage/ProjectSection';
-import SkillSection from '../components/Homepage/SkillSection';
+import { Layout } from '../components/Template';
+import {
+  About,
+  Education,
+  Experiences,
+  ProjectSection,
+  SkillSection,
+} from '../components/Homepage';
 
 export type SectionType = {
   id: string;

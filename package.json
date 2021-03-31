@@ -45,7 +45,7 @@
     "@types/react-helmet": "^6.1.0",
     "@types/react-scrollspy": "^3.3.2",
     "bootstrap": "^4.6.0",
-    "gatsby": "^3.0.2",
+    "gatsby": "^3.2.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^3.0.0",
     "gatsby-plugin-humans-txt": "^1.1.4",

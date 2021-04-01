@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pure Experience Component Should render without crashing and match snapshot 1`] = `
+exports[`Experience Component Should render without crashing and match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -37,93 +37,18 @@ Object {
                 <li>
                   Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary
                 </li>
-                <li>
-                  Built new core features into Hertz's internal rental analytics and tracking systems, using ExpressJS, EJS and NodeJS
-                </li>
-                <li>
-                  Built the new frontend for Hertz's shuttle bus tracking system, now currently used by the Ace brand, using ReactJS and deployed in an S3 bucket endpoint, communicating via serverless websockets
-                </li>
               </ul>
               <h4>
                 Technologies involved:
               </h4>
               <ul>
                 <li>
-                  PHP 7.4 and Wordpress
-                </li>
-                <li>
-                  HTML5, CSS3 and CSS pre-processors like SASS and LESS
-                </li>
-                <li>
-                  GraphQL and REST API
-                </li>
-                <li>
                   JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)
-                </li>
-                <li>
-                  Docker containers & docker-compose
-                </li>
-                <li>
-                  Database: MySQL & MongoDB
-                </li>
-                <li>
-                  Serverless architecture and websockets
-                </li>
-                <li>
-                  AWS Lambda and Elastic Beanstalk
-                </li>
-                <li>
-                  CI/CD: GitHub Actions pipeline and GitHub Packages
-                </li>
-                <li>
-                  Project management using JIRA and Confluence
                 </li>
               </ul>
               <ul
                 class="list-inline dev-icons"
               >
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
-                <li
-                  class="list-inline-item"
-                />
                 <li
                   class="list-inline-item"
                 />
@@ -176,93 +101,18 @@ Object {
               <li>
                 Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary
               </li>
-              <li>
-                Built new core features into Hertz's internal rental analytics and tracking systems, using ExpressJS, EJS and NodeJS
-              </li>
-              <li>
-                Built the new frontend for Hertz's shuttle bus tracking system, now currently used by the Ace brand, using ReactJS and deployed in an S3 bucket endpoint, communicating via serverless websockets
-              </li>
             </ul>
             <h4>
               Technologies involved:
             </h4>
             <ul>
               <li>
-                PHP 7.4 and Wordpress
-              </li>
-              <li>
-                HTML5, CSS3 and CSS pre-processors like SASS and LESS
-              </li>
-              <li>
-                GraphQL and REST API
-              </li>
-              <li>
                 JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)
-              </li>
-              <li>
-                Docker containers & docker-compose
-              </li>
-              <li>
-                Database: MySQL & MongoDB
-              </li>
-              <li>
-                Serverless architecture and websockets
-              </li>
-              <li>
-                AWS Lambda and Elastic Beanstalk
-              </li>
-              <li>
-                CI/CD: GitHub Actions pipeline and GitHub Packages
-              </li>
-              <li>
-                Project management using JIRA and Confluence
               </li>
             </ul>
             <ul
               class="list-inline dev-icons"
             >
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
-              <li
-                class="list-inline-item"
-              />
               <li
                 class="list-inline-item"
               />

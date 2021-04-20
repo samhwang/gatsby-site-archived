@@ -32,8 +32,8 @@ const About: FC = () => {
           different industries (retail, sports, and education.)
         </p>
         <div className="social-icons">
-          {socialLinksData.map(({ icon, name, url }) => (
-            <SocialIcon key={name} icon={icon} name={name} url={url} />
+          {socialLinksData.map(({ name, url }) => (
+            <SocialIcon key={name} name={name} url={url} />
           ))}
         </div>
       </div>

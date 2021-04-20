@@ -6,7 +6,6 @@ interface PersonalInformation {
   address: string;
   email: string;
   socialLinks: {
-    icon: string;
     name: string;
     url: string;
   }[];
@@ -26,7 +25,6 @@ interface PersonalInformation {
     companyName: string;
     description: string[];
     duration: string;
-    techIcons: string[];
     technologies: string[];
   }[];
   skills: {
@@ -47,7 +45,6 @@ const usePersonalInformationData = (): PersonalInformation => {
             address
             email
             socialLinks {
-              icon
               name
               url
             }
@@ -67,14 +64,12 @@ const usePersonalInformationData = (): PersonalInformation => {
               companyName
               description
               duration
-              techIcons
               technologies
             }
             skills {
               title
               description
             }
-            techStack
           }
         }
       }

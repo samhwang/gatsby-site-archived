@@ -1,10 +1,9 @@
 import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import Skill from './Skill';
-import LangIcon from '../../Icons/LangIcon';
 
 const SkillSection: FC = () => {
-  const { skills, techStack } = usePersonalInformationData();
+  const { skills } = usePersonalInformationData();
 
   return (
     <section
@@ -17,11 +16,6 @@ const SkillSection: FC = () => {
         {skills.map(({ title, description }) => (
           <Skill title={title} description={description} key={title} />
         ))}
-        <ul className="list-inline dev-icons">
-          {techStack.map((language) => (
-            <LangIcon name={language} key={language} />
-          ))}
-        </ul>
       </div>
     </section>
   );

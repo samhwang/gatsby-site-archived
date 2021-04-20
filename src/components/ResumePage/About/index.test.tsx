@@ -16,7 +16,6 @@ describe('Render About Data', () => {
       email: 'test@test.com',
       socialLinks: [
         {
-          icon: 'test-icon',
           name: 'test social icon',
           url: 'test social URL',
         },

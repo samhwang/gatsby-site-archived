@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import type { ReactNode } from 'react';
+import type { FC, ReactNode } from 'react';
 import { Layout } from '../components/Template';
 import {
   About,
@@ -9,12 +9,12 @@ import {
   SkillSection,
 } from '../components/Homepage';
 
-export type SectionType = {
+export interface SectionType {
   id: string;
   content: ReactNode | Element;
-};
+}
 
-function IndexPage() {
+const IndexPage: FC = () => {
   const sections = [
     { id: 'about', content: <About /> },
     { id: 'experience', content: <Experiences /> },
@@ -35,6 +35,6 @@ function IndexPage() {
       {children}
     </Layout>
   );
-}
+};
 
 export default IndexPage;

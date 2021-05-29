@@ -37,7 +37,8 @@
       }
     ],
     "prettier/prettier": ["error"],
-    "import/extensions": ["error", "never"]
+    "import/extensions": ["error", "never"],
+    "react/prop-types": "off"
   },
   "settings": {
     "import/parser": {

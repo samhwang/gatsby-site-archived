@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import { Helmet } from 'react-helmet';
 
 interface MetaProp {
@@ -16,7 +17,7 @@ interface SEOProps {
   };
 }
 
-function SEO({ title, description, meta, defaultFallback }: SEOProps) {
+const SEO: FC<SEOProps> = ({ title, description, meta, defaultFallback }) => {
   const siteTitle = defaultFallback.title;
   const metaDescription = description || defaultFallback.description;
   const defaultMeta: Array<MetaProp> = [
@@ -59,7 +60,7 @@ function SEO({ title, description, meta, defaultFallback }: SEOProps) {
       ))}
     </Helmet>
   );
-}
+};
 
 SEO.defaultProps = {
   meta: [],

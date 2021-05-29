@@ -1,9 +1,10 @@
+import type { FC } from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { usePersonalInformationData } from '../../../hooks';
 import SocialIcon from '../../Icons/SocialIcon';
 import type { SocialLinkProps } from '../../Icons/SocialIcon';
 
-function About() {
+const About: FC = () => {
   const {
     firstName,
     lastName,
@@ -43,6 +44,6 @@ function About() {
       </div>
     </section>
   );
-}
+};
 
 export default About;

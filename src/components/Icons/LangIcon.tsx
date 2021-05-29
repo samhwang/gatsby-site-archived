@@ -1,11 +1,12 @@
+import type { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 
-type LangIconProps = {
+interface LangIconProps {
   name: string;
-};
+}
 
-function LangIcon({ name }: LangIconProps) {
+const LangIcon: FC<LangIconProps> = ({ name }) => {
   const iconProps = ['fab', name] as [IconPrefix, IconName];
 
   return (
@@ -13,6 +14,6 @@ function LangIcon({ name }: LangIconProps) {
       <FontAwesomeIcon icon={iconProps} />
     </li>
   );
-}
+};
 
 export default LangIcon;

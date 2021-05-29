@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import Skill from './Skill';
 import type { SkillProps } from './Skill';
@@ -11,7 +12,7 @@ interface SkillsProp {
   techStack: TechStackMetadata;
 }
 
-function SkillSection() {
+const SkillSection: FC = () => {
   const { skills, techStack }: SkillsProp = usePersonalInformationData();
 
   return (
@@ -33,6 +34,6 @@ function SkillSection() {
       </div>
     </section>
   );
-}
+};
 
 export default SkillSection;

@@ -1,10 +1,11 @@
+import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import Project from './Project';
 import type { ProjectProps } from './Project';
 
 export type ProjectsMetadata = ProjectProps[];
 
-function ProjectSection() {
+const ProjectSection: FC = () => {
   const {
     projects,
   }: { projects: ProjectsMetadata } = usePersonalInformationData();
@@ -29,6 +30,6 @@ function ProjectSection() {
       </div>
     </section>
   );
-}
+};
 
 export default ProjectSection;

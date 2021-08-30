@@ -16,7 +16,7 @@ const Footer: FC<{}> = () => {
   return (
     <section className="resume-section p-3 p-lg-5 d-flex align-items-center">
       <p>
-        {`© 2020 `}
+        {`© ${new Date().getFullYear()} `}
         {GitHubLink}
         {`. Hosted on `}
         {GitHubPages}

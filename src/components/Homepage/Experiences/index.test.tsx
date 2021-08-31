@@ -1,16 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render } from '@testing-library/react';
+import { mocked } from 'ts-jest/utils';
 import Experiences from '.';
 import { usePersonalInformationData } from '../../../hooks';
 
 jest.mock('../../../hooks');
+const mockHook = mocked(usePersonalInformationData);
 
 describe('Experience Component', () => {
   it('Should render without crashing and match snapshot', () => {
-    const mockHook = usePersonalInformationData as jest.MockedFunction<
-      typeof usePersonalInformationData
-    >;
-    mockHook.mockReturnValueOnce({
+    const mockExperience: any = {
       experience: [
         {
           title: 'Junior Full Stack Developer',
@@ -23,7 +22,8 @@ describe('Experience Component', () => {
           technologies: ['JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)'],
         },
       ],
-    });
+    };
+    mockHook.mockReturnValueOnce(mockExperience);
     const ExperienceSection = <Experiences />;
     const tree = render(ExperienceSection);
     expect(tree).toMatchSnapshot();

@@ -6,9 +6,8 @@ import JobDescription from './JobDescription';
 export type ExperienceSection = JobDescriptionProps[];
 
 const Experiences: FC = () => {
-  const {
-    experience,
-  }: { experience: ExperienceSection } = usePersonalInformationData();
+  const { experience }: { experience: ExperienceSection } =
+    usePersonalInformationData();
 
   return (
     <section

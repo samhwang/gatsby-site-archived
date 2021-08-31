@@ -5,13 +5,8 @@ import SocialIcon from '../../Icons/SocialIcon';
 import type { SocialLinkProps } from '../../Icons/SocialIcon';
 
 const About: FC = () => {
-  const {
-    firstName,
-    lastName,
-    address,
-    email,
-    socialLinks,
-  } = usePersonalInformationData();
+  const { firstName, lastName, address, email, socialLinks } =
+    usePersonalInformationData();
   const socialLinksData: SocialLinkProps[] = socialLinks;
 
   return (

@@ -53,7 +53,7 @@ module.exports = {
           'bitbucket',
           'confluence',
         ],
-        technologies: []
+        technologies: [],
       },
       {
         title: 'Full Stack Software Developer',

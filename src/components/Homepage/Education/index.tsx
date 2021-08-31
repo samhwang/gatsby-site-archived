@@ -6,8 +6,7 @@ import type { EducationProps } from './School';
 export type EducationMetadata = EducationProps[];
 
 const Education: FC = () => {
-  const { education }: { education: EducationMetadata } =
-    usePersonalInformationData();
+  const { education } = usePersonalInformationData();
 
   return (
     <section

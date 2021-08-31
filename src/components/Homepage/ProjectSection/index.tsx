@@ -6,8 +6,7 @@ import type { ProjectProps } from './Project';
 export type ProjectsMetadata = ProjectProps[];
 
 const ProjectSection: FC = () => {
-  const { projects }: { projects: ProjectsMetadata } =
-    usePersonalInformationData();
+  const { projects } = usePersonalInformationData();
 
   return (
     <section

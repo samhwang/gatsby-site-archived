@@ -1,19 +1,18 @@
-import { useState } from 'react';
+import { FC } from 'react';
+import { useToggle } from 'rooks';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';
 import avatarWebP from '../../../assets/img/avatar.webp';
 
 export interface SidebarProps {
-  firstName: string;
-  lastName: string;
+  personalInformation: {
+    firstName: string;
+    lastName: string;
+  };
 }
 
-function PureSidebar({
-  personalInformation,
-}: {
-  personalInformation: SidebarProps;
-}) {
+const Sidebar: FC<SidebarProps> = ({ personalInformation }) => {
   const { firstName, lastName } = personalInformation;
 
   const tabs = [
@@ -23,10 +22,7 @@ function PureSidebar({
     { content: 'Skills', href: 'skills' },
     { content: 'Projects', href: 'projects' },
   ];
-  const [isCollapsed, setCollapsed] = useState(true);
-  function toggleNavbar() {
-    setCollapsed((currentCollapsed) => !currentCollapsed);
-  }
+  const [isCollapsed, toggleCollapsed] = useToggle(true);
 
   return (
     <nav
@@ -55,7 +51,7 @@ function PureSidebar({
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        onClick={toggleNavbar}
+        onClick={toggleCollapsed}
       >
         <span className="navbar-toggler-icon" />
       </button>
@@ -85,6 +81,6 @@ function PureSidebar({
       </div>
     </nav>
   );
-}
+};
 
-export default PureSidebar;
+export default Sidebar;

@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-export default function usePersonalInformationData() {
+const usePersonalInformationData = () => {
   const PersonalInfoQuery = graphql`
     query PersonalInfoQuery {
       site {
@@ -49,4 +49,6 @@ export default function usePersonalInformationData() {
   const { personalInformation } = data.site.siteMetadata;
 
   return personalInformation;
-}
+};
+
+export default usePersonalInformationData;

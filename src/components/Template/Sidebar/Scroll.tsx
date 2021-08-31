@@ -4,7 +4,7 @@ import type { FC, KeyboardEvent, MouseEvent, ReactElement } from 'react';
 
 const Element: FC<{ children: ReactElement }> = ({ children }) => children;
 
-function scrollTo(element?: Element, offSet = 0, timeout?: number) {
+const scrollTo = (element?: Element, offSet = 0, timeout?: number) => {
   const elemPos = element
     ? element.getBoundingClientRect().top + window.pageYOffset
     : 0;
@@ -16,7 +16,7 @@ function scrollTo(element?: Element, offSet = 0, timeout?: number) {
   setTimeout(() => {
     window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
   }, timeout);
-}
+};
 
 interface ScrollProps {
   type: string;
@@ -26,6 +26,8 @@ interface ScrollProps {
   children: ReactElement;
   counter: number;
 }
+
+type OnClickEvent = KeyboardEvent | MouseEvent;
 
 const Scroll: FC<ScrollProps> = ({
   type,
@@ -39,7 +41,7 @@ const Scroll: FC<ScrollProps> = ({
     smoothscroll.polyfill();
   }, []);
 
-  function handleClick(event: KeyboardEvent | MouseEvent) {
+  const handleClick = (event: OnClickEvent) => {
     event.preventDefault();
     let elem = null;
     let scroll = true;
@@ -61,7 +63,7 @@ const Scroll: FC<ScrollProps> = ({
     return scroll && !!elem
       ? scrollTo(elem, offset, timeout)
       : console.log(`Element not found: ${element}`); // eslint-disable-line
-  }
+  };
 
   return (
     <Element>

@@ -1,28 +1,27 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render } from '@testing-library/react';
+import { mocked } from 'ts-jest/utils';
 import Layout from '.';
 import { useSiteMetadata, usePersonalInformationData } from '../../../hooks';
 
 jest.mock('../../../hooks');
+const mockMetadataHook = mocked(useSiteMetadata);
+const mockDataHook = mocked(usePersonalInformationData);
 
 describe('Layout rendering', () => {
   it('Should match snapshot', () => {
-    const mockMetadataHook = useSiteMetadata as jest.MockedFunction<
-      typeof useSiteMetadata
-    >;
-    mockMetadataHook.mockReturnValueOnce({
+    const mockMetadata = {
       title: 'Sam Huynh',
       description: 'Online profile of Sam Huynh.',
-    });
-    const mockDataHook = usePersonalInformationData as jest.MockedFunction<
-      typeof usePersonalInformationData
-    >;
-    mockDataHook.mockReturnValueOnce({
-      personalInformation: {
-        firstName: 'Sam',
-        lastName: 'Huynh',
-      },
-    });
+    };
+    mockMetadataHook.mockReturnValueOnce(mockMetadata);
+
+    const mockData: any = {
+      firstName: 'Sam',
+      lastName: 'Huynh',
+    };
+    mockDataHook.mockReturnValueOnce(mockData);
+
     const LayoutComponent = (
       <Layout title="Test Render" description="Test Render">
         <h1>This is a test!</h1>

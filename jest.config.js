@@ -1,7 +1,7 @@
 module.exports = {
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.tsx?$': `<rootDir>/jest-preprocess.js`,
+    '^.+\\.tsx?$': `ts-jest`,
   },
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,

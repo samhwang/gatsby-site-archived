@@ -1,16 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render } from '@testing-library/react';
+import { mocked } from 'ts-jest/utils';
 import About from '.';
 import { usePersonalInformationData } from '../../../hooks';
 
 jest.mock('../../../hooks');
+const mockHook = mocked(usePersonalInformationData);
 
 describe('Render About Data', () => {
   it('Should match snapshot', () => {
-    const mockHook = usePersonalInformationData as jest.MockedFunction<
-      typeof usePersonalInformationData
-    >;
-    mockHook.mockReturnValueOnce({
+    const mockAbout: any = {
       firstName: 'test',
       lastName: 'test',
       address: '123 Test Drive',
@@ -22,7 +21,8 @@ describe('Render About Data', () => {
           url: 'test social URL',
         },
       ],
-    });
+    };
+    mockHook.mockReturnValueOnce(mockAbout);
     const AboutSection = <About />;
     const tree = render(AboutSection);
     expect(tree).toMatchSnapshot();

@@ -1,16 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render } from '@testing-library/react';
+import { mocked } from 'ts-jest/utils';
 import Education from '.';
 import { usePersonalInformationData } from '../../../hooks';
 
 jest.mock('../../../hooks');
+const mockHook = mocked(usePersonalInformationData);
 
 describe('Education section render', () => {
   it('Should match snapshot', () => {
-    const mockHook = usePersonalInformationData as jest.MockedFunction<
-      typeof usePersonalInformationData
-    >;
-    mockHook.mockReturnValueOnce({
+    const mockEducation: any = {
       education: [
         {
           institute: 'Test',
@@ -19,7 +18,8 @@ describe('Education section render', () => {
           duration: '2020 - 2021',
         },
       ],
-    });
+    };
+    mockHook.mockReturnValueOnce(mockEducation);
     const EducationSection = <Education />;
     const tree = render(EducationSection);
     expect(tree).toMatchSnapshot();

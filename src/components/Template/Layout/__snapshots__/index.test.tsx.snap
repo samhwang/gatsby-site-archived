@@ -19,7 +19,7 @@ Object {
             <span
               class="d-block d-lg-none"
             >
-              undefined undefined
+              Sam Huynh
             </span>
             <span
               class="d-none d-lg-block"
@@ -34,7 +34,7 @@ Object {
                   type="image/jpeg"
                 />
                 <img
-                  alt="undefined undefined Avatar"
+                  alt="Sam Huynh Avatar"
                   class="img-fluid img-profile rounded-circle mx-auto mb-2"
                   src="test-file-stub"
                 />
@@ -163,7 +163,7 @@ Object {
           <span
             class="d-block d-lg-none"
           >
-            undefined undefined
+            Sam Huynh
           </span>
           <span
             class="d-none d-lg-block"
@@ -178,7 +178,7 @@ Object {
                 type="image/jpeg"
               />
               <img
-                alt="undefined undefined Avatar"
+                alt="Sam Huynh Avatar"
                 class="img-fluid img-profile rounded-circle mx-auto mb-2"
                 src="test-file-stub"
               />

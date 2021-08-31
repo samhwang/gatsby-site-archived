@@ -1,19 +1,10 @@
 import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import Skill from './Skill';
-import type { SkillProps } from './Skill';
 import LangIcon from '../../Icons/LangIcon';
 
-export type TechStackMetadata = string[];
-export type SkillsMetadata = SkillProps[];
-
-interface SkillsProp {
-  skills: SkillsMetadata;
-  techStack: TechStackMetadata;
-}
-
 const SkillSection: FC = () => {
-  const { skills, techStack }: SkillsProp = usePersonalInformationData();
+  const { skills, techStack } = usePersonalInformationData();
 
   return (
     <section

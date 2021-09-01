@@ -27,13 +27,6 @@ Object {
               asdfasdf1234
             </li>
           </ul>
-          <ul
-            class="list-inline dev-icons"
-          >
-            <li
-              class="list-inline-item"
-            />
-          </ul>
         </div>
       </section>
     </div>
@@ -60,13 +53,6 @@ Object {
           <li>
             asdfasdf1234
           </li>
-        </ul>
-        <ul
-          class="list-inline dev-icons"
-        >
-          <li
-            class="list-inline-item"
-          />
         </ul>
       </div>
     </section>

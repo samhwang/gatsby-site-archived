@@ -39,12 +39,7 @@ Object {
           </p>
           <div
             class="social-icons"
-          >
-            <a
-              alt="test social icon link"
-              href="test social URL"
-            />
-          </div>
+          />
         </div>
       </section>
     </div>
@@ -84,12 +79,7 @@ Object {
         </p>
         <div
           class="social-icons"
-        >
-          <a
-            alt="test social icon link"
-            href="test social URL"
-          />
-        </div>
+        />
       </div>
     </section>
   </div>,

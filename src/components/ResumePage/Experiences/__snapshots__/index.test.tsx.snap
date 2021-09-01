@@ -46,13 +46,6 @@ Object {
                   JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)
                 </li>
               </ul>
-              <ul
-                class="list-inline dev-icons"
-              >
-                <li
-                  class="list-inline-item"
-                />
-              </ul>
             </div>
             <div
               class="resume-date text-md-right"
@@ -63,6 +56,15 @@ Object {
                 Oct 2019 - Present
               </span>
             </div>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              Oct 2019 - Present
+            </span>
           </div>
         </div>
       </section>
@@ -110,13 +112,6 @@ Object {
                 JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)
               </li>
             </ul>
-            <ul
-              class="list-inline dev-icons"
-            >
-              <li
-                class="list-inline-item"
-              />
-            </ul>
           </div>
           <div
             class="resume-date text-md-right"
@@ -127,6 +122,15 @@ Object {
               Oct 2019 - Present
             </span>
           </div>
+        </div>
+        <div
+          class="resume-date text-md-right"
+        >
+          <span
+            class="text-primary"
+          >
+            Oct 2019 - Present
+          </span>
         </div>
       </div>
     </section>

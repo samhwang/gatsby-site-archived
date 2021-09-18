@@ -53,7 +53,17 @@ module.exports = {
           'bitbucket',
           'confluence',
         ],
-        technologies: [],
+        technologies: [
+          'Frontend: React, Angular, Bootstrap, Jest',
+          'Backend: PHP7 (Drupal), NodeJS',
+          'REST API',
+          'Database: MariaDB',
+          'Serverless Functions',
+          'AWS (EC2, Lambda, Cloudwatch)',
+          'CI/CD: BuildKite Pipelines',
+          'Project management using JIRA and Confluence',
+          'Error and Metrics reporting with Datadog',
+        ],
       },
       {
         title: 'Full Stack Software Developer',
@@ -62,6 +72,7 @@ module.exports = {
         description: [
           'Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary',
           "Built new feature into Hertz's booking API, including but not limited to integrations with insurance partners and franchisee, error monitoring, reporting rental analytics and tracking systems, using GraphQL (Apollo), MongoDB, NodeJS (Express), EJS, ReactJS, Sentry and web sockets on AWS Serverless platform, with a dashboard on Elastic Beanstalk.",
+          "Rebuilt Hertz's customer portal for past journey information tand the shuttle bus tracking and booking portal, using React/Redux and Material UI",
         ],
         techIcons: [
           'js',
@@ -260,6 +271,7 @@ module.exports = {
           'Version control with Git, and online collaboration with GitHub, BitBucket and AWS CodeCommit',
           'Continuous Integration and Continuous Delivery with CircleCI, BuildKite, GitHub Actions & GitHub Container Registry',
           'Amazon Web Services products: EC2, Lambda, Elastic Beanstalk, SQS, SES, SNS, CloudWatch, S3, CloudFront, RDS',
+          'Building Infrastructure as Code using AWS Cloud Development Kit (CDK)',
           'Services tracing & error monitoring tools: Sentry, Datadog',
           'Project Management tools: JIRA, Confluence, Trello, Asana',
           'Microsoft Office Suite and similar Google tools',
@@ -268,11 +280,7 @@ module.exports = {
       },
       {
         title: 'Learning',
-        description: [
-          'Golang',
-          'DynamoDB',
-          'Infrastructure-as-Code toolkit (AWS CDK, TF-CDK)',
-        ],
+        description: ['Golang', 'DynamoDB', 'Terraform'],
       },
     ],
     techStack: [

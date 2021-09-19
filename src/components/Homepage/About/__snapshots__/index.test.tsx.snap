@@ -43,7 +43,11 @@ Object {
             <a
               alt="test social icon link"
               href="test social URL"
-            />
+            >
+              <i
+                class="devicon-test-icon"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -88,7 +92,11 @@ Object {
           <a
             alt="test social icon link"
             href="test social URL"
-          />
+          >
+            <i
+              class="devicon-test-icon"
+            />
+          </a>
         </div>
       </div>
     </section>

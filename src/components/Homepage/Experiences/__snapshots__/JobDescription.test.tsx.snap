@@ -72,49 +72,11 @@ Object {
           >
             <li
               class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
-            <li
-              class="list-inline-item"
-            />
+            >
+              <i
+                class="devicon-react-plain"
+              />
+            </li>
           </ul>
         </div>
         <div
@@ -197,49 +159,11 @@ Object {
         >
           <li
             class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
-          <li
-            class="list-inline-item"
-          />
+          >
+            <i
+              class="devicon-react-plain"
+            />
+          </li>
         </ul>
       </div>
       <div

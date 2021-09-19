@@ -16,7 +16,7 @@ describe('Skill Section Component', () => {
           description: ['asdfasdf1234'],
         },
       ],
-      techStack: ['js'],
+      techStack: ['javascript-plain'],
     };
     mockHook.mockReturnValueOnce(mockSkills);
     const SkillSectionComponent = <SkillSection />;

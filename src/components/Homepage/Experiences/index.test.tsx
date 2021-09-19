@@ -18,7 +18,7 @@ describe('Experience Component', () => {
             'Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary',
           ],
           duration: 'Oct 2019 - Present',
-          techIcons: ['js'],
+          techIcons: ['javascript-plain'],
           technologies: ['JavaScript (jQuery, NodeJS, ReactJS and ExpressJS)'],
         },
       ],

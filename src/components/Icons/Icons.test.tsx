@@ -1,6 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { render } from '@testing-library/react';
-import './index';
 import LangIcon from './LangIcon';
 import SocialIcon from './SocialIcon';
 

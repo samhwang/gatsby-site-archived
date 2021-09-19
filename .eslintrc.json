@@ -39,7 +39,8 @@
     "prettier/prettier": ["error"],
     "import/extensions": ["error", "never"],
     "react/prop-types": "off",
-    "react/default-props-match-prop-types": "off"
+    "react/default-props-match-prop-types": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   "settings": {
     "import/parser": {

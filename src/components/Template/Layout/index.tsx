@@ -4,6 +4,7 @@ import Footer from '../Footer';
 import Sidebar from '../Sidebar';
 import '../../../assets/sass/resume.scss';
 import '../../Icons';
+import 'devicon/devicon.min.css';
 import { useSiteMetadata, usePersonalInformationData } from '../../../hooks';
 
 export type LayoutProps = {

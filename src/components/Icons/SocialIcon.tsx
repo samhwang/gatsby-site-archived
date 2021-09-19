@@ -1,6 +1,4 @@
 import type { FC } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import type { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 export interface SocialLinkProps {
@@ -9,14 +7,10 @@ export interface SocialLinkProps {
   url: string;
 }
 
-const SocialIcon: FC<SocialLinkProps> = ({ icon, name, url }) => {
-  const iconProps = icon.split(' ') as [IconPrefix, IconName];
-
-  return (
-    <OutboundLink href={url} alt={`${name} link`}>
-      <FontAwesomeIcon icon={iconProps} />
-    </OutboundLink>
-  );
-};
+const SocialIcon: FC<SocialLinkProps> = ({ icon, name, url }) => (
+  <OutboundLink href={url} alt={`${name} link`}>
+    <i className={`devicon-${icon}`} />
+  </OutboundLink>
+);
 
 export default SocialIcon;

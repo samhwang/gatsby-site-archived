@@ -16,12 +16,12 @@ module.exports = {
     lastName: 'Huynh',
     socialLinks: [
       {
-        icon: 'fab github',
+        icon: 'github-original',
         name: 'Github',
         url: 'https://github.com/samhwang',
       },
       {
-        icon: 'fab linkedin-in',
+        icon: 'linkedin-plain',
         name: 'Linkedin',
         url: 'https://www.linkedin.com/in/samhwang2112/',
       },

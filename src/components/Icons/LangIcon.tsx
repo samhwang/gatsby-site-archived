@@ -1,17 +1,39 @@
 import type { FC } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
+import { useMemo, useCallback, useState } from 'react';
 
 interface LangIconProps {
   name: string;
 }
 
+const useIconClass = (name: string) => {
+  const DEFAULT_ICON_CLASS = useMemo<string>(() => `devicon-${name}`, []);
+  const [currentIconClass, setIconClass] = useState<string>(DEFAULT_ICON_CLASS);
+  const toggleColorIcon = useCallback((isHover: boolean = false) => {
+    switch (isHover) {
+      case true:
+        return setIconClass(`${DEFAULT_ICON_CLASS} colored`);
+
+      case false:
+      default:
+        return setIconClass(DEFAULT_ICON_CLASS);
+    }
+  }, []);
+
+  return [currentIconClass, toggleColorIcon] as const;
+};
+
 const LangIcon: FC<LangIconProps> = ({ name }) => {
-  const iconProps = ['fab', name] as [IconPrefix, IconName];
+  const [currentIconClass, toggleColorIcon] = useIconClass(name);
+  const onMouseEnter = () => toggleColorIcon(true);
+  const onMouseLeave = () => toggleColorIcon(false);
 
   return (
     <li className="list-inline-item">
-      <FontAwesomeIcon icon={iconProps} />
+      <i
+        className={currentIconClass}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      />
     </li>
   );
 };

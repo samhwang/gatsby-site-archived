@@ -1,4 +1,6 @@
-module.exports = {
+import type { Config } from '@jest/types';
+
+const config: Config.InitialOptions = {
   testEnvironment: 'jsdom',
   transform: {
     '^.+\\.tsx?$': `ts-jest`,
@@ -17,3 +19,5 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/setup-test-env.ts'],
   clearMocks: true,
 };
+
+export default config;

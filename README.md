@@ -9,18 +9,18 @@
 Originally created to be a page where I can learn about static sites, it
 has grown to be my main resume page.
 
-Created with [Gatsby](https://gatsbyjs.org), hosted on [GitHubPages](https://pages.github.com/).
+Created with [Gatsby](https://gatsbyjs.org), hosted on [GitHub Pages](https://pages.github.com/).
 
 Language:
 
 - TypeScript (primary) and React
 - SASS pre-processor for CSS
-- JavaScript configurations for Gatsby, Jest, and Storybook.
+- JavaScript configurations for Gatsby.
 
 Tools:
 
 - Gatsby static site generator
 - Jest for testing
-- Storybook for UI Testing
+- Coveralls for Code Coverage Tracking
 - GitHub Actions for CI/CD
 - GitHub Pages for static site hosting

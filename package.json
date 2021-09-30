@@ -68,7 +68,7 @@
     "@babel/core": "^7.9.0",
     "@jest/types": "^27.1.1",
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^12.0.0",
+    "@testing-library/react": "^12.1.1",
     "@types/jest": "^27.0.1",
     "@types/react-test-renderer": "^17.0.0",
     "@types/smoothscroll-polyfill": "^0.3.1",

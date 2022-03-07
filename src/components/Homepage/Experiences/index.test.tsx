@@ -1,10 +1,9 @@
 import { render } from '@testing-library/react';
-import { mocked } from 'ts-jest/utils';
 import Experiences from '.';
 import { usePersonalInformationData } from '../../../hooks';
 
 jest.mock('../../../hooks');
-const mockHook = mocked(usePersonalInformationData);
+const mockHook = jest.mocked(usePersonalInformationData);
 
 describe('Experience Component', () => {
   it('Should render without crashing and match snapshot', () => {

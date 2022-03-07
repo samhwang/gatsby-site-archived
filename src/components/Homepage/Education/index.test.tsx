@@ -1,10 +1,9 @@
 import { render } from '@testing-library/react';
-import { mocked } from 'ts-jest/utils';
 import Education from '.';
 import { usePersonalInformationData } from '../../../hooks';
 
 jest.mock('../../../hooks');
-const mockHook = mocked(usePersonalInformationData);
+const mockHook = jest.mocked(usePersonalInformationData);
 
 describe('Education section render', () => {
   it('Should match snapshot', () => {

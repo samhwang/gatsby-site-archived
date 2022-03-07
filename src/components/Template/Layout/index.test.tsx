@@ -1,11 +1,10 @@
 import { render } from '@testing-library/react';
-import { mocked } from 'ts-jest/utils';
 import Layout from '.';
 import { useSiteMetadata, usePersonalInformationData } from '../../../hooks';
 
 jest.mock('../../../hooks');
-const mockMetadataHook = mocked(useSiteMetadata);
-const mockDataHook = mocked(usePersonalInformationData);
+const mockMetadataHook = jest.mocked(useSiteMetadata);
+const mockDataHook = jest.mocked(usePersonalInformationData);
 
 describe('Layout rendering', () => {
   it('Should match snapshot', () => {

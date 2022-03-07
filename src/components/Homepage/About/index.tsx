@@ -3,7 +3,7 @@ import SocialIcon from '../../Icons/SocialIcon';
 import type { SocialLinkProps } from '../../Icons/SocialIcon';
 
 function About() {
-  const { firstName, lastName, address, email, socialLinks } =
+  const { firstName, lastName, address, socialLinks } =
     usePersonalInformationData();
   const socialLinksData: SocialLinkProps[] = socialLinks;
 

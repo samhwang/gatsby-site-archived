@@ -1,11 +1,10 @@
-import type { FC } from 'react';
 import useIconClass from '../../hooks/useIconClass';
 
 interface LangIconProps {
   name: string;
 }
 
-const LangIcon: FC<LangIconProps> = ({ name }) => {
+function LangIcon({ name }: LangIconProps) {
   const [currentIconClass, toggleColorIcon] = useIconClass(name);
 
   return (
@@ -17,6 +16,6 @@ const LangIcon: FC<LangIconProps> = ({ name }) => {
       />
     </li>
   );
-};
+}
 
 export default LangIcon;

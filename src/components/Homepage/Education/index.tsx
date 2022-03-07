@@ -1,11 +1,10 @@
-import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import School from './School';
 import type { EducationProps } from './School';
 
 export type EducationMetadata = EducationProps[];
 
-const Education: FC = () => {
+function Education() {
   const { education } = usePersonalInformationData();
 
   return (
@@ -27,6 +26,6 @@ const Education: FC = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Education;

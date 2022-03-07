@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import { Helmet } from 'react-helmet';
 
 interface MetaProp {
@@ -7,7 +6,7 @@ interface MetaProp {
   property?: string;
 }
 
-interface SEOProps {
+export interface SEOProps {
   title: string;
   description?: string;
   meta?: Array<MetaProp> | MetaProp;
@@ -17,7 +16,7 @@ interface SEOProps {
   };
 }
 
-const SEO: FC<SEOProps> = ({ title, description, meta, defaultFallback }) => {
+function SEO({ title, description, meta, defaultFallback }: SEOProps) {
   const siteTitle = defaultFallback.title;
   const metaDescription = description || defaultFallback.description;
   const defaultMeta: Array<MetaProp> = [
@@ -60,7 +59,7 @@ const SEO: FC<SEOProps> = ({ title, description, meta, defaultFallback }) => {
       ))}
     </Helmet>
   );
-};
+}
 
 SEO.defaultProps = {
   meta: [],
@@ -68,4 +67,3 @@ SEO.defaultProps = {
 };
 
 export default SEO;
-export type { SEOProps };

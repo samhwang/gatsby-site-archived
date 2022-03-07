@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import { ReactNode } from 'react';
 import SEO from '../SEO';
 import Footer from '../Footer';
 import Sidebar from '../Sidebar';
@@ -9,9 +9,10 @@ import { useSiteMetadata, usePersonalInformationData } from '../../../hooks';
 export type LayoutProps = {
   title: string;
   description: string;
+  children: ReactNode;
 };
 
-const Layout: FC<LayoutProps> = ({ children, title, description }) => {
+function Layout({ children, title, description }: LayoutProps) {
   const defaultFallback = useSiteMetadata();
   const personalInformation = usePersonalInformationData();
 
@@ -29,6 +30,6 @@ const Layout: FC<LayoutProps> = ({ children, title, description }) => {
       </div>
     </>
   );
-};
+}
 
 export default Layout;

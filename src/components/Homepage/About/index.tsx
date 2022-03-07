@@ -1,9 +1,8 @@
-import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import SocialIcon from '../../Icons/SocialIcon';
 import type { SocialLinkProps } from '../../Icons/SocialIcon';
 
-const About: FC = () => {
+function About() {
   const { firstName, lastName, address, email, socialLinks } =
     usePersonalInformationData();
   const socialLinksData: SocialLinkProps[] = socialLinks;
@@ -18,9 +17,7 @@ const About: FC = () => {
           {firstName}
           <span className="text-primary">{lastName}</span>
         </h1>
-        <div className="subheading mb-5">
-          {address}
-        </div>
+        <div className="subheading mb-5">{address}</div>
         <p className="lead mb-5">
           I have always been passionate about computers, and how technology can
           bring the world closer. That was the reason why I walked down the path
@@ -37,6 +34,6 @@ const About: FC = () => {
       </div>
     </section>
   );
-};
+}
 
 export default About;

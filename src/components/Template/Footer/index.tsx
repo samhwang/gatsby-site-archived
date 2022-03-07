@@ -1,7 +1,6 @@
-import type { FC } from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
-const Footer: FC<{}> = () => {
+function Footer() {
   const GitHubLink = (
     <OutboundLink href="https://github.com/samhwang">Sam Huynh</OutboundLink>
   );
@@ -25,6 +24,6 @@ const Footer: FC<{}> = () => {
       </p>
     </section>
   );
-};
+}
 
 export default Footer;

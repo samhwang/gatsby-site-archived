@@ -1,8 +1,14 @@
 import smoothscroll from 'smoothscroll-polyfill';
 import { cloneElement, useEffect } from 'react';
-import type { FC, KeyboardEvent, MouseEvent, ReactElement } from 'react';
+import type { KeyboardEvent, MouseEvent, ReactElement } from 'react';
 
-const Element: FC<{ children: ReactElement }> = ({ children }) => children;
+interface ElementProp {
+  children: ReactElement;
+}
+
+function Element({ children }: ElementProp) {
+  return children;
+}
 
 const scrollTo = (element?: Element, offSet = 0, timeout?: number) => {
   const elemPos = element
@@ -29,14 +35,14 @@ interface ScrollProps {
 
 type OnClickEvent = KeyboardEvent | MouseEvent;
 
-const Scroll: FC<ScrollProps> = ({
+function Scroll({
   type,
   element,
   offset,
   timeout,
   children,
   counter,
-}) => {
+}: ScrollProps) {
   useEffect(() => {
     smoothscroll.polyfill();
   }, []);
@@ -81,7 +87,7 @@ const Scroll: FC<ScrollProps> = ({
       )}
     </Element>
   );
-};
+}
 
 Scroll.defaultProps = {
   offset: 0,

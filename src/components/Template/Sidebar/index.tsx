@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { useToggle } from 'rooks';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
@@ -12,7 +11,7 @@ export interface SidebarProps {
   };
 }
 
-const Sidebar: FC<SidebarProps> = ({ personalInformation }) => {
+function Sidebar({ personalInformation }: SidebarProps) {
   const { firstName, lastName } = personalInformation;
 
   const tabs = [
@@ -81,6 +80,6 @@ const Sidebar: FC<SidebarProps> = ({ personalInformation }) => {
       </div>
     </nav>
   );
-};
+}
 
 export default Sidebar;

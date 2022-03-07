@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 export interface ProjectProps {
@@ -7,7 +6,7 @@ export interface ProjectProps {
   url?: string;
 }
 
-const Project: FC<ProjectProps> = ({ title, description, url }) => {
+function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (
     <OutboundLink href={url}>
       <strong>{`${title}:`}</strong>
@@ -25,7 +24,7 @@ const Project: FC<ProjectProps> = ({ title, description, url }) => {
       </p>
     </li>
   );
-};
+}
 
 Project.defaultProps = {
   url: '',

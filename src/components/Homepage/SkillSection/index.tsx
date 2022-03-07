@@ -1,9 +1,8 @@
-import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import Skill from './Skill';
 import LangIcon from '../../Icons/LangIcon';
 
-const SkillSection: FC = () => {
+function SkillSection() {
   const { skills, techStack } = usePersonalInformationData();
 
   return (
@@ -25,6 +24,6 @@ const SkillSection: FC = () => {
       </div>
     </section>
   );
-};
+}
 
 export default SkillSection;

@@ -1,11 +1,10 @@
-import type { FC } from 'react';
 import { usePersonalInformationData } from '../../../hooks';
 import type { JobDescriptionProps } from './JobDescription';
 import JobDescription from './JobDescription';
 
 export type ExperienceSection = JobDescriptionProps[];
 
-const Experiences: FC = () => {
+function Experiences() {
   const { experience } = usePersonalInformationData();
 
   return (
@@ -38,6 +37,6 @@ const Experiences: FC = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Experiences;

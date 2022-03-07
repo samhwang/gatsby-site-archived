@@ -1,55 +1,25 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es6": true,
     "jest/globals": true
   },
-  "extends": ["airbnb", "prettier"],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parser": "@typescript-eslint/parser",
+  "extends": ["airbnb", "airbnb-typescript", "prettier"],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 11,
-    "sourceType": "module"
+    "project": "./tsconfig.dev.json"
   },
-  "plugins": [
-    "react",
-    "prettier",
-    "@typescript-eslint",
-    "eslint-plugin-import",
-    "eslint-plugin-jsx-a11y",
-    "eslint-plugin-react",
-    "eslint-plugin-react-hooks",
-    "jest"
-  ],
+  "plugins": ["prettier", "@typescript-eslint", "jest"],
   "rules": {
+    "default-case": "off",
+    "import/extensions": ["error", "never"],
+    "no-console": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-use-before-define": ["error", "nofunc"],
+    "import/prefer-default-export": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    ],
-    "prettier/prettier": ["error"],
-    "import/extensions": ["error", "never"],
-    "react/prop-types": "off",
-    "react/default-props-match-prop-types": "off",
-    "import/no-extraneous-dependencies": "off"
-  },
-  "settings": {
-    "import/parser": {
-      "@typescript-eslint/parser": [".ts", ".tsx", ".d.ts"]
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [".ts", ".tsx", ".d.ts", ".js", ".jsx"]
-      }
-    }
+    "prettier/prettier": "error"
   }
 }

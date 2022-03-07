@@ -15,7 +15,7 @@ export interface SectionType {
 }
 
 function IndexPage() {
-  const sections = [
+  const sections: SectionType[] = [
     { id: 'about', content: <About /> },
     { id: 'experience', content: <Experiences /> },
     { id: 'education', content: <Education /> },
@@ -23,7 +23,7 @@ function IndexPage() {
     { id: 'projects', content: <ProjectSection /> },
   ];
 
-  const children = sections.map(({ id, content }: SectionType) => (
+  const children = sections.map(({ id, content }) => (
     <Fragment key={id}>
       {content}
       <hr className="m-0" />

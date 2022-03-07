@@ -14,7 +14,7 @@ on:
       - config.js
       - gatsby-config.js
       - package.json
-      - yarn.lock
+      - package-lock.json
 
 jobs:
   initialize:
@@ -25,33 +25,19 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Set up Node 14
+      - name: Set up Node 16
         uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
-
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache node_modules
-        uses: actions/cache@v2.1.6
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          node-version: "16.x"
 
       - name: Set up project
-        run: yarn install
+        run: npm ci
 
       - name: Run linting
-        run: yarn lint
+        run: npm run lint
 
       - name: Run tests
-        run: yarn test:coverage
+        run: npm run test:coverage
 
       - name: Archive test coverage artifacts
         uses: actions/upload-artifact@v2
@@ -61,7 +47,7 @@ jobs:
           retention-days: 1
 
       - name: Build Public files
-        run: yarn build
+        run: npm run build
 
       - name: Archive public assets
         uses: actions/upload-artifact@v2

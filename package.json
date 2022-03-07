@@ -13,12 +13,12 @@
   "homepage": "https://samhwang.github.io",
   "license": "SEE LICENSE IN LICENSE FILE",
   "engine": {
-    "node": ">=14.15",
-    "npm": ">=6.13",
+    "node": ">=16.15",
+    "npm": ">=8.13",
     "yarn": ">=1.22"
   },
   "scripts": {
-    "prebuild": "yarn clean",
+    "prebuild": "npm run clean",
     "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
@@ -29,7 +29,7 @@
     "serve": "gatsby serve",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "start": "yarn develop",
+    "start": "npm run develop",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

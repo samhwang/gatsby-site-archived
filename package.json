@@ -13,12 +13,12 @@
   "homepage": "https://samhwang.github.io",
   "license": "SEE LICENSE IN LICENSE FILE",
   "engine": {
-    "node": ">=14.15",
-    "npm": ">=6.13",
+    "node": ">=16.15",
+    "npm": ">=8.13",
     "yarn": ">=1.22"
   },
   "scripts": {
-    "prebuild": "yarn clean",
+    "prebuild": "npm run clean",
     "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
@@ -29,7 +29,7 @@
     "serve": "gatsby serve",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "start": "yarn develop",
+    "start": "npm run develop",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -79,7 +79,7 @@
     "babel-preset-gatsby": "^1.0.0",
     "babel-preset-react-app": "^10.0.0",
     "eslint": "^7.20.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.0.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",

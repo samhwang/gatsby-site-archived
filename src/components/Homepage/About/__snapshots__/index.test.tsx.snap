@@ -25,12 +25,7 @@ Object {
           <div
             class="subheading mb-5"
           >
-            123 Test Drive - 
-            <a
-              href="mailto:test@test.com"
-            >
-              test@test.com
-            </a>
+            123 Test Drive
           </div>
           <p
             class="lead mb-5"
@@ -74,12 +69,7 @@ Object {
         <div
           class="subheading mb-5"
         >
-          123 Test Drive - 
-          <a
-            href="mailto:test@test.com"
-          >
-            test@test.com
-          </a>
+          123 Test Drive
         </div>
         <p
           class="lead mb-5"

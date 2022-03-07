@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { usePersonalInformationData } from '../../../hooks';
 import SocialIcon from '../../Icons/SocialIcon';
 import type { SocialLinkProps } from '../../Icons/SocialIcon';
@@ -20,8 +19,7 @@ const About: FC = () => {
           <span className="text-primary">{lastName}</span>
         </h1>
         <div className="subheading mb-5">
-          {`${address} - `}
-          <OutboundLink href={`mailto:${email}`}>{email}</OutboundLink>
+          {address}
         </div>
         <p className="lead mb-5">
           I have always been passionate about computers, and how technology can

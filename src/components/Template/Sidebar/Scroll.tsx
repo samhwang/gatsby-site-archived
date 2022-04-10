@@ -2,25 +2,19 @@ import smoothscroll from 'smoothscroll-polyfill';
 import { cloneElement, useEffect } from 'react';
 import type { KeyboardEvent, MouseEvent, ReactElement } from 'react';
 
-interface ElementProp {
-  children: ReactElement;
-}
-
-function Element({ children }: ElementProp) {
-  return children;
-}
-
 const scrollTo = (element?: Element, offSet = 0, timeout?: number) => {
   const elemPos = element
-    ? element.getBoundingClientRect().top + window.pageYOffset
+    ? element.getBoundingClientRect().top + window.scrollY
     : 0;
+  const top = elemPos + offSet;
 
   if (!timeout) {
-    window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
+    window.scroll({ top, left: 0, behavior: 'smooth' });
+    return;
   }
 
   setTimeout(() => {
-    window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
+    window.scroll({ top, left: 0, behavior: 'smooth' });
   }, timeout);
 };
 
@@ -68,30 +62,26 @@ function Scroll({
 
     return scroll && !!elem
       ? scrollTo(elem, offset, timeout)
-      : console.log(`Element not found: ${element}`); // eslint-disable-line
+      : console.error(`Element not found: ${element}`);
   };
 
-  return (
-    <Element>
-      {typeof children === 'object' ? (
-        cloneElement(children, { onClick: handleClick })
-      ) : (
-        <span
-          onClick={handleClick}
-          onKeyDown={handleClick}
-          role="tab"
-          tabIndex={counter}
-        >
-          {children}
-        </span>
-      )}
-    </Element>
+  return typeof children === 'object' ? (
+    cloneElement(children, { onClick: handleClick })
+  ) : (
+    <span
+      onClick={handleClick}
+      onKeyDown={handleClick}
+      role="tab"
+      tabIndex={counter}
+    >
+      {children}
+    </span>
   );
 }
 
 Scroll.defaultProps = {
   offset: 0,
-  timeout: 300,
+  timeout: 0,
 };
 
 export default Scroll;

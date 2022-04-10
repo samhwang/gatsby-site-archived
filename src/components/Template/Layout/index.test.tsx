@@ -1,6 +1,9 @@
 import { render } from '@testing-library/react';
 import Layout from '.';
-import { useSiteMetadata, usePersonalInformationData } from '../../../hooks';
+import {
+  useSiteMetadata,
+  usePersonalInformationData,
+} from '../../../siteMetadata';
 
 jest.mock('../../../hooks');
 const mockMetadataHook = jest.mocked(useSiteMetadata);

@@ -1,4 +1,4 @@
-import useIconClass from '../../hooks/useIconClass';
+import useIconClass from './useIconClass';
 
 interface LangIconProps {
   name: string;

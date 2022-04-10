@@ -1,4 +1,4 @@
-import { usePersonalInformationData } from '../../../hooks';
+import { usePersonalInformationData } from '../../../siteMetadata';
 import SocialIcon from '../../Icons/SocialIcon';
 import type { SocialLinkProps } from '../../Icons/SocialIcon';
 

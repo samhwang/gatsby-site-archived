@@ -1,4 +1,4 @@
-import { usePersonalInformationData } from '../../../hooks';
+import { usePersonalInformationData } from '../../../siteMetadata';
 import type { JobDescriptionProps } from './JobDescription';
 import JobDescription from './JobDescription';
 

@@ -1,4 +1,4 @@
-import { usePersonalInformationData } from '../../../hooks';
+import { usePersonalInformationData } from '../../../siteMetadata';
 import School from './School';
 import type { EducationProps } from './School';
 

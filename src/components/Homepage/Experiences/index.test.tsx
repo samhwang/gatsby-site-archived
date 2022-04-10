@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import Experiences from '.';
-import { usePersonalInformationData } from '../../../hooks';
+import { usePersonalInformationData } from '../../../siteMetadata';
 
 jest.mock('../../../hooks');
 const mockHook = jest.mocked(usePersonalInformationData);

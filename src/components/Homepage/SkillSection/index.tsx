@@ -1,4 +1,4 @@
-import { usePersonalInformationData } from '../../../hooks';
+import { usePersonalInformationData } from '../../../siteMetadata';
 import Skill from './Skill';
 import LangIcon from '../../Icons/LangIcon';
 

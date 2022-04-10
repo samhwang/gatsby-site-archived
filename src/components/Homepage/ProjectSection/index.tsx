@@ -1,4 +1,4 @@
-import { usePersonalInformationData } from '../../../hooks';
+import { usePersonalInformationData } from '../../../siteMetadata';
 import Project from './Project';
 import type { ProjectProps } from './Project';
 

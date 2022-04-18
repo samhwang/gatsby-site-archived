@@ -1,27 +1,10 @@
-import smoothscroll from 'smoothscroll-polyfill';
 import {
   cloneElement,
-  useEffect,
+  useCallback,
   KeyboardEvent,
   MouseEvent,
   ReactElement,
 } from 'react';
-
-const scrollTo = (element?: Element, offSet = 0, timeout?: number) => {
-  const elemPos = element
-    ? element.getBoundingClientRect().top + window.scrollY
-    : 0;
-  const top = elemPos + offSet;
-
-  if (!timeout) {
-    window.scroll({ top, left: 0, behavior: 'smooth' });
-    return;
-  }
-
-  setTimeout(() => {
-    window.scroll({ top, left: 0, behavior: 'smooth' });
-  }, timeout);
-};
 
 interface ScrollProps {
   type: string;
@@ -42,33 +25,48 @@ function Scroll({
   children,
   counter,
 }: ScrollProps) {
-  useEffect(() => {
-    smoothscroll.polyfill();
-  }, []);
+  const scrollTo = useCallback((elem?: Element, offSet = 0, delay = 0) => {
+    const elemPos = elem
+      ? elem.getBoundingClientRect().top + window.scrollY
+      : 0;
+    const top = elemPos + offSet;
 
-  const handleClick = (event: OnClickEvent) => {
-    event.preventDefault();
-    let elem = null;
-    let scroll = true;
-    if (type && element) {
-      switch (type) {
-        case 'class':
-          // eslint-disable-next-line prefer-destructuring
-          elem = document.getElementsByClassName(element)[0];
-          scroll = !!elem;
-          break;
-        case 'id':
-          elem = document.getElementById(element);
-          scroll = !!elem;
-          break;
-        default:
-      }
+    if (!delay) {
+      window.scroll({ top, left: 0, behavior: 'smooth' });
+      return;
     }
 
-    return scroll && !!elem
-      ? scrollTo(elem, offset, timeout)
-      : console.error(`Element not found: ${element}`);
-  };
+    setTimeout(() => {
+      window.scroll({ top, left: 0, behavior: 'smooth' });
+    }, delay);
+  }, []);
+
+  const handleClick = useCallback(
+    (event: OnClickEvent) => {
+      event.preventDefault();
+      let elem = null;
+      let scroll = true;
+      if (type && element) {
+        switch (type) {
+          case 'class':
+            // eslint-disable-next-line prefer-destructuring
+            elem = document.getElementsByClassName(element)[0];
+            scroll = !!elem;
+            break;
+          case 'id':
+            elem = document.getElementById(element);
+            scroll = !!elem;
+            break;
+          default:
+        }
+      }
+
+      return scroll && !!elem
+        ? scrollTo(elem, offset, timeout)
+        : console.error(`Element not found: ${element}`);
+    },
+    [element, offset, scrollTo, timeout, type]
+  );
 
   return typeof children === 'object' ? (
     cloneElement(children, { onClick: handleClick })

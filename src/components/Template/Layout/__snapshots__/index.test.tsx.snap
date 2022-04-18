@@ -58,7 +58,7 @@ Object {
             class="collapse navbar-collapse "
             id="navbarSupportedContent"
           >
-            <ul
+            <div
               class="navbar-nav"
             >
               <li
@@ -102,7 +102,7 @@ Object {
                 </a>
               </li>
               <li
-                class="nav-item"
+                class="nav-item active"
               >
                 <a
                   class="nav-link"
@@ -111,7 +111,7 @@ Object {
                   Projects
                 </a>
               </li>
-            </ul>
+            </div>
           </div>
         </nav>
         <div
@@ -202,7 +202,7 @@ Object {
           class="collapse navbar-collapse "
           id="navbarSupportedContent"
         >
-          <ul
+          <div
             class="navbar-nav"
           >
             <li
@@ -246,7 +246,7 @@ Object {
               </a>
             </li>
             <li
-              class="nav-item"
+              class="nav-item active"
             >
               <a
                 class="nav-link"
@@ -255,7 +255,7 @@ Object {
                 Projects
               </a>
             </li>
-          </ul>
+          </div>
         </div>
       </nav>
       <div

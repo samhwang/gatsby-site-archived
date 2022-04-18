@@ -1,5 +1,6 @@
+import { useRef } from 'react';
 import { useToggle } from 'rooks';
-import Scrollspy from 'react-scrollspy';
+import { Scrollspy } from '@makotot/ghostui';
 import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';
 import avatarWebP from '../../../assets/img/avatar.webp';
@@ -15,11 +16,19 @@ function Sidebar({ personalInformation }: SidebarProps) {
   const { firstName, lastName } = personalInformation;
 
   const tabs = [
-    { content: 'About', href: 'about' },
-    { content: 'Experience', href: 'experience' },
-    { content: 'Education', href: 'education' },
-    { content: 'Skills', href: 'skills' },
-    { content: 'Projects', href: 'projects' },
+    { content: 'About', href: 'about', ref: useRef<HTMLLIElement>(null) },
+    {
+      content: 'Experience',
+      href: 'experience',
+      ref: useRef<HTMLLIElement>(null),
+    },
+    {
+      content: 'Education',
+      href: 'education',
+      ref: useRef<HTMLLIElement>(null),
+    },
+    { content: 'Skills', href: 'skills', ref: useRef<HTMLLIElement>(null) },
+    { content: 'Projects', href: 'projects', ref: useRef<HTMLLIElement>(null) },
   ];
   const [isCollapsed, toggleCollapsed] = useToggle(true);
 
@@ -58,24 +67,25 @@ function Sidebar({ personalInformation }: SidebarProps) {
         className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`}
         id="navbarSupportedContent"
       >
-        <Scrollspy
-          items={tabs.map((s) => s.href)}
-          currentClassName="active"
-          offset={-300}
-          className="navbar-nav"
-        >
-          {tabs.map((tab, i) => {
-            const { href, content } = tab;
-            return (
-              <li className="nav-item" key={href}>
-                <Scroll type="id" element={href} counter={i}>
-                  <a className="nav-link" href={`#${href}`}>
-                    {content}
-                  </a>
-                </Scroll>
-              </li>
-            );
-          })}
+        <Scrollspy sectionRefs={tabs.map(({ ref }) => ref)}>
+          {({ currentElementIndexInViewport }) => (
+            <div className="navbar-nav">
+              {tabs.map(({ href, content, ref }, i) => {
+                const isActive = currentElementIndexInViewport === i;
+                const className = isActive ? 'nav-item active' : 'nav-item';
+
+                return (
+                  <li className={className} ref={ref} key={href}>
+                    <Scroll type="id" element={href} counter={i}>
+                      <a className="nav-link" href={`#${href}`}>
+                        {content}
+                      </a>
+                    </Scroll>
+                  </li>
+                );
+              })}
+            </div>
+          )}
         </Scrollspy>
       </div>
     </nav>

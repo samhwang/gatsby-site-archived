@@ -3,13 +3,13 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jest/globals": true
+    "jest": true
   },
-  "extends": ["airbnb", "airbnb-typescript", "prettier"],
+  "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.dev.json"
   },
-  "plugins": ["prettier", "@typescript-eslint", "jest"],
+  "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
     "default-case": "off",
     "import/extensions": ["error", "never"],

@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
-import SEO from '.';
-import type { SEOProps } from '.';
+import SEO, { SEOProps } from '.';
 
 describe('SEO Rendering', () => {
   it('Should match snapshot', () => {

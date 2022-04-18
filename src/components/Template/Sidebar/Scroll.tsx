@@ -1,6 +1,11 @@
 import smoothscroll from 'smoothscroll-polyfill';
-import { cloneElement, useEffect } from 'react';
-import type { KeyboardEvent, MouseEvent, ReactElement } from 'react';
+import {
+  cloneElement,
+  useEffect,
+  KeyboardEvent,
+  MouseEvent,
+  ReactElement,
+} from 'react';
 
 const scrollTo = (element?: Element, offSet = 0, timeout?: number) => {
   const elemPos = element

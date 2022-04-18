@@ -1,8 +1,5 @@
 import { usePersonalInformationData } from '../../../siteMetadata';
 import Project from './Project';
-import type { ProjectProps } from './Project';
-
-export type ProjectsMetadata = ProjectProps[];
 
 function ProjectSection() {
   const { projects } = usePersonalInformationData();

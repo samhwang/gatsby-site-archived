@@ -1,5 +1,4 @@
-import { Fragment } from 'react';
-import type { ReactNode } from 'react';
+import { Fragment, ReactNode } from 'react';
 import { Layout } from '../components/Template';
 import {
   About,

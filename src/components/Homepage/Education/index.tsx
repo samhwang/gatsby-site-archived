@@ -1,8 +1,5 @@
 import { usePersonalInformationData } from '../../../siteMetadata';
 import School from './School';
-import type { EducationProps } from './School';
-
-export type EducationMetadata = EducationProps[];
 
 function Education() {
   const { education } = usePersonalInformationData();

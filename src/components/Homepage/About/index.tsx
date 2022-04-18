@@ -1,6 +1,5 @@
 import { usePersonalInformationData } from '../../../siteMetadata';
-import SocialIcon from '../../Icons/SocialIcon';
-import type { SocialLinkProps } from '../../Icons/SocialIcon';
+import SocialIcon, { SocialLinkProps } from '../../Icons/SocialIcon';
 
 function About() {
   const { firstName, lastName, address, socialLinks } =

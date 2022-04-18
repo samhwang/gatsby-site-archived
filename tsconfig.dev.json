@@ -2,5 +2,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "jsx": "react-jsxdev"
-  }
+  },
+  "include": [
+    "./src",
+    "jest.config.ts",
+    "config.js",
+    "gatsby-config.js"
+  ]
 }

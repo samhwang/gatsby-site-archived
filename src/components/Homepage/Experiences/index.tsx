@@ -1,8 +1,5 @@
 import { usePersonalInformationData } from '../../../siteMetadata';
-import type { JobDescriptionProps } from './JobDescription';
 import JobDescription from './JobDescription';
-
-export type ExperienceSection = JobDescriptionProps[];
 
 function Experiences() {
   const { experience } = usePersonalInformationData();

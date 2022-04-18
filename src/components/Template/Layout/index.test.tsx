@@ -5,7 +5,7 @@ import {
   usePersonalInformationData,
 } from '../../../siteMetadata';
 
-jest.mock('../../../hooks');
+jest.mock('../../../siteMetadata');
 const mockMetadataHook = jest.mocked(useSiteMetadata);
 const mockDataHook = jest.mocked(usePersonalInformationData);
 

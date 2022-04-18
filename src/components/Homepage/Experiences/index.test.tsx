@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import Experiences from '.';
 import { usePersonalInformationData } from '../../../siteMetadata';
 
-jest.mock('../../../hooks');
+jest.mock('../../../siteMetadata');
 const mockHook = jest.mocked(usePersonalInformationData);
 
 describe('Experience Component', () => {

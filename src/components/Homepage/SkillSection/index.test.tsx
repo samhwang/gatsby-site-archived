@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import SkillSection from '.';
 import { usePersonalInformationData } from '../../../siteMetadata';
 
-jest.mock('../../../hooks');
+jest.mock('../../../siteMetadata');
 const mockHook = jest.mocked(usePersonalInformationData);
 
 describe('Skill Section Component', () => {

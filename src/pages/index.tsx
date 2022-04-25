@@ -10,7 +10,7 @@ import {
 
 export interface SectionType {
   id: string;
-  content: ReactNode | Element;
+  content: ReactNode;
 }
 
 function IndexPage() {

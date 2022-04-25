@@ -1,22 +1,21 @@
 import { render } from '@testing-library/react';
 import Education from '.';
-import { usePersonalInformationData } from '../../../siteMetadata';
+import useEducationData from './useEducationData';
+import { SchoolProps } from './School';
 
-jest.mock('../../../siteMetadata');
-const mockHook = jest.mocked(usePersonalInformationData);
+jest.mock('./useEducationData');
+const mockHook = jest.mocked(useEducationData);
 
 describe('Education section render', () => {
   it('Should match snapshot', () => {
-    const mockEducation: any = {
-      education: [
-        {
-          institute: 'Test',
-          degree: 'Test',
-          major: 'Test',
-          duration: '2020 - 2021',
-        },
-      ],
-    };
+    const mockEducation: SchoolProps[] = [
+      {
+        institute: 'Test',
+        degree: 'Test',
+        major: 'Test',
+        duration: '2020 - 2021',
+      },
+    ];
     mockHook.mockReturnValueOnce(mockEducation);
     const EducationSection = <Education />;
     const tree = render(EducationSection);

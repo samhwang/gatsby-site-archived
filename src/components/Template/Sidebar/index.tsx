@@ -4,11 +4,10 @@ import { Scrollspy } from '@makotot/ghostui';
 import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';
 import avatarWebP from '../../../assets/img/avatar.webp';
-import { usePersonalInformationData } from '../../../siteMetadata';
+import useSidebarData from './useSidebarData';
 
 function Sidebar() {
-  const personalInformation = usePersonalInformationData();
-  const { firstName, lastName } = personalInformation;
+  const { firstName, lastName } = useSidebarData();
 
   const tabs = [
     { content: 'About', href: 'about', ref: useRef<HTMLLIElement>(null) },

@@ -1,8 +1,8 @@
-import { usePersonalInformationData } from '../../../siteMetadata';
 import Project from './Project';
+import useProjectData from './useProjectData';
 
 function ProjectSection() {
-  const { projects } = usePersonalInformationData();
+  const projects = useProjectData();
 
   return (
     <section

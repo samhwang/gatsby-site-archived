@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import Sidebar from '../Sidebar';
 import '../../../assets/sass/resume.scss';
 import 'devicon/devicon.min.css';
-import { useSiteMetadata } from '../../../siteMetadata';
+import useSiteMetadata from './useSiteMetadata';
 
 export type LayoutProps = {
   title: string;

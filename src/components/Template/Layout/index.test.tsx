@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react';
 import Layout from '.';
-import {
-  useSiteMetadata,
-  usePersonalInformationData,
-} from '../../../siteMetadata';
+import useSiteMetadata from './useSiteMetadata';
+import useSidebarData from '../Sidebar/useSidebarData';
 
-jest.mock('../../../siteMetadata');
+jest.mock('./useSiteMetadata');
 const mockMetadataHook = jest.mocked(useSiteMetadata);
-const mockDataHook = jest.mocked(usePersonalInformationData);
+
+jest.mock('../Sidebar/useSidebarData');
+const mockSidebarHook = jest.mocked(useSidebarData);
 
 describe('Layout rendering', () => {
   it('Should match snapshot', () => {
@@ -15,13 +15,13 @@ describe('Layout rendering', () => {
       title: 'Sam Huynh',
       description: 'Online profile of Sam Huynh.',
     };
-    mockMetadataHook.mockReturnValueOnce(mockMetadata);
+    mockMetadataHook.mockReturnValue(mockMetadata);
 
-    const mockData: any = {
+    const mockSidebarData = {
       firstName: 'Sam',
       lastName: 'Huynh',
     };
-    mockDataHook.mockReturnValueOnce(mockData);
+    mockSidebarHook.mockReturnValueOnce(mockSidebarData);
 
     const LayoutComponent = (
       <Layout title="Test Render" description="Test Render">

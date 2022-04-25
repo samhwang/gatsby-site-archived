@@ -1,17 +1,16 @@
 import { render } from '@testing-library/react';
 import About from '.';
-import { usePersonalInformationData } from '../../../siteMetadata';
+import useAboutData, { AboutData } from './useAboutData';
 
-jest.mock('../../../siteMetadata');
-const mockHook = jest.mocked(usePersonalInformationData);
+jest.mock('./useAboutData');
+const mockHook = jest.mocked(useAboutData);
 
 describe('Render About Data', () => {
   it('Should match snapshot', () => {
-    const mockAbout: any = {
+    const mockAbout: AboutData = {
       firstName: 'test',
       lastName: 'test',
       address: '123 Test Drive',
-      email: 'test@test.com',
       socialLinks: [
         {
           icon: 'test-icon',

@@ -1,8 +1,8 @@
-import { usePersonalInformationData } from '../../../siteMetadata';
+import useEducationData from './useEducationData';
 import School from './School';
 
 function Education() {
-  const { education } = usePersonalInformationData();
+  const education = useEducationData();
 
   return (
     <section

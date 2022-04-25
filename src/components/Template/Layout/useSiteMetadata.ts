@@ -5,7 +5,7 @@ interface SiteMetadata {
   description: string;
 }
 
-const useSiteMetadata = (): SiteMetadata => {
+function useSiteMetadata(): SiteMetadata {
   const SiteMetadataQuery = graphql`
     query SiteMetadataQuery {
       site {
@@ -19,6 +19,6 @@ const useSiteMetadata = (): SiteMetadata => {
 
   const data = useStaticQuery(SiteMetadataQuery);
   return data.site.siteMetadata;
-};
+}
 
 export default useSiteMetadata;

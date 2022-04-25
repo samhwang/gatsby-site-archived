@@ -1,11 +1,11 @@
-export interface EducationProps {
+export interface SchoolProps {
   institute: string;
   degree: string;
   major: string;
   duration: string;
 }
 
-function Education({ institute, degree, major, duration }: EducationProps) {
+function Education({ institute, degree, major, duration }: SchoolProps) {
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div className="resume-content">

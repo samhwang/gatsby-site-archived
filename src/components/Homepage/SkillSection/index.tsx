@@ -1,9 +1,9 @@
-import { usePersonalInformationData } from '../../../siteMetadata';
+import useSkillData from './useSkillData';
 import Skill from './Skill';
 import LangIcon from '../../Icons/LangIcon';
 
 function SkillSection() {
-  const { skills, techStack } = usePersonalInformationData();
+  const { skills, techStack } = useSkillData();
 
   return (
     <section

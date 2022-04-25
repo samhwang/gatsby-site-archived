@@ -1,8 +1,8 @@
-import { usePersonalInformationData } from '../../../siteMetadata';
 import JobDescription from './JobDescription';
+import useExperienceData from './useExperienceData';
 
 function Experiences() {
-  const { experience } = usePersonalInformationData();
+  const experience = useExperienceData();
 
   return (
     <section

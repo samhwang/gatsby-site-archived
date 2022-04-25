@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react';
 import SkillSection from '.';
-import { usePersonalInformationData } from '../../../siteMetadata';
+import useSkillData, { SkillData } from './useSkillData';
 
-jest.mock('../../../siteMetadata');
-const mockHook = jest.mocked(usePersonalInformationData);
+jest.mock('./useSkillData');
+const mockHook = jest.mocked(useSkillData);
 
 describe('Skill Section Component', () => {
   it('Should render without crashing and match snapshot', () => {
-    const mockSkills: any = {
+    const mockSkills: SkillData = {
       skills: [
         {
           title: 'asdfasdf',

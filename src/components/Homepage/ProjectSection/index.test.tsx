@@ -1,21 +1,20 @@
 import { render } from '@testing-library/react';
 import ProjectSection from '.';
-import { usePersonalInformationData } from '../../../siteMetadata';
+import useProjectData from './useProjectData';
+import { ProjectProps } from './Project';
 
-jest.mock('../../../siteMetadata');
-const mockHook = jest.mocked(usePersonalInformationData);
+jest.mock('./useProjectData');
+const mockHook = jest.mocked(useProjectData);
 
 describe('Project section rendering', () => {
   it('Should match snapshot', () => {
-    const mockProjects: any = {
-      projects: [
-        {
-          title: 'Test Title',
-          description: 'Test Description',
-          url: 'test url',
-        },
-      ],
-    };
+    const mockProjects: ProjectProps[] = [
+      {
+        title: 'Test Title',
+        description: 'Test Description',
+        url: 'test url',
+      },
+    ];
     mockHook.mockReturnValueOnce(mockProjects);
     const ProjectsComponent = <ProjectSection />;
     const tree = render(ProjectsComponent);

@@ -4,15 +4,10 @@ import { Scrollspy } from '@makotot/ghostui';
 import Scroll from './Scroll';
 import avatarJPG from '../../../assets/img/avatar.jpg';
 import avatarWebP from '../../../assets/img/avatar.webp';
+import { usePersonalInformationData } from '../../../siteMetadata';
 
-export interface SidebarProps {
-  personalInformation: {
-    firstName: string;
-    lastName: string;
-  };
-}
-
-function Sidebar({ personalInformation }: SidebarProps) {
+function Sidebar() {
+  const personalInformation = usePersonalInformationData();
   const { firstName, lastName } = personalInformation;
 
   const tabs = [

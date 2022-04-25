@@ -4,10 +4,7 @@ import Footer from '../Footer';
 import Sidebar from '../Sidebar';
 import '../../../assets/sass/resume.scss';
 import 'devicon/devicon.min.css';
-import {
-  useSiteMetadata,
-  usePersonalInformationData,
-} from '../../../siteMetadata';
+import { useSiteMetadata } from '../../../siteMetadata';
 
 export type LayoutProps = {
   title: string;
@@ -17,7 +14,6 @@ export type LayoutProps = {
 
 function Layout({ children, title, description }: LayoutProps) {
   const defaultFallback = useSiteMetadata();
-  const personalInformation = usePersonalInformationData();
 
   return (
     <>
@@ -27,7 +23,7 @@ function Layout({ children, title, description }: LayoutProps) {
         defaultFallback={defaultFallback}
       />
       <div className="main-body">
-        <Sidebar personalInformation={personalInformation} />
+        <Sidebar />
         <div className="container-fluid p-0">{children}</div>
         <Footer />
       </div>

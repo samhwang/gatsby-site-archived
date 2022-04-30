@@ -65,7 +65,7 @@
     "@types/react-dom": "^18.0.1",
     "@types/react-helmet": "^6.1.5",
     "@types/react-scrollspy": "^3.3.2",
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.19.0",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.4",

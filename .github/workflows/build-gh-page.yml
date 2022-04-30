@@ -39,7 +39,7 @@ jobs:
         run: npm run test:coverage
 
       - name: Archive test coverage artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: coverage
           path: coverage
@@ -49,7 +49,7 @@ jobs:
         run: npm run build
 
       - name: Archive public assets
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: public
           path: public

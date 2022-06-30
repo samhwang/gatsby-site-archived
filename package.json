@@ -67,7 +67,7 @@
     "@types/react-scrollspy": "^3.3.2",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
-    "babel-jest": "^27.5.1",
+    "babel-jest": "^28.1.2",
     "babel-loader": "^8.2.4",
     "babel-preset-gatsby": "^2.12.1",
     "babel-preset-react-app": "^10.0.1",

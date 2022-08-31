@@ -51,7 +51,7 @@
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "rooks": "^5.11.0",
-    "sass": "^1.50.0"
+    "sass": "^1.54.8"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
